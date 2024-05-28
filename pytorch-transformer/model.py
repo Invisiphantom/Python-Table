@@ -1,8 +1,9 @@
+import math
 import torch
 import torch.nn as nn
-import math
 
 
+# (batch, seq_len) --> (batch, seq_len, d_model)
 class InputEmbeddings(nn.Module):
 
     def __init__(self, d_model: int, vocab_size: int) -> None:
@@ -11,11 +12,11 @@ class InputEmbeddings(nn.Module):
         self.vocab_size = vocab_size
         self.embedding = nn.Embedding(vocab_size, d_model)
 
-    # (batch, seq_len) --> (batch, seq_len, d_model)
     def forward(self, x):
         return self.embedding(x) * math.sqrt(self.d_model)
 
 
+# (batch, seq_len, d_model)
 class PositionalEncoding(nn.Module):
 
     def __init__(self, d_model: int, seq_len: int, dropout: float) -> None:
@@ -26,17 +27,20 @@ class PositionalEncoding(nn.Module):
         pe = torch.zeros(seq_len, d_model)
         position = torch.arange(0, seq_len, dtype=torch.float).unsqueeze(1)  # (seq_len, 1)
         div_term = torch.exp(torch.arange(0, d_model, 2).float() * (-math.log(10000.0) / d_model))  # (d_model / 2)
-        pe[:, 0::2] = torch.sin(position * div_term)  # sin(position * (10000 ** (2i / d_model))
-        pe[:, 1::2] = torch.cos(position * div_term)  # cos(position * (10000 ** (2i / d_model))
+        pe[:, 0::2] = torch.sin(position * div_term)  # sin(position * (10000 ** (-2i / d_model))
+        pe[:, 1::2] = torch.cos(position * div_term)  # cos(position * (10000 ** (-2i / d_model))
         pe = pe.unsqueeze(0)  # (1, seq_len, d_model)
         self.register_buffer("pe", pe)
 
     def forward(self, x):
-        x = x + (self.pe[:, : x.shape[1], :]).requires_grad_(False)  # (batch, seq_len, d_model)
+        x = x + self.pe[:, : x.shape[1], :]
         return self.dropout(x)
 
 
 # ----------------------------------------------------------------------------------------
+
+
+# (batch_size, h, seq_len, d_model)
 class MultiHeadAttentionBlock(nn.Module):
 
     def __init__(self, d_model: int, h: int, dropout: float) -> None:
@@ -44,7 +48,7 @@ class MultiHeadAttentionBlock(nn.Module):
         self.d_model = d_model
         self.h = h
 
-        assert d_model % h == 0, "d_model is not divisible by h"
+        assert d_model % h == 0, "d_model不能被h整除!"
 
         self.d_k = d_model // h
         self.w_q = nn.Linear(d_model, d_model, bias=False)  # Wq
@@ -53,18 +57,20 @@ class MultiHeadAttentionBlock(nn.Module):
         self.w_o = nn.Linear(d_model, d_model, bias=False)  # Wo
         self.dropout = nn.Dropout(dropout)
 
-    @staticmethod  # (batch_size, h, seq_len, d_model)
-    def attention(query, key, value, mask, dropout: nn.Dropout):
+    @staticmethod
+    def attention(query, key, value, mask, dropout: nn.Dropout = None):
         d_k = query.shape[-1]
         # (batch, h, seq_len, d_k)@(batch, h, d_k, seq_len) --> (batch, h, seq_len, seq_len)
         attention_scores = (query @ key.transpose(-2, -1)) / math.sqrt(d_k)
+
         if mask is not None:
             attention_scores.masked_fill_(mask == 0, -1e9)
-        attention_scores = attention_scores.softmax(dim=-1)  # Apply softmax
-        attention_scores = dropout(attention_scores)
+        attention_scores = attention_scores.softmax(dim=-1)
+        if dropout is not None:
+            attention_scores = dropout(attention_scores)
 
         # (batch, h, seq_len, seq_len)@(batch, h, seq_len, d_k) --> (batch, h, seq_len, d_k)
-        return attention_scores @ value
+        return attention_scores @ value, attention_scores
 
     def forward(self, q, k, v, mask):
         q = self.w_q(q)  # (batch, seq_len, d_model) --> (batch, seq_len, d_model)
@@ -75,31 +81,35 @@ class MultiHeadAttentionBlock(nn.Module):
         q = q.view(q.shape[0], q.shape[1], self.h, self.d_k).transpose(1, 2)
         k = k.view(k.shape[0], k.shape[1], self.h, self.d_k).transpose(1, 2)
         v = v.view(v.shape[0], v.shape[1], self.h, self.d_k).transpose(1, 2)
+        x, _ = MultiHeadAttentionBlock.attention(q, k, v, mask, self.dropout)
 
-        # (batch, h, seq_len, d_k)
-        x = MultiHeadAttentionBlock.attention(q, k, v, mask, self.dropout)
         # (batch, h, seq_len, d_k) --> (batch, seq_len, h, d_k) --> (batch, seq_len, d_model)
-        x = x.transpose(1, 2).contiguous().view(x.shape[0], -1, self.h * self.d_k)
+        x = x.transpose(1, 2).contiguous().view(x.shape[0], -1, self.d_model)
+        return self.w_o(x)
 
-        return self.w_o(x)  # (batch, seq_len, d_model) --> (batch, seq_len, d_model)
 
-
+# fmt:off
+# (batch, seq_len, d_model) --> (batch, seq_len, d_ff) --> (batch, seq_len, d_model)
 class FeedForwardBlock(nn.Module):
 
     def __init__(self, d_model: int, d_ff: int, dropout: float) -> None:
         super().__init__()
-        self.linear_1 = nn.Linear(d_model, d_ff)  # w1 and b1
-        self.dropout = nn.Dropout(dropout)
-        self.linear_2 = nn.Linear(d_ff, d_model)  # w2 and b2
+        self.ffn = nn.Sequential(
+            nn.Linear(d_model, d_ff),
+            nn.ReLU(),
+            nn.Dropout(dropout),
+            nn.Linear(d_ff, d_model)
+        )
 
     def forward(self, x):
-        # (batch, seq_len, d_model) --> (batch, seq_len, d_ff) --> (batch, seq_len, d_model)
-        return self.linear_2(self.dropout(torch.relu(self.linear_1(x))))
+        return self.ffn(x)
 
 
 # ----------------------------------------------------------------------------------------
 
 
+# fmt:on
+# (batch, seq_len, d_model)
 class LayerNorm(nn.Module):
 
     def __init__(self, d_model: int, eps: float = 1e-6) -> None:
@@ -143,10 +153,10 @@ class EncoderBlock(nn.Module):
         self.addnorm1 = addnorm1
         self.addnorm2 = addnorm2
 
-    def forward(self, x, src_mask):
-        x = self.addnorm1(x, lambda x: self.self_attention_block(x, x, x, src_mask))
-        x = self.addnorm2(x, self.feed_forward_block)
-        return x
+    def forward(self, src, src_mask):
+        src = self.addnorm1(src, lambda x: self.self_attention_block(x, x, x, src_mask))
+        src = self.addnorm2(src, self.feed_forward_block)
+        return src
 
 
 class Encoder(nn.Module):
@@ -156,10 +166,10 @@ class Encoder(nn.Module):
         self.encode_blocks = encode_blocks
         self.encode_norm = encode_norm
 
-    def forward(self, x, mask):
-        for enc_block in self.encode_blocks:
-            x = enc_block(x, mask)
-        return self.encode_norm(x)
+    def forward(self, src, src_mask):
+        for encode_block in self.encode_blocks:
+            src = encode_block(src=src, src_mask=src_mask)
+        return self.encode_norm(src)
 
 
 # ----------------------------------------------------------------------------------------
@@ -184,11 +194,11 @@ class DecoderBlock(nn.Module):
         self.addnorm2 = addnorm2
         self.addnrom3 = addnorm3
 
-    def forward(self, x, encoder_output, src_mask, tgt_mask):
-        x = self.addnorm1(x, lambda x: self.self_attention_block(x, x, x, tgt_mask))
-        x = self.addnorm2(x, lambda x: self.cross_attention_block(x, encoder_output, encoder_output, src_mask))
-        x = self.addnrom3(x, self.feed_forward_block)
-        return x
+    def forward(self, tgt, encoder_output, src_mask, tgt_mask):
+        tgt = self.addnorm1(tgt, lambda x: self.self_attention_block(x, x, x, tgt_mask))
+        tgt = self.addnorm2(tgt, lambda x: self.cross_attention_block(x, encoder_output, encoder_output, src_mask))
+        tgt = self.addnrom3(tgt, self.feed_forward_block)
+        return tgt
 
 
 class Decoder(nn.Module):
@@ -200,7 +210,7 @@ class Decoder(nn.Module):
 
     def forward(self, tgt, encoder_output, src_mask, tgt_mask):
         for dec_block in self.decode_blocks:
-            tgt = dec_block(tgt, encoder_output, src_mask, tgt_mask)
+            tgt = dec_block(tgt=tgt, encoder_output=encoder_output, src_mask=src_mask, tgt_mask=tgt_mask)
         return self.decode_norm(tgt)
 
 
@@ -245,13 +255,13 @@ class Transformer(nn.Module):
     def encode(self, src, src_mask):
         src = self.src_embed(src)
         src = self.src_pos(src)
-        return self.encoder(src, src_mask)
+        return self.encoder(src=src, src_mask=src_mask)
 
     # (batch, seq_len, d_model)
     def decode(self, encoder_output, src_mask, tgt, tgt_mask):
         tgt = self.tgt_embed(tgt)
         tgt = self.tgt_pos(tgt)
-        return self.decoder(tgt, encoder_output, src_mask, tgt_mask)
+        return self.decoder(tgt=tgt, encoder_output=encoder_output, src_mask=src_mask, tgt_mask=tgt_mask)
 
     # (batch, seq_len, d_model) -> (batch, seq_len, vocab_size)
     def project(self, x):
@@ -292,7 +302,14 @@ def build_transformer(
         addnrom1 = AddNorm(d_model, dropout)  # gamma beta
         addnorm2 = AddNorm(d_model, dropout)  # gamma beta
         addnorm3 = AddNorm(d_model, dropout)  # gamma beta
-        decoder_block = DecoderBlock(decoder_self_attention_block, decoder_cross_attention_block, feed_forward_block, addnrom1, addnorm2, addnorm3)
+        decoder_block = DecoderBlock(
+            decoder_self_attention_block,
+            decoder_cross_attention_block,
+            feed_forward_block,
+            addnrom1,
+            addnorm2,
+            addnorm3,
+        )
         decoder_blocks.append(decoder_block)
 
     encoder_norm = LayerNorm(d_model)  # gamma beta

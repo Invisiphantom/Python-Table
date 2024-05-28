@@ -1,6 +1,6 @@
 from model import build_transformer
 from dataset import BilingualDataset, causal_mask
-from config import get_config, get_weights_file_path, latest_weights_file_path
+from config import get_config, get_model_path, latest_weights_file_path
 
 import torch
 import torch.nn as nn
@@ -44,7 +44,10 @@ def greedy_decode(model, source, source_mask, tokenizer_src, tokenizer_tgt, max_
         # get next token
         prob = model.project(out[:, -1])
         _, next_word = torch.max(prob, dim=1)
-        decoder_input = torch.cat([decoder_input, torch.empty(1, 1).type_as(source).fill_(next_word.item()).to(device)], dim=1)
+        decoder_input = torch.cat(
+            [decoder_input, torch.empty(1, 1).type_as(source).fill_(next_word.item()).to(device)],
+            dim=1,
+        )
 
         if next_word == eos_idx:
             break
@@ -52,7 +55,18 @@ def greedy_decode(model, source, source_mask, tokenizer_src, tokenizer_tgt, max_
     return decoder_input.squeeze(0)
 
 
-def run_validation(model, validation_ds, tokenizer_src, tokenizer_tgt, max_len, device, print_msg, global_step, writer, num_examples=2):
+def run_validation(
+    model,
+    validation_ds,
+    tokenizer_src,
+    tokenizer_tgt,
+    max_len,
+    device,
+    print_msg,
+    global_step,
+    writer,
+    num_examples=2,
+):
     model.eval()
     count = 0
 
@@ -125,7 +139,7 @@ def get_all_sentences(ds, lang):
 
 
 def get_or_build_tokenizer(config, ds, lang):
-    tokenizer_path = Path(config["tokenizer_file"].format(lang))
+    tokenizer_path = Path(config["tokenizer"].format(lang))
     if not Path.exists(tokenizer_path):
         # Most code taken from: https://huggingface.co/docs/tokenizers/quicktour
         tokenizer = Tokenizer(WordLevel(unk_token="[UNK]"))
@@ -140,7 +154,7 @@ def get_or_build_tokenizer(config, ds, lang):
 
 def get_ds(config):
     # It only has the train split, so we divide it overselves
-    ds_raw = load_dataset(f"{config['datasource']}", f"{config['lang_src']}-{config['lang_tgt']}", split="train")
+    ds_raw = load_dataset(f"{config['dataset']}", f"{config['lang_src']}-{config['lang_tgt']}", split="train")
 
     # Build tokenizers
     tokenizer_src = get_or_build_tokenizer(config, ds_raw, config["lang_src"])
@@ -151,8 +165,22 @@ def get_ds(config):
     val_ds_size = len(ds_raw) - train_ds_size
     train_ds_raw, val_ds_raw = random_split(ds_raw, [train_ds_size, val_ds_size])
 
-    train_ds = BilingualDataset(train_ds_raw, tokenizer_src, tokenizer_tgt, config["lang_src"], config["lang_tgt"], config["seq_len"])
-    val_ds = BilingualDataset(val_ds_raw, tokenizer_src, tokenizer_tgt, config["lang_src"], config["lang_tgt"], config["seq_len"])
+    train_ds = BilingualDataset(
+        train_ds_raw,
+        tokenizer_src,
+        tokenizer_tgt,
+        config["lang_src"],
+        config["lang_tgt"],
+        config["seq_len"],
+    )
+    val_ds = BilingualDataset(
+        val_ds_raw,
+        tokenizer_src,
+        tokenizer_tgt,
+        config["lang_src"],
+        config["lang_tgt"],
+        config["seq_len"],
+    )
 
     # Find the maximum length of each sentence in the source and target sentence
     max_len_src = 0
@@ -174,32 +202,30 @@ def get_ds(config):
 
 
 def get_model(config, vocab_src_len, vocab_tgt_len):
-    model = build_transformer(vocab_src_len, vocab_tgt_len, config["seq_len"], config["seq_len"], d_model=config["d_model"])
+    model = build_transformer(
+        src_vocab_size=vocab_src_len,
+        tgt_vocab_size=vocab_tgt_len,
+        src_seq_len=config["seq_len"],
+        tgt_seq_len=config["seq_len"],
+        d_model=config["d_model"],
+    )
     return model
 
 
 def train_model(config):
-    # Define the device
-    device = "cuda" if torch.cuda.is_available() else "mps" if torch.has_mps or torch.backends.mps.is_available() else "cpu"
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("Using device:", device)
-    if device == "cuda":
-        print(f"Device name: {torch.cuda.get_device_name(device.index)}")
-        print(f"Device memory: {torch.cuda.get_device_properties(device.index).total_memory / 1024 ** 3} GB")
-    elif device == "mps":
-        print(f"Device name: <mps>")
-    else:
-        print("NOTE: If you have a GPU, consider using it for training.")
-        print("      On a Windows machine with NVidia GPU, check this video: https://www.youtube.com/watch?v=GMSjDTU8Zlc")
-        print("      On a Mac machine, run: pip3 install --pre torch torchvision torchaudio torchtext --index-url https://download.pytorch.org/whl/nightly/cpu")
-    device = torch.device(device)
+    print(f"Device name: {torch.cuda.get_device_name(device.index)}")
+    print(f"Device memory: {torch.cuda.get_device_properties(device.index).total_memory / 1024 ** 3:1.0f} GB")
+
 
     # Make sure the weights folder exists
-    Path(f"{config['datasource']}_{config['model_folder']}").mkdir(parents=True, exist_ok=True)
+    Path(f"{config['dataset']}_{config['model_dir']}").mkdir(parents=True, exist_ok=True)
 
     train_dataloader, val_dataloader, tokenizer_src, tokenizer_tgt = get_ds(config)
     model = get_model(config, tokenizer_src.get_vocab_size(), tokenizer_tgt.get_vocab_size()).to(device)
     # Tensorboard
-    writer = SummaryWriter(config["experiment_name"])
+    writer = SummaryWriter(config["tb_dir"])
 
     optimizer = torch.optim.Adam(model.parameters(), lr=config["lr"], eps=1e-9)
 
@@ -207,7 +233,11 @@ def train_model(config):
     initial_epoch = 0
     global_step = 0
     preload = config["preload"]
-    model_filename = latest_weights_file_path(config) if preload == "latest" else get_weights_file_path(config, preload) if preload else None
+    model_filename = (
+        latest_weights_file_path(config)
+        if preload == "latest"
+        else get_model_path(config, preload) if preload else None
+    )
     if model_filename:
         print(f"Preloading model {model_filename}")
         state = torch.load(model_filename)
@@ -233,7 +263,9 @@ def train_model(config):
 
             # Run the tensors through the encoder, decoder and the projection layer
             encoder_output = model.encode(encoder_input, encoder_mask)  # (B, seq_len, d_model)
-            decoder_output = model.decode(encoder_output, encoder_mask, decoder_input, decoder_mask)  # (B, seq_len, d_model)
+            decoder_output = model.decode(
+                encoder_output, encoder_mask, decoder_input, decoder_mask
+            )  # (B, seq_len, d_model)
             proj_output = model.project(decoder_output)  # (B, seq_len, vocab_size)
 
             # Compare the output with the label
@@ -257,11 +289,29 @@ def train_model(config):
             global_step += 1
 
         # Run validation at the end of every epoch
-        run_validation(model, val_dataloader, tokenizer_src, tokenizer_tgt, config["seq_len"], device, lambda msg: batch_iterator.write(msg), global_step, writer)
+        run_validation(
+            model,
+            val_dataloader,
+            tokenizer_src,
+            tokenizer_tgt,
+            config["seq_len"],
+            device,
+            lambda msg: batch_iterator.write(msg),
+            global_step,
+            writer,
+        )
 
         # Save the model at the end of every epoch
-        model_filename = get_weights_file_path(config, f"{epoch:02d}")
-        torch.save({"epoch": epoch, "model_state_dict": model.state_dict(), "optimizer_state_dict": optimizer.state_dict(), "global_step": global_step}, model_filename)
+        model_filename = get_model_path(config, f"{epoch:02d}")
+        torch.save(
+            {
+                "epoch": epoch,
+                "model_state_dict": model.state_dict(),
+                "optimizer_state_dict": optimizer.state_dict(),
+                "global_step": global_step,
+            },
+            model_filename,
+        )
 
 
 if __name__ == "__main__":
