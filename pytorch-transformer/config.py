@@ -10,9 +10,7 @@ def get_config():
         "tokenizer_dir": "Tokenizer",
         
         "preload": "latest",
-        "model_dir": "model",
-        "model_name": "tmodel_",
-        "tb_dir": "runs/tmodel",
+        "tb_log": "Log",
         
         "lr": 1e-4,
         "num_epochs": 1,
@@ -22,15 +20,15 @@ def get_config():
     }
 
 def get_model_path(config, epoch: str):
-    Path(f"{config['dataset']}_{config['model_dir']}").mkdir(parents=True, exist_ok=True)
-    model_dir = f"{config['dataset']}_{config['model_dir']}"
-    model_filename = f"{config['model_name']}{epoch}.pt"
+    Path(f"Model-{config['dataset']}").mkdir(parents=True, exist_ok=True)
+    model_dir = f"Model-{config['dataset']}"
+    model_filename = f"model_{epoch}.pt"
     return str(Path('.') / model_dir / model_filename)
 
 def latest_weights_file_path(config):
-    Path(f"{config['dataset']}_{config['model_dir']}").mkdir(parents=True, exist_ok=True)
-    model_dir = f"{config['dataset']}_{config['model_dir']}"
-    model_filename = f"{config['model_name']}*"
+    Path(f"Model-{config['dataset']}").mkdir(parents=True, exist_ok=True)
+    model_dir = f"Model-{config['dataset']}"
+    model_filename = f"model_*"
     weights_files = list(Path(model_dir).glob(model_filename))
     if len(weights_files) == 0:
         return None

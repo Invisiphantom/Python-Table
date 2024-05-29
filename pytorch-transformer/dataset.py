@@ -73,7 +73,7 @@ class BilingualDataset(Dataset):
         assert label.size(0) == self.seq_len
 
         sequence_mask = torch.ones(1, self.seq_len, self.seq_len, dtype=torch.bool).tril() # 位置掩码
-        encoder_mask = (encoder_input != self.pad_token).repeat(self.seq_len, 1).unsqueeze(0)
+        encoder_mask = (encoder_input != self.pad_token).unsqueeze(0).unsqueeze(0) # 在-2维自动重复seq_len次
         decoder_mask = (decoder_input != self.pad_token).repeat(self.seq_len, 1).unsqueeze(0) & sequence_mask
 
         return {
