@@ -26,14 +26,15 @@ class PositionalEncoding(nn.Module):
         self.dropout = nn.Dropout(dropout)
         pe = torch.zeros(seq_len, d_model)
         position = torch.arange(0, seq_len, dtype=torch.float).unsqueeze(1)  # (seq_len, 1)
-        div_term = torch.exp(torch.arange(0, d_model, 2).float() * (-math.log(10000.0) / d_model))  # (d_model / 2)
+        tensor_2i = torch.arange(0, d_model, 2, dtype=torch.float) # (d_model / 2)
+        div_term = torch.exp(tensor_2i * (-math.log(10000.0) / d_model))  # (d_model / 2)
         pe[:, 0::2] = torch.sin(position * div_term)  # sin(position * (10000 ** (-2i / d_model))
         pe[:, 1::2] = torch.cos(position * div_term)  # cos(position * (10000 ** (-2i / d_model))
         pe = pe.unsqueeze(0)  # (1, seq_len, d_model)
         self.register_buffer("pe", pe)
 
     def forward(self, x):
-        x = x + self.pe[:, : x.shape[1], :]
+        x = x + self.pe[:, : x.shape[1], :].requires_grad_(False)
         return self.dropout(x)
 
 
@@ -83,6 +84,7 @@ class MultiHeadAttentionBlock(nn.Module):
         k = k.view(k.shape[0], k.shape[1], self.h, self.d_k).transpose(1, 2)
         v = v.view(v.shape[0], v.shape[1], self.h, self.d_k).transpose(1, 2)
         x, _ = MultiHeadAttentionBlock.attention(q, k, v, mask, self.dropout)
+        del q, k, v
 
         # (batch, h, seq_len, d_k) --> (batch, seq_len, h, d_k) --> (batch, seq_len, d_model)
         x = x.transpose(1, 2).contiguous().view(x.shape[0], -1, self.d_model)
@@ -129,8 +131,8 @@ class AddNorm(nn.Module):
 
     def __init__(self, d_model: int, dropout: float) -> None:
         super().__init__()
-        self.dropout = nn.Dropout(dropout)
         self.norm = LayerNorm(d_model)
+        self.dropout = nn.Dropout(dropout)
 
     def forward(self, x, sublayer):
         return x + self.dropout(sublayer(self.norm(x)))
@@ -225,7 +227,7 @@ class ProjLayer(nn.Module):
         self.proj = nn.Linear(d_model, vocab_size)
 
     def forward(self, x) -> None:
-        return self.proj(x)
+        return nn.functional.log_softmax(self.proj(x), dim=-1)
 
 
 # ----------------------------------------------------------------------------------------
@@ -244,12 +246,12 @@ class Transformer(nn.Module):
         proj_layer: ProjLayer,
     ) -> None:
         super().__init__()
-        self.encoder = encoder
-        self.decoder = decoder
         self.src_embed = src_embed
         self.tgt_embed = tgt_embed
         self.src_pos = src_pos
         self.tgt_pos = tgt_pos
+        self.encoder = encoder
+        self.decoder = decoder
         self.proj_layer = proj_layer
 
     # (batch, seq_len, d_model)
