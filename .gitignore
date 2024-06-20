@@ -3,3 +3,7 @@ runs
 Log
 Model
 Tokenizer
+
+wandb
+YOLOv8
+*.pt
