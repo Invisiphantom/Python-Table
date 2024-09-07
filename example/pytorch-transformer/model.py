@@ -26,7 +26,7 @@ class PositionalEncoding(nn.Module):
         self.dropout = nn.Dropout(dropout)
         pe = torch.zeros(seq_len, d_model)
         position = torch.arange(0, seq_len, dtype=torch.float).unsqueeze(1)  # (seq_len, 1)
-        tensor_2i = torch.arange(0, d_model, 2, dtype=torch.float) # (d_model / 2)
+        tensor_2i = torch.arange(0, d_model, 2, dtype=torch.float)  # (d_model / 2)
         div_term = torch.exp(tensor_2i * (-math.log(10000.0) / d_model))  # (d_model / 2)
         pe[:, 0::2] = torch.sin(position * div_term)  # sin(position * (10000 ** (-2i / d_model))
         pe[:, 1::2] = torch.cos(position * div_term)  # cos(position * (10000 ** (-2i / d_model))
@@ -59,9 +59,9 @@ class MultiHeadAttentionBlock(nn.Module):
         self.dropout = nn.Dropout(dropout)
 
     @staticmethod
-    def attention(query, key, value, mask, dropout: nn.Dropout = None):
+    def attention(query: torch.Tensor, key: torch.Tensor, value: torch.Tensor, mask, dropout: nn.Dropout = None):
         d_k = query.shape[-1]
-        
+
         # (batch, h, qry_len, d_k)@(batch, h, d_k, seq_len) --> (batch, h, qry_len, seq_len)
         attention_scores = (query @ key.transpose(-2, -1)) / math.sqrt(d_k)
 
@@ -74,7 +74,7 @@ class MultiHeadAttentionBlock(nn.Module):
         # (batch, h, seq_len, seq_len)@(batch, h, seq_len, d_k) --> (batch, h, seq_len, d_k)
         return attention_scores @ value, attention_scores
 
-    def forward(self, q, k, v, mask):
+    def forward(self, q: torch.Tensor, k: torch.Tensor, v: torch.Tensor, mask):
         q = self.w_q(q)  # (batch, qry_len, d_model) --> (batch, qry_len, d_model)
         k = self.w_k(k)  # (batch, seq_len, d_model) --> (batch, seq_len, d_model)
         v = self.w_v(v)  # (batch, seq_len, d_model) --> (batch, seq_len, d_model)
