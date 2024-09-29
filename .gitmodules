@@ -1,3 +1,0 @@
-[submodule "example/glass-bottle-mouth-detection"]
-	path = example/glass-bottle-mouth-detection
-	url = https://huggingface.co/datasets/EthanCao/glass-bottle-mouth-detection
