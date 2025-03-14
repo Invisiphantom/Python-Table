@@ -42,16 +42,16 @@ class Net:
     # dL/dU1 = dL/dX1 * dX1/dU1
     # dL/dW0 = dL/dU1 * dU1/dW0
     # dL/db0 = dL/dU1 * dU1/db0
-    def _backward(self, outputs, dL_dX, lr=0.01):
+    def _backward(self, outputs, dL_dX, lr):
         for i in range(len(self.net) - 1, -1, -1):
             # W: (out, in)
             # b: (out)
             W, b, f = self.net[i]
 
+            # X0: (batch, in)
             # U1: (batch, out)
-            # X:  (batch, in)
+            X0 = outputs[i]["X"]
             U1 = outputs[i + 1]["U"]
-            X = outputs[i]["X"]
 
             # 逐元素相乘
             # dL/dX1:  (batch, out)
@@ -60,14 +60,14 @@ class Net:
             # dL/dU1 = dL/dX1 * dX1/dU1
             dL_dU1 = f.backward(U1, dL_dX)
 
-            batch_size = X.shape[0]
+            batch_size = X0.shape[0]
 
             # dL/dU1: (batch, out)
             # dU1/dW: (batch, in)
             # dL/dW:  (out, in)
             # dL/dW = dL/dU1 * dU1/dW
             #       = dL/dU1 * X
-            dL_dW = np.dot(dL_dU1.T, X) / batch_size
+            dL_dW = np.dot(dL_dU1.T, X0) / batch_size
 
             # dL/dU1: (batch, out)
             # dU1/db: (out)

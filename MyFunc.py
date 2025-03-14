@@ -91,7 +91,7 @@ class Mse(LossFunc):
 
     @staticmethod
     def backward(Y, _Y):
-        return (_Y - Y) / len(Y)
+        return 2 * (_Y - Y) / Y.shape[0]
 
 
 class CrossEntropy(LossFunc):
@@ -99,12 +99,12 @@ class CrossEntropy(LossFunc):
     # _Y: 预测概率 (softmax)
     @staticmethod
     def forward(Y, _Y):
-        epsilon = 1e-12
+        epsilon = 1e-2
         _Y = np.clip(_Y, epsilon, 1 - epsilon)
-        return -np.sum(Y * np.log(_Y)) / len(Y)
+        return -np.sum(Y * np.log(_Y)) / Y.shape[0]
 
     @staticmethod
     def backward(Y, _Y):
-        epsilon = 1e-12
+        epsilon = 1e-2
         _Y = np.clip(_Y, epsilon, 1 - epsilon)
-        return (-Y / _Y) / len(Y)
+        return (-Y / _Y) / Y.shape[0]
