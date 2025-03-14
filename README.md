@@ -15,11 +15,20 @@ pip install scikit-learn transformers datasets tokenizers tqdm tensorboard torch
 
 
 ```py
-# 最高验证准确率: 96.90%
+# 96.90%
 net_info = [
     {"in_features": 784, "out_features": 256, "activation": Sigmoid},
     {"in_features": 256, "out_features": 64, "activation": Sigmoid},
     {"in_features": 64, "out_features": 16, "activation": Sigmoid},
     {"in_features": 16, "out_features": 10, "activation": Id},
 ]
+
+# 97.61%
+net_info = [
+    {"in_features": 784, "out_features": 256, "activation": Gelu},
+    {"in_features": 256, "out_features": 64, "activation": Gelu},
+    {"in_features": 64, "out_features": 16, "activation": Gelu},
+    {"in_features": 16, "out_features": 10, "activation": Softmax},
+]
+
 ```
