@@ -7,65 +7,55 @@ from abc import ABC, abstractmethod
 # dL/dU = dL/dY * dY/dU
 class ActFunc(ABC):
     @abstractmethod
-    def forward(U):
+    def forward(X):
         pass
 
     @abstractmethod
-    def backward(U, dL_dY):
+    def backward(X, dL_dY, lr):
         pass
-
-
-class Id(ActFunc):
-    @staticmethod
-    def forward(U):
-        return U
-
-    @staticmethod
-    def backward(U, dL_dY):
-        return dL_dY * 1
 
 
 class Sigmoid(ActFunc):
     @staticmethod
-    def forward(U):
-        return 1 / (1 + np.exp(-U))
+    def forward(X):
+        return 1 / (1 + np.exp(-X))
 
     @staticmethod
-    def backward(U, dL_dY):
-        X = Sigmoid.forward(U)
+    def backward(X, dL_dY, lr):
+        X = Sigmoid.forward(X)
         return dL_dY * (X * (1 - X))
 
 
 class Relu(ActFunc):
     @staticmethod
-    def forward(U):
-        return np.maximum(0, U)
+    def forward(X):
+        return np.maximum(0, X)
 
     @staticmethod
-    def backward(U, dL_dY):
-        return dL_dY * np.where(U > 0, 1, 0)
+    def backward(X, dL_dY, lr):
+        return dL_dY * np.where(X > 0, 1, 0)
 
 
 class Gelu(ActFunc):
     @staticmethod
-    def forward(U):
-        return 0.5 * U * (1 + np.tanh(np.sqrt(2 / np.pi) * (U + 0.044715 * U**3)))
+    def forward(X):
+        return 0.5 * X * (1 + np.tanh(np.sqrt(2 / np.pi) * (X + 0.044715 * X**3)))
 
     @staticmethod
-    def backward(U, dL_dY):
-        return dL_dY * (0.5 * (1 + np.tanh(np.sqrt(2 / np.pi) * (U + 0.044715 * U**3))) + 0.5 * U * (1 - np.tanh(np.sqrt(2 / np.pi) * (U + 0.044715 * U**3)) ** 2) * np.sqrt(2 / np.pi) * (1 + 0.134145 * U**2))
+    def backward(X, dL_dY, lr):
+        return dL_dY * (0.5 * (1 + np.tanh(np.sqrt(2 / np.pi) * (X + 0.044715 * X**3))) + 0.5 * X * (1 - np.tanh(np.sqrt(2 / np.pi) * (X + 0.044715 * X**3)) ** 2) * np.sqrt(2 / np.pi) * (1 + 0.134145 * X**2))
 
 
 class Softmax(ActFunc):
     # (batch_size, out_features)
     @staticmethod
-    def forward(U):
-        exp_U = np.exp(U - np.max(U, axis=-1, keepdims=True))
-        return exp_U / np.sum(exp_U, axis=-1, keepdims=True)
+    def forward(X):
+        exp_X = np.exp(X - np.max(X, axis=-1, keepdims=True))
+        return exp_X / np.sum(exp_X, axis=-1, keepdims=True)
 
     @staticmethod
-    def backward(U, dL_dY):
-        X = Softmax.forward(U)
+    def backward(X, dL_dY, lr):
+        X = Softmax.forward(X)
         grad_sum = np.sum(X * dL_dY, axis=-1, keepdims=True)
         return X * (dL_dY - grad_sum)
 
