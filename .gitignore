@@ -7,3 +7,4 @@ Tokenizer
 wandb
 YOLOv8
 *.pt
+*.pkl
