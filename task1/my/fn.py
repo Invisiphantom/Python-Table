@@ -18,7 +18,7 @@ class ActFunc(ABC):
 class Sigmoid(ActFunc):
     def __str__(self):
         return "Sigmoid()"
-    
+
     @staticmethod
     def forward(X):
         return 1 / (1 + np.exp(-X))
@@ -32,7 +32,7 @@ class Sigmoid(ActFunc):
 class Relu(ActFunc):
     def __str__(self):
         return "Relu()"
-    
+
     @staticmethod
     def forward(X):
         return np.maximum(0, X)
@@ -45,7 +45,7 @@ class Relu(ActFunc):
 class Gelu(ActFunc):
     def __str__(self):
         return "Gelu()"
-    
+
     @staticmethod
     def forward(X):
         return 0.5 * X * (1 + np.tanh(np.sqrt(2 / np.pi) * (X + 0.044715 * X**3)))
@@ -58,7 +58,7 @@ class Gelu(ActFunc):
 class Softmax(ActFunc):
     def __str__(self):
         return "Softmax()"
-    
+
     # (batch_size, out_features)
     @staticmethod
     def forward(X):
@@ -99,14 +99,12 @@ class Mse(LossFunc):
 class CrossEntropy(LossFunc):
     # Y : 真实标签 (one-hot)
     # _Y: 预测概率 (softmax)
-    @staticmethod
     def forward(Y, _Y):
-        epsilon = 1e-2
-        _Y = np.clip(_Y, epsilon, 1 - epsilon)
-        return -np.sum(Y * np.log(_Y)) / Y.shape[0]
+        eps = 1e-12
+        _Y = np.clip(_Y, eps, 1.0 - eps)
+        sample_losses = -np.sum(Y * np.log(_Y), axis=1)
+        return np.mean(sample_losses)
 
     @staticmethod
     def backward(Y, _Y):
-        epsilon = 1e-2
-        _Y = np.clip(_Y, epsilon, 1 - epsilon)
-        return (-Y / _Y) / Y.shape[0]
+        return _Y - Y
