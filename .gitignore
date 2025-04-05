@@ -1,10 +1,5 @@
 __pycache__
-runs
-Log
-Model
-Tokenizer
-
-wandb
-YOLOv8
-*.pt
+models
+logs
+data
 *.pkl
