@@ -8,9 +8,9 @@ rm ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init bash
 source .bashrc
 
-pip install numpy pandas matplotlib jupyter scikit-learn
-pip install torch torchvision torchaudio tensorboard torchmetrics
-pip install transformers datasets tokenizers 
+pip install numpy pandas matplotlib jupyter import-ipynb scikit-learn
+pip install torch torchvision torchaudio torchmetrics tensorboard torch-tb-profiler
+pip install transformers datasets tokenizers
 ```
 
 

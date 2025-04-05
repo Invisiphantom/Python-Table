@@ -11,3 +11,4 @@ with open(model_path, "rb") as f:
 
 test_accuracy = model.interview(mnist_path)
 print(f"测试准确率: {test_accuracy:.2f}%")
+print(model)
