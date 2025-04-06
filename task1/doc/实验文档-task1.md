@@ -31,36 +31,30 @@ Net(
 ```py
 Net(
   (0): Flatten()
-  (1): Mlp(in_features=28 * 28, out_features=256)
-  (2): Gelu()
-  (3): Dropout(p=0.3)
-  (4): Mlp(in_features=256, out_features=64)
-  (5): Gelu()
-  (6): Dropout(p=0.3)
-  (7): Mlp(in_features=64, out_features=16)
-  (8): Gelu()
-  (9): Dropout(p=0.3)
-  (10): Mlp(in_features=16, out_features=10)
-  (11): Softmax()
+  (1): Mlp(in_features=784, out_features=128)
+  (2): Relu()
+  (3): Dropout(p=0.15)
+  (4): Mlp(in_features=128, out_features=10)
+  (5): Softmax()
 )
 ```
 
 | 超参数         |     |
 | -------------- | --- |
-| 初始学习率     | 10  |
-| 学习率容忍次数 | 10  |
+| 初始学习率     | 0.1  |
+| 学习率容忍次数 | 20  |
 | 学习率衰减因子 | 0.5 |
-| 无增长容忍次数 | 20  |
-| 批次大小       | 512 |
+| 无增长容忍次数 | 50  |
+| 批次大小       | 64 |
 
 | 结果             |        |
 | ---------------- | ------ |
-| 最佳迭代次数     | 130    |
-| 最佳验证集准确率 | 97.93% |
+| 最佳迭代次数     | 180    |
+| 最佳验证集准确率 | 98.23% |
 
 ### 训练过程误差曲线:
-![](https://img.ethancao.cn/20250405214752685.png)
+![](https://img.ethancao.cn/20250406172346166.png)
 
 ### 识别失败的图片 (预测标签-[准确标签])
-![](https://img.ethancao.cn/20250405214923260.png)
+![](https://img.ethancao.cn/output.png)
 
