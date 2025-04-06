@@ -83,7 +83,7 @@ def run(net, loss_fn, initial_lr, batch_size, data):
     lr_factor = 0.5  # 学习率衰减因子
 
     worse_count = 0  # 连续无增长计数
-    worse_tolerance = 20  # 无增长容忍次数
+    worse_tolerance = 40  # 无增长容忍次数
 
     max_epochs = 800  # 最大迭代次数
     pbar = tqdm(range(max_epochs))
