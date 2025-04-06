@@ -87,6 +87,9 @@ class LossFunc(ABC):
 
 
 class Mse(LossFunc):
+    def __str__(self):
+        return "Mse"
+    
     @staticmethod
     def forward(Y, _Y):
         return np.mean((_Y - Y) ** 2)
@@ -97,6 +100,9 @@ class Mse(LossFunc):
 
 
 class CrossEntropy(LossFunc):
+    def __str__(self):
+        return "CrossEntropy"
+    
     # Y : 真实标签 (one-hot)
     # _Y: 预测概率 (softmax)
     @staticmethod

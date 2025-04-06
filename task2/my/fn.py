@@ -101,12 +101,12 @@ class CrossEntropy(LossFunc):
     # _Y: 预测概率 (softmax)
     @staticmethod
     def forward(Y, _Y):
-        epsilon = 1e-2
+        epsilon = 1e-12
         _Y = np.clip(_Y, epsilon, 1 - epsilon)
         return -np.sum(Y * np.log(_Y)) / Y.shape[0]
 
     @staticmethod
     def backward(Y, _Y):
-        epsilon = 1e-2
+        epsilon = 1e-12
         _Y = np.clip(_Y, epsilon, 1 - epsilon)
         return (-Y / _Y) / Y.shape[0]
