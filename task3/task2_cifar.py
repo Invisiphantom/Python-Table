@@ -7,10 +7,9 @@ from tqdm import tqdm
 import torch
 from torch import nn
 from torch import optim
+import torch.nn.functional as F
 from torch.utils.data import TensorDataset, DataLoader
 from torch.utils.tensorboard import SummaryWriter
-
-device = torch.accelerator.current_accelerator().type if torch.accelerator.is_available() else "cpu"
 
 
 def unpickle(file):
@@ -47,7 +46,6 @@ def train_valid_data(cifar10_dir="/opt/data/cifar10_testdata/"):
 
     # 独热编码标签
     labels = one_hot(labels, 10)
-    print(images.shape, labels.shape)
 
     # 分割训练集与验证集 (4:1)
     split = int(len(images) * 0.8)
@@ -67,7 +65,40 @@ def train_valid_data(cifar10_dir="/opt/data/cifar10_testdata/"):
     return (train_dataset, valid_dataset)
 
 
-def run(model, loss_fn, initial_lr, batch_size, dataset):
+def init_weight(m):
+    if isinstance(m, nn.Conv2d):
+        nn.init.kaiming_normal_(m.weight, mode="fan_out", nonlinearity="relu")
+    elif isinstance(m, nn.Linear):
+        nn.init.xavier_normal_(m.weight)
+    elif isinstance(m, nn.BatchNorm2d):
+        nn.init.constant_(m.weight, 1)
+        nn.init.constant_(m.bias, 0)
+
+
+class ResidualBlock(nn.Module):
+    def __init__(self, in_channels, out_channels, stride=1):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Conv2d(in_channels, out_channels, 3, stride, padding=1),
+            nn.BatchNorm2d(out_channels),
+            nn.ReLU(),
+            nn.Conv2d(out_channels, out_channels, 3, padding=1),
+            nn.BatchNorm2d(out_channels),
+        )
+
+        # 残差连接匹配维度
+        self.shortcut = nn.Sequential()
+        if stride != 1 or in_channels != out_channels:
+            self.shortcut = nn.Sequential(
+                nn.Conv2d(in_channels, out_channels, 1, stride),
+                nn.BatchNorm2d(out_channels),
+            )
+
+    def forward(self, x):
+        return F.relu(self.net(x) + self.shortcut(x))
+
+
+def run(model, loss_fn, initial_lr, batch_size, dataset, device):
     train_dataset, valid_dataset = dataset
     train_size, test_size = len(train_dataset), len(valid_dataset)
 
@@ -78,7 +109,7 @@ def run(model, loss_fn, initial_lr, batch_size, dataset):
     lr_factor = 0.5  # 学习率衰减因子
 
     worse_count = 0  # 连续无增长计数
-    worse_tolerance = 20  # 无增长容忍次数
+    worse_tolerance = 40  # 无增长容忍次数
 
     train_dataloader = DataLoader(train_dataset, batch_size, True)
     valid_dataloader = DataLoader(valid_dataset, batch_size, False)
@@ -86,14 +117,14 @@ def run(model, loss_fn, initial_lr, batch_size, dataset):
     optimizer = optim.AdamW(model.parameters(), lr=initial_lr, weight_decay=1e-4)
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, "min", patience=lr_patience, factor=lr_factor)
 
-    max_epochs = 200
+    max_epochs = 800
     worse_count = 0
-    pbar = tqdm(range(max_epochs))
+    pbar = tqdm(range(max_epochs), unit_scale=False)
     for i in pbar:
         train_loss, test_loss, accuracy = 0, 0, 0
 
         model.train()
-        for batch, (X, y) in enumerate(train_dataloader):
+        for X, y in train_dataloader:
             X, y = X.to(device), y.to(device)
 
             pred = model(X)
@@ -128,9 +159,8 @@ def run(model, loss_fn, initial_lr, batch_size, dataset):
                 print(f"模型连续{worse_tolerance}次无提升，提前终止训练")
                 print(f"最佳迭代次数: {epoch_count-worse_count}")
                 print(f"最佳准确率：{best_accuracy:.2f}%")
-                print(f"损失函数={loss_fn()} 学习率={initial_lr} 批大小={batch_size}")
+                print(f"损失函数={loss_fn} 学习率={initial_lr} 批大小={batch_size}")
                 print(f"模型参数={sum(p.numel() for p in model.parameters())}")
-                print(model)
                 break
 
         pbar.set_postfix(lr=f"{optimizer.param_groups[0]["lr"]:.0e}", train_loss=f"{train_loss:.2e}", test_loss=f"{test_loss:.2e}", accuracy=f"{accuracy:.2f}%", best_accuracy=f"{best_accuracy:.2f}%")
