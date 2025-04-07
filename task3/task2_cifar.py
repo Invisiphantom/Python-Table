@@ -25,7 +25,7 @@ def one_hot(labels, num_classes):
     return one_hot_labels
 
 
-def train_valid_data(cifar10_dir="/opt/data/cifar10_testdata/"):
+def train_valid_data(cifar10_dir):
     images, labels = [], []
 
     # 读取文件数据
@@ -79,7 +79,7 @@ def init_weight(m):
 
 def run(model, loss_fn, initial_lr, batch_size, dataset, device):
     train_dataset, valid_dataset = dataset
-    train_size, test_size = len(train_dataset), len(valid_dataset)
+    train_size, valid_size = len(train_dataset), len(valid_dataset)
 
     epoch_count = 0  # 总训练轮数
     best_accuracy = 0  # 最佳准确率
@@ -100,7 +100,7 @@ def run(model, loss_fn, initial_lr, batch_size, dataset, device):
     worse_count = 0
     pbar = tqdm(range(max_epochs), unit_scale=False)
     for i in pbar:
-        train_loss, test_loss, accuracy = 0, 0, 0
+        train_loss, valid_loss, accuracy = 0, 0, 0
 
         model.train()
         for X, y in train_dataloader:
@@ -120,14 +120,14 @@ def run(model, loss_fn, initial_lr, batch_size, dataset, device):
                 X, y = X.to(device), y.to(device)
 
                 pred = model(X)
-                test_loss += loss_fn(pred, y).item()
+                valid_loss += loss_fn(pred, y).item()
                 accuracy += torch.sum(torch.argmax(pred, dim=1) == torch.argmax(y, dim=1)).item()
 
         epoch_count += 1
         train_loss /= train_size
-        test_loss /= test_size
-        accuracy = accuracy / test_size * 100
-        scheduler.step(test_loss)
+        valid_loss /= valid_size
+        accuracy = accuracy / valid_size * 100
+        scheduler.step(valid_loss)
 
         if accuracy > best_accuracy:
             worse_count = 0
@@ -142,4 +142,4 @@ def run(model, loss_fn, initial_lr, batch_size, dataset, device):
                 print(f"模型参数={sum(p.numel() for p in model.parameters())}")
                 break
 
-        pbar.set_postfix(lr=f"{optimizer.param_groups[0]["lr"]:.0e}", train_loss=f"{train_loss:.2e}", test_loss=f"{test_loss:.2e}", accuracy=f"{accuracy:.2f}%", best_accuracy=f"{best_accuracy:.2f}%")
+        pbar.set_postfix(lr=f'{optimizer.param_groups[0]["lr"]:.0e}', train_loss=f"{train_loss:.2e}", valid_loss=f"{valid_loss:.2e}", accuracy=f"{accuracy:.2f}%", best_accuracy=f"{best_accuracy:.2f}%")

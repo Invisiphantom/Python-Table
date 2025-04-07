@@ -6,7 +6,7 @@ import numpy as np
 import torch
 from torch import nn
 
-device = torch.accelerator.current_accelerator().type if torch.accelerator.is_available() else "cpu"
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 # data_mnist_path = ["/opt/data/mnist_testdata/train-images.idx3-ubyte", "/opt/data/mnist_testdata/train-labels.idx1-ubyte"]

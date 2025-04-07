@@ -1,4 +1,5 @@
 import os
+import sys
 import dill
 import idx2numpy
 import numpy as np
@@ -9,19 +10,22 @@ import torch
 from torch import nn
 from torch import optim
 from torch.optim import lr_scheduler
-from torch.utils.data import TensorDataset, DataLoader
+from torch.utils.data import Dataset, TensorDataset, DataLoader
 from torch.utils.tensorboard import SummaryWriter
+import torchvision.transforms as transforms
 
-from task3_resnet import ResBlock
+sys.path.append(os.path.abspath(".."))
+from ethan.net.resnet import ResNet18
+from ethan.utils.cutout import Cutout
 
 # nohup python task3_mnist_resnet.py > task3_mnist_resnet.log 2>&1 &
 # jobs -l    fg %1    Ctrl+Z
 # tensorboard --logdir=/opt/logs 
 writer = SummaryWriter(log_dir="/opt/logs/task2-mnist-torch", flush_secs=30)
-device = torch.accelerator.current_accelerator().type if torch.accelerator.is_available() else "cpu"
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"device: {device}")
 
-mnist_dir = "/opt/data/mnist_testdata/"
+mnist_dir = "/opt/data/MNIST/raw"
 
 
 # 用于适配interview接口
@@ -108,7 +112,7 @@ train_labels, valid_labels = labels[:split], labels[split:]
 
 train_dataset = TensorDataset(train_images, train_labels)
 valid_dataset = TensorDataset(valid_images, valid_labels)
-train_size, test_size = len(train_dataset), len(valid_dataset)
+train_size, valid_size = len(train_dataset), len(valid_dataset)
 
 
 best_accuracy = 0  # 最佳准确率
@@ -145,7 +149,7 @@ scheduler = lr_scheduler.SequentialLR(
 
 pbar = tqdm(range(max_epoch))
 for i in pbar:
-    train_loss, test_loss, accuracy = 0, 0, 0
+    train_loss, valid_loss, accuracy = 0, 0, 0
 
     model.train()
     for batch, (X, y) in enumerate(train_dataloader):
@@ -165,13 +169,13 @@ for i in pbar:
             X, y = X.to(device), y.to(device)
 
             pred = model(X)
-            test_loss += loss_fn(pred, y).item()
+            valid_loss += loss_fn(pred, y).item()
             accuracy += torch.sum(torch.argmax(pred, dim=1) == torch.argmax(y, dim=1)).item()
 
     scheduler.step()
     train_loss /= train_size
-    test_loss /= test_size
-    accuracy = accuracy / test_size * 100
+    valid_loss /= valid_size
+    accuracy = accuracy / valid_size * 100
 
     if accuracy > best_accuracy:
         best_accuracy = accuracy
@@ -179,10 +183,10 @@ for i in pbar:
             dill.dump(model, f)
 
     writer.add_scalar("train_loss", train_loss, i)
-    writer.add_scalar("test_loss", test_loss, i)
+    writer.add_scalar("valid_loss", valid_loss, i)
     writer.add_scalar("accuracy", accuracy, i)
     writer.add_scalar("learning_rate", optimizer.param_groups[0]["lr"], i)
-    pbar.set_postfix(lr=f"{optimizer.param_groups[0]["lr"]:.0e}", train_loss=f"{train_loss:.2e}", test_loss=f"{test_loss:.2e}", accuracy=f"{accuracy:.2f}%", best_accuracy=f"{best_accuracy:.2f}%")
+    pbar.set_postfix(lr=f'{optimizer.param_groups[0]["lr"]:.0e}', train_loss=f"{train_loss:.2e}", valid_loss=f"{valid_loss:.2e}", accuracy=f"{accuracy:.2f}%", best_accuracy=f"{best_accuracy:.2f}%")
 
 print("模型参数:", sum(p.numel() for p in model.parameters()))
 print("保存路径:", model_path)

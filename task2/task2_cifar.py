@@ -11,21 +11,23 @@ from torch import optim
 from torch.optim import lr_scheduler
 from torch.utils.data import Dataset, DataLoader
 from torch.utils.tensorboard import SummaryWriter
+from torchvision import datasets
 import torchvision.transforms as transforms
 
 sys.path.append(os.path.abspath(".."))
-from ethan.net.resnet import ResNet18
 from ethan.utils.cutout import Cutout
 
 
-# tmux new -s cifar
-# python task3_cifar_resnet.py 2>&1 | tee task3_cifar_resnet.log
-# Ctrl+B D  &&  tmux ls  &&  tmux attach -t cifar
+# tmux new -s task2_cifar
+# python task2_cifar.py 2>&1 | tee task2_cifar.log
+# Ctrl+B D  &&  tmux ls  &&  tmux attach -t task2_cifar
 # tmux new -s tensorboard && tensorboard --logdir=/opt/logs
-writer = SummaryWriter(log_dir="/opt/logs/task3_cifar_resnet", flush_secs=30)
+writer = SummaryWriter(log_dir="/opt/logs/task2_cifar", flush_secs=30)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"device: {device}")
 
+# 下载数据集
+datasets.CIFAR10(root="/opt/data", train=True, download=True)
 cifar10_dir = "/opt/data/cifar-10-batches-py/"
 
 
@@ -128,12 +130,56 @@ class CIFAR_Net(nn.Module):
             accuracy = torch.sum(torch.argmax(pred, dim=1) == torch.argmax(eval_labels, dim=1)).item()
         return accuracy / len(eval_labels) * 100
 
+    def _make_layer(self, in_channels, out_channels):
+        return nn.Sequential(
+            nn.Conv2d(in_channels, out_channels, 3, padding=1),
+            nn.BatchNorm2d(out_channels),
+            nn.ReLU(),
+            nn.Conv2d(out_channels, out_channels, 3, padding=1),
+            nn.BatchNorm2d(out_channels),
+            nn.ReLU(),
+            nn.MaxPool2d(2),
+        )
+
     def __init__(self):
         super().__init__()
-        self.net = ResNet18(3, 10)
+        self.conv1 = nn.Conv2d(3, 64, 3, padding=1, bias=False)
+        self.bn1 = nn.BatchNorm2d(64)
+        self.relu = nn.ReLU()
+
+        self.layer1 = self._make_layer(64, 64)
+        self.layer2 = self._make_layer(64, 128)
+        self.layer3 = self._make_layer(128, 256)
+        self.layer4 = self._make_layer(256, 512)
+
+        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+        self.fc = nn.Linear(512, 10)
+
+        # 权重初始化
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                nn.init.kaiming_normal_(m.weight, mode="fan_out", nonlinearity="relu")
+            elif isinstance(m, nn.BatchNorm2d):
+                nn.init.constant_(m.weight, 1)
+                nn.init.constant_(m.bias, 0)
+            elif isinstance(m, nn.Linear):
+                nn.init.normal_(m.weight, 0, 0.01)
+                nn.init.constant_(m.bias, 0)
 
     def forward(self, x):
-        return self.net(x)
+        x = self.conv1(x)
+        x = self.bn1(x)
+        x = self.relu(x)
+
+        x = self.layer1(x)
+        x = self.layer2(x)
+        x = self.layer3(x)
+        x = self.layer4(x)
+
+        x = self.avgpool(x)
+        x = torch.flatten(x, 1)
+        x = self.fc(x)
+        return x
 
 
 train_dataset, valid_dataset = CIFAR_Net.train_valid_loader(cifar10_dir)
@@ -206,7 +252,6 @@ for i in pbar:
         best_valid_loss = valid_loss
         with open(model_path, "wb") as f:
             dill.dump(model, f)
-
 
     writer.add_scalar("train_loss", train_loss, i)
     writer.add_scalar("valid_loss", valid_loss, i)

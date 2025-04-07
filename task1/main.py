@@ -2,7 +2,7 @@ import dill
 import struct
 import numpy as np
 
-# mnist_path = ["/opt/data/mnist_testdata/train-images.idx3-ubyte", "/opt/data/mnist_testdata/train-labels.idx1-ubyte"]
+# mnist_path = ["/opt/data/MNIST/raw/train-images-idx3-ubyte", "/opt/data/MNIST/raw/train-labels-idx1-ubyte"]
 mnist_path = ["mnist_testdata/t10k-images.idx3-ubyte", "mnist_testdata/t10k-labels.idx1-ubyte"]
 model_path = "task1-mnist.pkl"
 

@@ -31,7 +31,8 @@ def one_hot(labels, num_classes):
     return one_hot_labels
 
 
-def train_valid_data(mnist_dir="/opt/data/mnist_testdata/"):
+def train_valid_data(mnist_dir):
+
     # 读取文件数据
     images = image_data(mnist_dir + "train-images.idx3-ubyte")
     labels = label_data(mnist_dir + "train-labels.idx1-ubyte")

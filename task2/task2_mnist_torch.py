@@ -1,36 +1,31 @@
 import os
 import sys
 import dill
-import pickle
+import idx2numpy
 import numpy as np
+import matplotlib.pyplot as plt
 from tqdm import tqdm
 
 import torch
 from torch import nn
 from torch import optim
 from torch.optim import lr_scheduler
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset, TensorDataset, DataLoader
 from torch.utils.tensorboard import SummaryWriter
-import torchvision.transforms as transforms
+from torchvision import transforms
+from torchvision import datasets
 
-sys.path.append(os.path.abspath(".."))
-from ethan.net.resnet import ResNet18
-from ethan.utils.cutout import Cutout
-
-
-# tmux new -s cifar
-# python task3_cifar_resnet.py 2>&1 | tee task3_cifar_resnet.log
-# Ctrl+B D  &&  tmux ls  &&  tmux attach -t cifar
-# tmux new -s tensorboard && tensorboard --logdir=/opt/logs
-writer = SummaryWriter(log_dir="/opt/logs/task3_cifar_resnet", flush_secs=30)
+# tensorboard --logdir=/opt/logs
+writer = SummaryWriter(log_dir="/opt/logs/task2-mnist-torch", flush_secs=30)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"device: {device}")
 
-cifar10_dir = "/opt/data/cifar-10-batches-py/"
+
+mnist_dir = "/opt/data/MNIST/raw/"
+datasets.MNIST(root="/opt/data", train=True, download=True)
 
 
-# 用于适配interview接口
-class CIFAR_Net(nn.Module):
+class MNIST_Net(nn.Module):
     class TrainDataset(Dataset):
         def __init__(self, images, labels):
             super().__init__()
@@ -39,11 +34,10 @@ class CIFAR_Net(nn.Module):
             self.trans = transforms.Compose(
                 [
                     transforms.ToPILImage(),
-                    transforms.RandomCrop(32, padding=4),
+                    transforms.RandomCrop(28, padding=4),
                     transforms.RandomHorizontalFlip(),
                     transforms.ToTensor(),
-                    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-                    Cutout(n_holes=1, length=16),
+                    transforms.Normalize((0.1307,), (0.3081,)),
                 ]
             )
 
@@ -61,7 +55,7 @@ class CIFAR_Net(nn.Module):
             self.trans = transforms.Compose(
                 [
                     transforms.ToTensor(),
-                    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+                    transforms.Normalize((0.1307,), (0.3081,)),
                 ]
             )
 
@@ -72,12 +66,6 @@ class CIFAR_Net(nn.Module):
             return len(self.images)
 
     @staticmethod
-    def unpickle(file):
-        with open(file, "rb") as f:
-            dict = pickle.load(f, encoding="bytes")
-        return dict
-
-    @staticmethod
     def one_hot(labels, num_classes):
         one_hot_labels = np.zeros((len(labels), num_classes))
         for i in range(len(labels)):
@@ -85,18 +73,14 @@ class CIFAR_Net(nn.Module):
         return one_hot_labels
 
     @staticmethod
-    def train_valid_loader(cifar10_dir):
+    def train_valid_dataset(mnist_dir):
         # 读取文件数据
-        images, labels = [], []
-        for i in range(1, 6):
-            data_batch = CIFAR_Net.unpickle(cifar10_dir + f"data_batch_{i}")
-            images.append(data_batch[b"data"])
-            labels.append(data_batch[b"labels"])
-        images, labels = np.concatenate(images), np.concatenate(labels)
+        images = idx2numpy.convert_from_file(mnist_dir + "train-images-idx3-ubyte")
+        labels = idx2numpy.convert_from_file(mnist_dir + "train-labels-idx1-ubyte")
 
         # 添加图片宽高与通道 独热编码标签
-        images = images.reshape(-1, 3, 32, 32).transpose(0, 2, 3, 1)
-        labels = CIFAR_Net.one_hot(labels, 10)
+        images = images.reshape(-1, 1, 28, 28).transpose(0, 2, 3, 1)
+        labels = MNIST_Net.one_hot(labels, 10)
 
         # 分割训练集与验证集 (9:1)
         split = int(len(images) * 0.9)
@@ -104,49 +88,97 @@ class CIFAR_Net(nn.Module):
         train_labels, valid_labels = labels[:split], labels[split:]
 
         # 构造数据集
-        train_dataset = CIFAR_Net.TrainDataset(train_images, train_labels)
-        valid_dataset = CIFAR_Net.ValidDataset(valid_images, valid_labels)
+        train_dataset = MNIST_Net.TrainDataset(train_images, train_labels)
+        valid_dataset = MNIST_Net.ValidDataset(valid_images, valid_labels)
         return train_dataset, valid_dataset
 
     def interview(self, eval_datafile_path, device):
-        # 读取文件数据
-        data_batch = self.unpickle(eval_datafile_path)
-        eval_images, eval_labels = data_batch[b"data"], data_batch[b"labels"]
-
-        # 添加图片宽高与通道 独热编码标签
-        eval_images = eval_images.reshape(-1, 3, 32, 32)
-        eval_labels = CIFAR_Net.one_hot(eval_labels, 10)
-
-        # 数据预处理
-        trans = transforms.Compose([transforms.ToTensor(), transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
-        eval_images = trans(eval_images)
+        eval_images = idx2numpy.convert_from_file(eval_datafile_path[0])
+        eval_labels = idx2numpy.convert_from_file(eval_datafile_path[1])
+        eval_images = eval_images.reshape(-1, 1, 28, 28)
+        eval_labels = self.one_hot(eval_labels, 10)
+        eval_images = torch.from_numpy(np.array(eval_images, copy=True)).float()
+        eval_labels = torch.from_numpy(np.array(eval_labels, copy=True)).float()
+        eval_images, eval_labels = eval_images.to(device), eval_labels.to(device)
 
         self.eval()
         with torch.no_grad():
-            eval_images, eval_labels = eval_images.to(device), eval_labels.to(device)
             pred = self.forward(eval_images)
             accuracy = torch.sum(torch.argmax(pred, dim=1) == torch.argmax(eval_labels, dim=1)).item()
         return accuracy / len(eval_labels) * 100
 
+    def _make_layer(self, in_channels, out_channels):
+        return nn.Sequential(
+            nn.Conv2d(in_channels, out_channels, 3, padding=1),
+            nn.BatchNorm2d(out_channels),
+            nn.ReLU(),
+            nn.Conv2d(out_channels, out_channels, 3, padding=1),
+            nn.BatchNorm2d(out_channels),
+            nn.ReLU(),
+            nn.MaxPool2d(2),
+        )
+
     def __init__(self):
         super().__init__()
-        self.net = ResNet18(3, 10)
+        self.conv1 = nn.Conv2d(1, 64, 3, padding=1, bias=False)
+        self.bn1 = nn.BatchNorm2d(64)
+        self.relu = nn.ReLU()
+
+        self.layer1 = self._make_layer(64, 128)
+        self.layer2 = self._make_layer(128, 256)
+        self.layer3 = self._make_layer(256, 512)
+
+        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+        self.fc = nn.Linear(512, 10)
+
+        # 权重初始化
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                nn.init.kaiming_normal_(m.weight, mode="fan_out", nonlinearity="relu")
+            elif isinstance(m, nn.BatchNorm2d):
+                nn.init.constant_(m.weight, 1)
+                nn.init.constant_(m.bias, 0)
+            elif isinstance(m, nn.Linear):
+                nn.init.normal_(m.weight, 0, 0.01)
+                nn.init.constant_(m.bias, 0)
+
+        # 权重初始化
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                nn.init.kaiming_normal_(m.weight, mode="fan_out", nonlinearity="relu")
+            elif isinstance(m, nn.BatchNorm2d):
+                nn.init.constant_(m.weight, 1)
+                nn.init.constant_(m.bias, 0)
+            elif isinstance(m, nn.Linear):
+                nn.init.normal_(m.weight, 0, 0.01)
+                nn.init.constant_(m.bias, 0)
 
     def forward(self, x):
-        return self.net(x)
+        x = self.conv1(x)
+        x = self.bn1(x)
+        x = self.relu(x)
+
+        x = self.layer1(x)
+        x = self.layer2(x)
+        x = self.layer3(x)
+
+        x = self.avgpool(x)
+        x = torch.flatten(x, 1)
+        x = self.fc(x)
+        return x
 
 
-train_dataset, valid_dataset = CIFAR_Net.train_valid_loader(cifar10_dir)
+train_dataset, valid_dataset = MNIST_Net.train_valid_dataset(mnist_dir)
 train_size, valid_size = len(train_dataset), len(valid_dataset)
-
 
 epoch_count = 0  # 总训练轮数
 best_accuracy = 0  # 最佳准确率
 best_valid_loss = np.inf  # 最佳验证损失
-model_path = "task3-cifar-resnet.pkl"  # 模型保存路径
+model_path = "task2-mnist-torch.pkl"  # 模型保存路径
+
 
 # 如果模型文件存在, 则加载模型参数
-model = CIFAR_Net().to(device)
+model = MNIST_Net().to(device)
 if os.path.exists(model_path):
     with open(model_path, "rb") as f:
         pre_model = dill.load(f)
@@ -154,11 +186,11 @@ if os.path.exists(model_path):
     print("模型文件存在, 加载成功")
 else:
     print("模型文件不存在, 从头训练")
-
+    
 
 batch_size = 128  # 批处理大小
 initial_lr = 1e-3  # 初始学习率
-max_epoch = 200  # 最大训练轮数
+max_epoch = 30  # 最大训练轮数
 
 train_dataloader = DataLoader(train_dataset, batch_size, True)
 valid_dataloader = DataLoader(valid_dataset, batch_size, False)
@@ -206,7 +238,6 @@ for i in pbar:
         best_valid_loss = valid_loss
         with open(model_path, "wb") as f:
             dill.dump(model, f)
-
 
     writer.add_scalar("train_loss", train_loss, i)
     writer.add_scalar("valid_loss", valid_loss, i)
