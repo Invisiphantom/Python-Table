@@ -12,7 +12,7 @@ from torch.optim import lr_scheduler
 from torch.utils.data import TensorDataset, DataLoader
 from torch.utils.tensorboard import SummaryWriter
 
-from task3_resnet import ResidualBlock
+from task3_resnet import ResBlock
 
 # nohup python task3_mnist_resnet.py > task3_mnist_resnet.log 2>&1 &
 # jobs -l    fg %1    Ctrl+Z
@@ -59,12 +59,12 @@ class MNIST_Net(nn.Module):
             nn.MaxPool2d(3, stride=2, padding=1),
             #
             # (64,7,7) -> (64,7,7)
-            ResidualBlock(64, 64),
-            ResidualBlock(64, 64),
+            ResBlock(64, 64),
+            ResBlock(64, 64),
             #
             # (64,7,7) -> (128,4,4)
-            ResidualBlock(64, 128, stride=2),
-            ResidualBlock(128, 128),
+            ResBlock(64, 128, stride=2),
+            ResBlock(128, 128),
             #
             nn.Flatten(),
             nn.Linear(128 * 4 * 4, 512),
