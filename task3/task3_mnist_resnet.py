@@ -122,80 +122,80 @@ class MNIST_Net(nn.Module):
     def forward(self, x):
         return self.net(x)
 
+if __name__ == "__main__":
+    train_dataset, valid_dataset = MNIST_Net.train_valid_dataset(mnist_dir)
+    train_size, valid_size = len(train_dataset), len(valid_dataset)
 
-train_dataset, valid_dataset = MNIST_Net.train_valid_dataset(mnist_dir)
-train_size, valid_size = len(train_dataset), len(valid_dataset)
-
-epoch_count = 0  # 总训练轮数
-best_accuracy = 0  # 最佳准确率
-best_valid_loss = np.inf  # 最佳验证损失
-model_path = "task2-mnist-torch.pkl"  # 模型保存路径
-
-
-# 如果模型文件存在, 则加载模型参数
-model = MNIST_Net().to(device)
-if os.path.exists(model_path):
-    with open(model_path, "rb") as f:
-        pre_model = dill.load(f)
-    model.load_state_dict(pre_model.state_dict())
-    print("模型文件存在, 加载成功")
-else:
-    print("模型文件不存在, 从头训练")
+    epoch_count = 0  # 总训练轮数
+    best_accuracy = 0  # 最佳准确率
+    best_valid_loss = np.inf  # 最佳验证损失
+    model_path = "task2-mnist-torch.pkl"  # 模型保存路径
 
 
-batch_size = 128  # 批处理大小
-initial_lr = 1e-3  # 初始学习率
-max_epoch = 30  # 最大训练轮数
+    # 如果模型文件存在, 则加载模型参数
+    model = MNIST_Net().to(device)
+    if os.path.exists(model_path):
+        with open(model_path, "rb") as f:
+            pre_model = dill.load(f)
+        model.load_state_dict(pre_model.state_dict())
+        print("模型文件存在, 加载成功")
+    else:
+        print("模型文件不存在, 从头训练")
 
-train_dataloader = DataLoader(train_dataset, batch_size, True)
-valid_dataloader = DataLoader(valid_dataset, batch_size, False)
 
-loss_fn = nn.CrossEntropyLoss()
-optimizer = optim.AdamW(model.parameters(), lr=initial_lr, weight_decay=1e-3)
-scheduler = lr_scheduler.CosineAnnealingLR(optimizer, T_max=max_epoch)
+    batch_size = 128  # 批处理大小
+    initial_lr = 1e-3  # 初始学习率
+    max_epoch = 30  # 最大训练轮数
+
+    train_dataloader = DataLoader(train_dataset, batch_size, True)
+    valid_dataloader = DataLoader(valid_dataset, batch_size, False)
+
+    loss_fn = nn.CrossEntropyLoss()
+    optimizer = optim.AdamW(model.parameters(), lr=initial_lr, weight_decay=1e-3)
+    scheduler = lr_scheduler.CosineAnnealingLR(optimizer, T_max=max_epoch)
 
 
-pbar = tqdm(range(max_epoch))
-for i in pbar:
-    train_loss, valid_loss, accuracy = 0, 0, 0
+    pbar = tqdm(range(max_epoch))
+    for i in pbar:
+        train_loss, valid_loss, accuracy = 0, 0, 0
 
-    model.train()
-    for X, y in train_dataloader:
-        X, y = X.to(device), y.to(device)
-
-        pred = model(X)
-        loss = loss_fn(pred, y)
-        train_loss += loss.item()
-
-        loss.backward()
-        optimizer.step()
-        optimizer.zero_grad()
-
-    model.eval()
-    with torch.no_grad():
-        for X, y in valid_dataloader:
+        model.train()
+        for X, y in train_dataloader:
             X, y = X.to(device), y.to(device)
 
             pred = model(X)
-            valid_loss += loss_fn(pred, y).item()
-            accuracy += torch.sum(torch.argmax(pred, dim=1) == torch.argmax(y, dim=1)).item()
+            loss = loss_fn(pred, y)
+            train_loss += loss.item()
 
-    scheduler.step()
-    epoch_count += 1
-    train_loss /= train_size
-    valid_loss /= valid_size
-    accuracy = accuracy / valid_size * 100
+            loss.backward()
+            optimizer.step()
+            optimizer.zero_grad()
 
-    if accuracy > best_accuracy:
-        best_accuracy = accuracy
+        model.eval()
+        with torch.no_grad():
+            for X, y in valid_dataloader:
+                X, y = X.to(device), y.to(device)
 
-    if valid_loss < best_valid_loss:
-        best_valid_loss = valid_loss
-        with open(model_path, "wb") as f:
-            dill.dump(model, f)
+                pred = model(X)
+                valid_loss += loss_fn(pred, y).item()
+                accuracy += torch.sum(torch.argmax(pred, dim=1) == torch.argmax(y, dim=1)).item()
 
-    writer.add_scalar("train_loss", train_loss, i)
-    writer.add_scalar("valid_loss", valid_loss, i)
-    writer.add_scalar("accuracy", accuracy, i)
-    writer.add_scalar("learning_rate", optimizer.param_groups[0]["lr"], i)
-    pbar.set_postfix(lr=f'{optimizer.param_groups[0]["lr"]:.1e}', train_loss=f"{train_loss:.2e}", valid_loss=f"{valid_loss:.2e}", accuracy=f"{accuracy:.2f}%", best_accuracy=f"{best_accuracy:.2f}%")
+        scheduler.step()
+        epoch_count += 1
+        train_loss /= train_size
+        valid_loss /= valid_size
+        accuracy = accuracy / valid_size * 100
+
+        if accuracy > best_accuracy:
+            best_accuracy = accuracy
+
+        if valid_loss < best_valid_loss:
+            best_valid_loss = valid_loss
+            with open(model_path, "wb") as f:
+                dill.dump(model, f)
+
+        writer.add_scalar("train_loss", train_loss, i)
+        writer.add_scalar("valid_loss", valid_loss, i)
+        writer.add_scalar("accuracy", accuracy, i)
+        writer.add_scalar("learning_rate", optimizer.param_groups[0]["lr"], i)
+        pbar.set_postfix(lr=f'{optimizer.param_groups[0]["lr"]:.1e}', train_loss=f"{train_loss:.2e}", valid_loss=f"{valid_loss:.2e}", accuracy=f"{accuracy:.2f}%", best_accuracy=f"{best_accuracy:.2f}%")
