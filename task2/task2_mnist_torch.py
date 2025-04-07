@@ -15,6 +15,9 @@ from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
 from torchvision import datasets
 
+# tmux new -s task2_mnist
+# python task2_mnist_torch.py 2>&1 | tee task2_mnist_torch.log
+# Ctrl+B D  &&  tmux ls  &&  tmux attach -t task2_mnist
 # tensorboard --logdir=/opt/logs
 writer = SummaryWriter(log_dir="/opt/logs/task2-mnist-torch", flush_secs=30)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

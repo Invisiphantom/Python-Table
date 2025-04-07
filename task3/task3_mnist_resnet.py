@@ -18,6 +18,9 @@ from torchvision import datasets
 sys.path.append(os.path.abspath(".."))
 from ethan.net.resnet import ResNet18
 
+# tmux new -s mnist
+# python task3_mnist_resnet.py 2>&1 | tee task3_mnist_resnet.log
+# Ctrl+B D  &&  tmux ls  &&  tmux attach -t cifar
 # tensorboard --logdir=/opt/logs
 writer = SummaryWriter(log_dir="/opt/logs/task2-mnist-torch", flush_secs=30)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -129,7 +132,7 @@ if __name__ == "__main__":
     epoch_count = 0  # 总训练轮数
     best_accuracy = 0  # 最佳准确率
     best_valid_loss = np.inf  # 最佳验证损失
-    model_path = "task2-mnist-torch.pkl"  # 模型保存路径
+    model_path = "task3-mnist-resnet.pkl"  # 模型保存路径
 
 
     # 如果模型文件存在, 则加载模型参数

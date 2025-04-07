@@ -189,7 +189,7 @@ if __name__ == "__main__":
     epoch_count = 0  # 总训练轮数
     best_accuracy = 0  # 最佳准确率
     best_valid_loss = np.inf  # 最佳验证损失
-    model_path = "task3-cifar-resnet.pkl"  # 模型保存路径
+    model_path = "task2-cifar.pkl"  # 模型保存路径
 
     # 如果模型文件存在, 则加载模型参数
     model = CIFAR_Net().to(device)
