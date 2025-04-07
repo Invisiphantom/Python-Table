@@ -18,9 +18,10 @@ class ResidualBlock(nn.Module):
         if stride != 1 or in_channels != out_channels:
             self.shortcut = nn.Sequential(
                 nn.Conv2d(in_channels, out_channels, 1, stride),
-                nn.BatchNorm2d(out_channels),
             )
             
 
     def forward(self, x):
-        return F.relu(self.net(x) + self.shortcut(x))
+        out = self.net(x)
+        out += self.shortcut(x)
+        return F.relu(out)
