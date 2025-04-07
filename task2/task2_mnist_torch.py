@@ -20,7 +20,7 @@ writer = SummaryWriter(log_dir="/opt/logs/task2-mnist-torch", flush_secs=30)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"device: {device}")
 
-
+# 下载数据集
 mnist_dir = "/opt/data/MNIST/raw/"
 datasets.MNIST(root="/opt/data", train=True, download=True)
 
@@ -93,16 +93,21 @@ class MNIST_Net(nn.Module):
         return train_dataset, valid_dataset
 
     def interview(self, eval_datafile_path, device):
+        # 读取文件数据
         eval_images = idx2numpy.convert_from_file(eval_datafile_path[0])
         eval_labels = idx2numpy.convert_from_file(eval_datafile_path[1])
+
+        # 添加图片宽高与通道 独热编码标签
         eval_images = eval_images.reshape(-1, 1, 28, 28)
         eval_labels = self.one_hot(eval_labels, 10)
-        eval_images = torch.from_numpy(np.array(eval_images, copy=True)).float()
-        eval_labels = torch.from_numpy(np.array(eval_labels, copy=True)).float()
-        eval_images, eval_labels = eval_images.to(device), eval_labels.to(device)
+
+        # 数据预处理
+        trans = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))])
+        eval_images = trans(eval_images)
 
         self.eval()
         with torch.no_grad():
+            eval_images, eval_labels = eval_images.to(device), eval_labels.to(device)
             pred = self.forward(eval_images)
             accuracy = torch.sum(torch.argmax(pred, dim=1) == torch.argmax(eval_labels, dim=1)).item()
         return accuracy / len(eval_labels) * 100
@@ -186,7 +191,7 @@ if os.path.exists(model_path):
     print("模型文件存在, 加载成功")
 else:
     print("模型文件不存在, 从头训练")
-    
+
 
 batch_size = 128  # 批处理大小
 initial_lr = 1e-3  # 初始学习率
