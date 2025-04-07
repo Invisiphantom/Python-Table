@@ -1,6 +1,5 @@
 import os
 import sys
-import dill
 import pickle
 import numpy as np
 from tqdm import tqdm
@@ -189,14 +188,12 @@ if __name__ == "__main__":
     epoch_count = 0  # 总训练轮数
     best_accuracy = 0  # 最佳准确率
     best_valid_loss = np.inf  # 最佳验证损失
-    model_path = "task2-cifar.pkl"  # 模型保存路径
+    model_path = "task2-cifar.pth"  # 模型保存路径
 
     # 如果模型文件存在, 则加载模型参数
     model = CIFAR_Net().to(device)
     if os.path.exists(model_path):
-        with open(model_path, "rb") as f:
-            pre_model = dill.load(f)
-        model.load_state_dict(pre_model.state_dict())
+        model.load_state_dict(torch.load(model_path))
         print("模型文件存在, 加载成功")
     else:
         print("模型文件不存在, 从头训练")
@@ -250,8 +247,7 @@ if __name__ == "__main__":
 
         if valid_loss < best_valid_loss:
             best_valid_loss = valid_loss
-            with open(model_path, "wb") as f:
-                dill.dump(model, f)
+            torch.save(model.state_dict(), model_path)
 
         writer.add_scalar("train_loss", train_loss, i)
         writer.add_scalar("valid_loss", valid_loss, i)

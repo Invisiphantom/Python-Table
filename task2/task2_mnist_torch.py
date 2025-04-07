@@ -1,6 +1,6 @@
 import os
 import sys
-import dill
+ 
 import idx2numpy
 import numpy as np
 import matplotlib.pyplot as plt
