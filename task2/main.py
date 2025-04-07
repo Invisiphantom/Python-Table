@@ -16,7 +16,7 @@ data_mnist_path = ["mnist_testdata/t10k-images.idx3-ubyte", "mnist_testdata/t10k
 data_cifar10_path = "cifar10_testdata/test_batch"
 
 
-model_mnist_my_path = "task2-mnist-my.pkl"
+model_mnist_my_path = "task2-mnist-ethan.pkl"
 model_mnist_torch_path = "task2-mnist-torch.pkl"
 model_cifar_path = "task2-cifar.pkl"
 
@@ -29,7 +29,7 @@ with open(model_mnist_torch_path, "rb") as f:
 with open(model_cifar_path, "rb") as f:
     model_cifar = dill.load(f).to(device)
 
-accuracy_mnist_my = model_mnist_my.interview(data_mnist_path)
+accuracy_mnist_my = model_mnist_ethan.interview(data_mnist_path)
 print(f"mnist_my: {accuracy_mnist_my:.2f}%")
 print(model_mnist_my)
 print()

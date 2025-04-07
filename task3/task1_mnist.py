@@ -1,7 +1,7 @@
 import struct
 import numpy as np
 from tqdm import tqdm
-from my.net import *
+from ethan.numpy.net import *
 
 
 def image_data(file_name):

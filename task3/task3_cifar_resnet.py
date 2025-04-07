@@ -1,4 +1,5 @@
 import os
+import sys
 import dill
 import pickle
 import random
@@ -13,7 +14,9 @@ from torch.utils.data import Dataset, TensorDataset, DataLoader
 from torch.utils.tensorboard import SummaryWriter
 import torchvision.transforms as transforms
 
-from task3_resnet import ResNet18, ResNet34
+sys.path.append(os.path.abspath(".."))
+from ethan.net.resnet import ResNet18
+from ethan.utils.cutout import Cutout
 
 
 # tmux new -s cifar
@@ -41,6 +44,7 @@ class CIFAR_Net(nn.Module):
                     transforms.RandomHorizontalFlip(),
                     transforms.ToTensor(),
                     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+                    Cutout(n_holes=1, length=16),
                 ]
             )
 
@@ -127,7 +131,7 @@ class CIFAR_Net(nn.Module):
 
     def __init__(self):
         super().__init__()
-        self.net = ResNet18(10)
+        self.net = ResNet18(3, 10)
 
     def forward(self, x):
         return self.net(x)
@@ -142,23 +146,23 @@ best_accuracy = 0  # 最佳准确率
 model_path = "task3-cifar-resnet.pkl"  # 模型保存路径
 
 model = CIFAR_Net().to(device)
-loss_fn = nn.CrossEntropyLoss()
-
-# if os.path.exists(model_path):
-#     with open(model_path, "rb") as f:
-#         model = dill.load(f)
-#     print("模型文件存在, 加载成功")
-# else:
-#     print("模型文件不存在, 从头训练")
-#     model = CIFAR_Net().to(device)
+if os.path.exists(model_path):
+    with open(model_path, "rb") as f:
+        pre_model = dill.load(f)
+    model.load_state_dict(pre_model.state_dict())
+    print("模型文件存在, 加载成功")
+else:
+    print("模型文件不存在, 从头训练")
 
 
 batch_size = 128  # 批处理大小
-initial_lr = 3e-2  # 初始学习率
-max_epoch = 800  # 最大训练轮数
+initial_lr = 1e-3  # 初始学习率
+max_epoch = 200  # 最大训练轮数
 
 train_dataloader = DataLoader(train_dataset, batch_size, True)
 valid_dataloader = DataLoader(valid_dataset, batch_size, False)
+
+loss_fn = nn.CrossEntropyLoss()
 optimizer = optim.AdamW(model.parameters(), lr=initial_lr, weight_decay=1e-3)
 scheduler = lr_scheduler.CosineAnnealingLR(optimizer, T_max=max_epoch)
 
@@ -204,8 +208,3 @@ for i in pbar:
     writer.add_scalar("accuracy", accuracy, i)
     writer.add_scalar("learning_rate", optimizer.param_groups[0]["lr"], i)
     pbar.set_postfix(lr=f"{optimizer.param_groups[0]["lr"]:.1e}", train_loss=f"{train_loss:.2e}", test_loss=f"{test_loss:.2e}", accuracy=f"{accuracy:.2f}%", best_accuracy=f"{best_accuracy:.2f}%")
-
-print("模型参数:", sum(p.numel() for p in model.parameters()))
-print("保存路径:", model_path)
-print("当前训练轮数:", epoch_count)
-print("最佳准确率:", best_accuracy)

@@ -34,9 +34,9 @@ class ResNet(nn.Module):
             layers.append(ResBlock(out_channels, out_channels))
         return nn.Sequential(*layers)
 
-    def __init__(self, layers, num_classes):
+    def __init__(self, layers, in_channels, num_classes):
         super().__init__()
-        self.conv1 = nn.Conv2d(3, 64, 3, padding=1, bias=False)
+        self.conv1 = nn.Conv2d(in_channels, 64, 3, padding=1, bias=False)
         self.bn1 = nn.BatchNorm2d(64)
         self.relu = nn.ReLU()
 
@@ -73,18 +73,18 @@ class ResNet(nn.Module):
 
 
 class ResNet18(nn.Module):
-    def __init__(self, num_classes):
+    def __init__(self, in_channels, num_classes):
         super().__init__()
-        self.net = ResNet([2, 2, 2, 2], num_classes=num_classes)
+        self.net = ResNet([2, 2, 2, 2], in_channels, num_classes=num_classes)
 
     def forward(self, x):
         return self.net(x)
 
 
 class ResNet34(nn.Module):
-    def __init__(self, num_classes):
+    def __init__(self, in_channels, num_classes):
         super().__init__()
-        self.net = ResNet([3, 4, 6, 3], num_classes=num_classes)
+        self.net = ResNet([3, 4, 6, 3], in_channels, num_classes=num_classes)
 
     def forward(self, x):
         return self.net(x)

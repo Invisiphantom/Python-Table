@@ -3,10 +3,10 @@
 # 组件库-my
 
 使用numpy实现的神经网络组件库
-- my.fn: 包含常用的激活函数和损失函数
+- ethan.fn: 包含常用的激活函数和损失函数
   - 激活函数: Relu, Gelu, Sigmoid, Softmax
   - 损失函数: MSE, CrossEntropy
-- my.net: 包含常用的网络结构
+- ethan.numpy.net: 包含常用的网络结构
   - 线性层-MLP
   - 消融层-Dropout
   - 展开层-Flatten

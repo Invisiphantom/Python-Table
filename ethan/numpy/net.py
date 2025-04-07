@@ -1,7 +1,7 @@
 import numpy as np
 from numpy.lib.stride_tricks import sliding_window_view
 from abc import ABC, abstractmethod
-from my.fn import *
+from ethan.fn import *
 
 
 class Net:
