@@ -2,7 +2,7 @@
 
 # MNIST任务-numpy手写实现
 
-数据集: 随机分割训练集与验证集 (9:1)
+数据集: 随机分割训练集与验证集 (4:1)
 数据强化: 随机旋转、随机裁剪
 模型架构:
 ```py
@@ -38,86 +38,91 @@ Net(
 # MNIST任务-torch实现
 
 数据集: 随机分割训练集与验证集 (4:1)
-模型参数量: 421642
+数据增强: 随机裁剪, 随机翻转, 归一化
 ```py
-(net): Sequential(
-  (0): Conv2d(1, 32, kernel_size=3, padding=1)
-  (1): ReLU()
-  (2): MaxPool2d(kernel_size=2=1)
-  (4): ReLU()
-  (5): MaxPool2d(kernel_size=2, out_features=128, bias=True)
-  (8): ReLU()
-  (9): Dropout(p=0.5, inplace=False)
-  (10): Linear(in_features=128, out_features=10, bias=True)
-)
+def _make_layer(self, in_channels, out_channels):
+    return nn.Sequential(
+        nn.Conv2d(in_channels, out_channels, 3, padding=1),
+        nn.BatchNorm2d(out_channels),
+        nn.ReLU(),
+        nn.Conv2d(out_channels, out_channels, 3, padding=1),
+        nn.BatchNorm2d(out_channels),
+        nn.ReLU(),
+        nn.MaxPool2d(2),
+    )
+
+def __init__(self):
+    super().__init__()
+    self.conv1 = nn.Conv2d(1, 64, 3, padding=1, bias=False)
+    self.bn1 = nn.BatchNorm2d(64)
+    self.relu = nn.ReLU()
+
+    self.layer1 = self._make_layer(64, 128)
+    self.layer2 = self._make_layer(128, 256)
+    self.layer3 = self._make_layer(256, 512)
+
+    self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+    self.fc = nn.Linear(512, 10)
 ```
 
-| 超参数         |                   |
-| -------------- | ----------------- |
-| 优化器         | AdamW             |
-| 学习率调节器   | ReduceLROnPlateau |
-| 初始学习率     | 1e-3              |
-| 学习率容忍次数 | 10                |
-| 学习率衰减因子 | 0.5               |
-| 无增长容忍次数 | 20                |
-| 批次大小       | 128               |
 
-| 结果             |         |
-| ---------------- | ------- |
-| 最佳迭代次数     | 46      |
-| 最佳验证集准确率 | 99.275% |
+| 超参数       |                   |
+| ------------ | ----------------- |
+| 优化器       | AdamW             |
+| 学习率调节器 | CosineAnnealingLR |
+| 初始学习率   | 1e-3              |
+| 批次大小     | 128               |
+| 最大迭代数   | 100               |
+
+| 结果         |          |
+| ------------ | -------- |
+| 训练集误差   | 3.87e-07 |
+| 验证集误差   | 4.24e-04 |
+| 验证集准确率 | 99.30%   |
+
 
 
 # CIFAR-10任务-torch实现
 
 数据集: 随机分割训练集与验证集 (4:1)
-模型参数量: 5354826
+数据增强: 随机裁剪, 随机翻转, 随机遮挡, 归一化
 ```py
-(net): Sequential(
-  (0): Conv2d(3, 64, kernel_size=3, padding=1)
-  (1): BatchNorm2d(64)
-  (2): ReLU()
-  (3): Conv2d(64, 64, kernel_size=3, padding=1)
-  (4): BatchNorm2d(64)
-  (5): ReLU()
-  (6): MaxPool2d(kernel_size=2)
+def _make_layer(self, in_channels, out_channels):
+    return nn.Sequential(
+        nn.Conv2d(in_channels, out_channels, 3, padding=1),
+        nn.BatchNorm2d(out_channels),
+        nn.ReLU(),
+        nn.Conv2d(out_channels, out_channels, 3, padding=1),
+        nn.BatchNorm2d(out_channels),
+        nn.ReLU(),
+        nn.MaxPool2d(2),
+    )
 
-  (7): Conv2d(64, 128, kernel_size=3, padding=1)
-  (8): BatchNorm2d(128)
-  (9): ReLU()
-  (10): Conv2d(128, 128, kernel_size=3, padding=1)
-  (11): BatchNorm2d(128)
-  (12): ReLU()
-  (13): MaxPool2d(kernel_size=2)
+def __init__(self):
+    super().__init__()
+    self.conv1 = nn.Conv2d(3, 64, 3, padding=1, bias=False)
+    self.bn1 = nn.BatchNorm2d(64)
+    self.relu = nn.ReLU()
 
-  (14): Conv2d(128, 256, kernel_size=3, padding=1)
-  (15): BatchNorm2d(256)
-  (16): ReLU()
-  (17): Conv2d(256, 256, kernel_size=3, padding=1)
-  (18): BatchNorm2d(256)
-  (19): ReLU()
-  (20): MaxPool2d(kernel_size=2)
+    self.layer1 = self._make_layer(64, 128)
+    self.layer2 = self._make_layer(128, 256)
+    self.layer3 = self._make_layer(256, 512)
 
-  (21): Flatten()
-  (22): Linear(in_features=4096, out_features=1024, bias=True)
-  (23): BatchNorm1d(1024)
-  (24): ReLU()
-  (25): Dropout(p=0.3)
-  (26): Linear(in_features=1024, out_features=10, bias=True)
-)
+    self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+    self.fc = nn.Linear(512, 10)
 ```
 
-| 超参数         |                   |
-| -------------- | ----------------- |
-| 优化器         | AdamW             |
-| 学习率调节器   | ReduceLROnPlateau |
-| 初始学习率     | 1e-3              |
-| 学习率容忍次数 | 10                |
-| 学习率衰减因子 | 0.5               |
-| 无增长容忍次数 | 20                |
-| 批次大小       | 128               |
+| 超参数       |                   |
+| ------------ | ----------------- |
+| 优化器       | AdamW             |
+| 学习率调节器 | CosineAnnealingLR |
+| 初始学习率   | 1e-3              |
+| 批次大小     | 128               |
+| 最大迭代数   | 200               |
 
-| 结果             |        |
-| ---------------- | ------ |
-| 最佳迭代次数     | 65     |
-| 最佳验证集准确率 | 85.61% |
+
+| 结果         |          |
+| ------------ | -------- |
+| 训练集误差   | 3.87e-07 |
+| 验证集误差   | 4.24e-04 |
+| 验证集准确率 | 99.30%   |

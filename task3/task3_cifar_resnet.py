@@ -101,8 +101,8 @@ class CIFAR_Net(nn.Module):
         images = images.reshape(-1, 3, 32, 32).transpose(0, 2, 3, 1)
         labels = CIFAR_Net.one_hot(labels, 10)
 
-        # 分割训练集与验证集 (9:1)
-        split = int(len(images) * 0.9)
+        # 分割训练集与验证集 (4:1)
+        split = int(len(images) * 0.8)
         train_images, valid_images = images[:split], images[split:]
         train_labels, valid_labels = labels[:split], labels[split:]
 
@@ -117,21 +117,19 @@ class CIFAR_Net(nn.Module):
         eval_images, eval_labels = data_batch[b"data"], data_batch[b"labels"]
 
         # 添加图片宽高与通道 独热编码标签
-        eval_images = eval_images.reshape(-1, 3, 32, 32)
+        eval_images = eval_images.reshape(-1, 3, 32, 32).transpose(0, 2, 3, 1)
         eval_labels = self.one_hot(eval_labels, 10)
 
-        eval_images = torch.from_numpy(eval_images).float()
-        eval_labels = torch.from_numpy(eval_labels).float()
-
-        # 数据预处理
-        trans = transforms.Compose([transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
-        eval_images = trans(eval_images)
+        eval_dataset = CIFAR_Net.ValidDataset(eval_images, eval_labels)
+        eval_dataloader = DataLoader(eval_dataset, batch_size=128, shuffle=False)
 
         self.eval()
         with torch.no_grad():
-            eval_images, eval_labels = eval_images.to(device), eval_labels.to(device)
-            pred = self.forward(eval_images)
-            accuracy = torch.sum(torch.argmax(pred, dim=1) == torch.argmax(eval_labels, dim=1)).item()
+            accuracy = 0
+            for X, y in eval_dataloader:
+                X, y = X.to(device), y.to(device)
+                pred = self.forward(X)
+                accuracy += torch.sum(torch.argmax(pred, dim=1) == torch.argmax(y, dim=1)).item()
         return accuracy / len(eval_labels) * 100
 
     def __init__(self):

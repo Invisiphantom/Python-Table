@@ -1,6 +1,6 @@
 import os
 import sys
- 
+
 import idx2numpy
 import numpy as np
 import matplotlib.pyplot as plt
@@ -81,15 +81,15 @@ class MNIST_Net(nn.Module):
     @staticmethod
     def train_valid_dataset(mnist_dir):
         # 读取文件数据
-        images = idx2numpy.convert_from_file(mnist_dir + "train-images-idx3-ubyte")
-        labels = idx2numpy.convert_from_file(mnist_dir + "train-labels-idx1-ubyte")
+        images = idx2numpy.convert_from_file(mnist_dir + "train-images-idx3-ubyte").copy()
+        labels = idx2numpy.convert_from_file(mnist_dir + "train-labels-idx1-ubyte").copy()
 
         # 添加图片宽高与通道 独热编码标签
         images = images.reshape(-1, 1, 28, 28).transpose(0, 2, 3, 1)
         labels = MNIST_Net.one_hot(labels, 10)
 
-        # 分割训练集与验证集 (9:1)
-        split = int(len(images) * 0.9)
+        # 分割训练集与验证集 (4:1)
+        split = int(len(images) * 0.8)
         train_images, valid_images = images[:split], images[split:]
         train_labels, valid_labels = labels[:split], labels[split:]
 
@@ -100,22 +100,23 @@ class MNIST_Net(nn.Module):
 
     def interview(self, eval_datafile_path, device):
         # 读取文件数据
-        eval_images = idx2numpy.convert_from_file(eval_datafile_path[0])
-        eval_labels = idx2numpy.convert_from_file(eval_datafile_path[1])
+        eval_images = idx2numpy.convert_from_file(eval_datafile_path[0]).copy()
+        eval_labels = idx2numpy.convert_from_file(eval_datafile_path[1]).copy()
 
         # 添加图片宽高与通道 独热编码标签
-        eval_images = eval_images.reshape(-1, 1, 28, 28)
+        eval_images = eval_images.reshape(-1, 1, 28, 28).transpose(0, 2, 3, 1)
         eval_labels = self.one_hot(eval_labels, 10)
 
-        # 数据预处理
-        trans = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))])
-        eval_images = trans(eval_images)
+        eval_dataset = MNIST_Net.ValidDataset(eval_images, eval_labels)
+        eval_dataloader = DataLoader(eval_dataset, batch_size=128, shuffle=False)
 
         self.eval()
         with torch.no_grad():
-            eval_images, eval_labels = eval_images.to(device), eval_labels.to(device)
-            pred = self.forward(eval_images)
-            accuracy = torch.sum(torch.argmax(pred, dim=1) == torch.argmax(eval_labels, dim=1)).item()
+            accuracy = 0
+            for X, y in eval_dataloader:
+                X, y = X.to(device), y.to(device)
+                pred = self.forward(X)
+                accuracy += torch.sum(torch.argmax(pred, dim=1) == torch.argmax(y, dim=1)).item()
         return accuracy / len(eval_labels) * 100
 
     def __init__(self):
@@ -124,6 +125,7 @@ class MNIST_Net(nn.Module):
 
     def forward(self, x):
         return self.net(x)
+
 
 if __name__ == "__main__":
     train_dataset, valid_dataset = MNIST_Net.train_valid_dataset(mnist_dir)
@@ -134,7 +136,6 @@ if __name__ == "__main__":
     best_valid_loss = np.inf  # 最佳验证损失
     model_path = "task3-mnist-resnet.pth"  # 模型保存路径
 
-
     # 如果模型文件存在, 则加载模型参数
     model = MNIST_Net().to(device)
     if os.path.exists(model_path):
@@ -143,10 +144,9 @@ if __name__ == "__main__":
     else:
         print("模型文件不存在, 从头训练")
 
-
     batch_size = 128  # 批处理大小
     initial_lr = 1e-3  # 初始学习率
-    max_epoch = 30  # 最大训练轮数
+    max_epoch = 10  # 最大训练轮数
 
     train_dataloader = DataLoader(train_dataset, batch_size, True)
     valid_dataloader = DataLoader(valid_dataset, batch_size, False)
@@ -154,7 +154,6 @@ if __name__ == "__main__":
     loss_fn = nn.CrossEntropyLoss()
     optimizer = optim.AdamW(model.parameters(), lr=initial_lr, weight_decay=1e-3)
     scheduler = lr_scheduler.CosineAnnealingLR(optimizer, T_max=max_epoch)
-
 
     pbar = tqdm(range(max_epoch))
     for i in pbar:
