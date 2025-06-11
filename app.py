@@ -1,4 +1,3 @@
-import os
 import torch
 import gradio as gr
 import numpy as np
@@ -35,7 +34,7 @@ def predict_audio(audio):
             sample_rate = 8000
 
         # 生成带时间戳的文件名
-        wav_filename = f"test/audio_{datetime.now().strftime("%H-%M-%S")}.wav"
+        wav_filename = f"audio.wav"
         wavfile.write(wav_filename, sample_rate, audio_data)
 
         # 提取MFCC特征
@@ -47,7 +46,8 @@ def predict_audio(audio):
         # 进行预测
         with torch.no_grad():
             outputs = model(mfcc_tensor)
-            _, predicted = torch.max(outputs, 1)
+            # 从one-hot输出中获取概率最大的类别
+            predicted = torch.argmax(outputs, dim=1)
 
         # 获取预测结果
         predicted_idx = str(predicted.item()).zfill(2)
@@ -58,10 +58,8 @@ def predict_audio(audio):
         return f"识别出错: {str(e)}"
 
 
-# 创建Gradio界面
 with gr.Blocks() as demo:
     gr.Markdown("# 语音识别系统")
-    gr.Markdown("请点击下方录音按钮，说出一个单词，系统将自动识别并保存8kHz WAV文件到当前目录")
 
     with gr.Row():
         audio_input = gr.Audio(type="numpy", label="录音")

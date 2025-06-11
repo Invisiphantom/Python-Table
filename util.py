@@ -225,7 +225,6 @@ class SpeechDataset(Dataset):
         # 直接从内存中返回预处理好的数据
         return self.data[idx]
 
-
 class SpeechRecognizer(nn.Module):
     def __init__(self, input_size=13, hidden_size=128, num_layers=2, num_classes=20):
         super(SpeechRecognizer, self).__init__()
