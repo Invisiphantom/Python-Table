@@ -6,3 +6,4 @@ data
 *.log
 *.pkl
 *.pth
+*.dat

@@ -1,5 +1,5 @@
 Group O
-D B-PER
+D O
 
 Japan O
 started O
@@ -37,7 +37,7 @@ Haifa O
 1 O
 Hapoel O
 Taibe O
-1 B-PER
+1 O
 
 Both O
 Major O
@@ -87,7 +87,7 @@ GMT O
 Walsall O
 1 O
 Burnley O
-1 B-PER
+1 O
 
 RUGBY O
 UNION O
@@ -109,7 +109,7 @@ DEBUT O
 
 MINNESOTA O
 AT O
-DETROIT B-LOC
+DETROIT O
 
 Stenhousemuir O
 15 O
@@ -118,16 +118,16 @@ Stenhousemuir O
 6 O
 18 O
 12 O
-17 B-PER
+17 O
 
 New O
 York O
 103 O
 MIAMI O
-85 B-PER
+85 O
 
 MOSCOW O
-1996-12-06 B-PER
+1996-12-06 O
 
 -- O
 Sandor O
@@ -140,12 +140,12 @@ newsroom O
 1 O
 ) O
 327 O
-4040 B-PER
+4040 O
 
 Dunfermline O
 2 O
 Aberdeen O
-3 B-PER
+3 O
 
 Forwards O
 - O
@@ -163,7 +163,7 @@ Ion O
 . O
 
 ROME O
-1996-12-06 B-PER
+1996-12-06 O
 
 " O
 It O
@@ -216,12 +216,12 @@ International O
 Bonds O
 +44 O
 171 O
-6320 B-PER
+6320 O
 
 W O
 L O
 PCT O
-GB B-PER
+GB O
 
 Aly O
 Ashour O
@@ -261,14 +261,14 @@ Takagi O
 
 TORONTO O
 AT O
-ATLANTA B-LOC
+ATLANTA O
 
 Greenock O
 Morton O
 0 O
 St O
 Johnstone O
-2 B-PER
+2 O
 
 The O
 ministry O
@@ -392,7 +392,7 @@ week O
 . O
 
 MELBOURNE O
-1996-12-06 B-PER
+1996-12-06 O
 
 Stockport O
 22 O
@@ -401,13 +401,13 @@ Stockport O
 6 O
 29 O
 25 O
-36 B-PER
+36 O
 
 TEMBAU O
 DENPASAR O
 , O
 Bali O
-1996-12-07 B-PER
+1996-12-07 O
 
 Bowling O
 : O
@@ -423,7 +423,7 @@ Walsh O
 ( O
 4nb O
 ) O
-, B-ORG
+, O
 
 ( O
 tabulate O
@@ -447,7 +447,7 @@ Korea O
 0 O
 5 O
 3 O
-4 B-ORG
+4 O
 
 He O
 said O
@@ -601,10 +601,10 @@ secretariat O
 Reading O
 50 O
 Widnes O
-3 B-PER
+3 O
 
 Premier O
-league B-PER
+league O
 
 Multinational O
 commander O
@@ -655,11 +655,11 @@ since O
 
 Standings O
 of O
-National B-LOC
+National O
 
 Jeon O
 Woon O
-55 B-PER
+55 O
 
 Pakistan O
 , O
@@ -704,7 +704,7 @@ now O
 . O
 
 MADRID O
-1996-12-07 B-PER
+1996-12-07 O
 
 Ipswich O
 22 O
@@ -713,7 +713,7 @@ Ipswich O
 8 O
 27 O
 32 O
-26 B-PER
+26 O
 
 10 O
 equal O
@@ -727,7 +727,7 @@ weekly O
 
 PORT O
 LOUIS O
-1996-12-06 B-PER
+1996-12-06 O
 
 Fife O
 v O
@@ -740,7 +740,7 @@ Mirren O
 ( O
 to O
 Tuesday O
-) B-PER
+) O
 
 7. O
 Noriaki O
@@ -753,7 +753,7 @@ Japan O
 124.2 O
 / O
 117.8 O
-) B-PER
+) O
 
 SOCCER O
 SHOWCASE-FANS O
@@ -767,7 +767,7 @@ SAYS O
 
 VANCOUVER O
 AT O
-DALLAS B-LOC
+DALLAS O
 
 " O
 As O
@@ -851,7 +851,7 @@ Timmer O
 ( O
 Netherlands O
 ) O
-1:24.86 B-ORG
+1:24.86 O
 
 Heifers O
 : O
@@ -871,7 +871,7 @@ WASHINGTON O
 1 O
 72 O
 71 O
-27 B-PER
+27 O
 
 12. O
 Warwara O
@@ -879,7 +879,7 @@ Zelenskaja O
 ( O
 Russia O
 ) O
-1:49.66 B-ORG
+1:49.66 O
 
 Anke O
 Baler O
@@ -991,7 +991,7 @@ price O
 -- O
 
 Group O
-B B-PER
+B O
 
 West O
 Indies O
@@ -1060,12 +1060,12 @@ Results O
 of O
 the O
 World O
-Cup B-PER
+Cup O
 
 Wrexham O
 2 O
 Scunthorpe O
-2 B-PER
+2 O
 
 Result O
 : O
@@ -1084,7 +1084,7 @@ Desk O
 +1 O
 212 O
 859 O
-1640 B-PER
+1640 O
 
 11. O
 Heidi O
@@ -1092,7 +1092,7 @@ Zurbriggen O
 ( O
 Switzerland O
 ) O
-1:49.65 B-ORG
+1:49.65 O
 
 We O
 ca O
@@ -1131,7 +1131,7 @@ ANGELES O
 3 O
 72 O
 83 O
-25 B-PER
+25 O
 
 Saqr O
 , O
@@ -1198,7 +1198,7 @@ Barcelona O
 1 O
 46 O
 19 O
-34 B-PER
+34 O
 
 Lieutenant-General O
 Maurice O
@@ -1276,7 +1276,7 @@ Malaysia O
 . O
 
 BUCHAREST O
-1996-12-06 B-PER
+1996-12-06 O
 
 Alloa O
 16 O
@@ -1324,7 +1324,7 @@ Ravllova O
 ( O
 Russia O
 ) O
-1:25.55 B-ORG
+1:25.55 O
 
 No O
 new O
@@ -1362,14 +1362,14 @@ Ally O
 McCoist O
 ( O
 Rangers O
-) B-PER
+) O
 
 William O
 Hill O
 betting O
 on O
 Saturday O
-'s B-PER
+'s O
 
 Zaragoza O
 15 O
@@ -1387,11 +1387,11 @@ Barcelona O
 2 O
 46 O
 21 O
-34 B-PER
+34 O
 
 JACKSONVILLE O
 AT O
-HOUSTON B-LOC
+HOUSTON O
 
 Halftime O
 0-1 O
@@ -1426,7 +1426,7 @@ Pedrag O
 Mijatovic O
 7-1 O
 Luis O
-Figo B-PER
+Figo O
 
 But O
 critics O
@@ -1475,7 +1475,7 @@ Masnada O
 ( O
 France O
 ) O
-82 B-ORG
+82 O
 
 A O
 Santa O
@@ -1791,7 +1791,7 @@ comparison O
 16-1 O
 Roberto O
 Carlos O
-16-1 B-PER
+16-1 O
 
 NYC O
 Jan O
@@ -1816,7 +1816,7 @@ Germany O
 
 ABU O
 DHABI O
-1996-12-07 B-PER
+1996-12-07 O
 
 FIFA O
 chairman O
@@ -1882,7 +1882,7 @@ second B-ORG
 
 MIAMI O
 AT O
-CHICAGO B-LOC
+CHICAGO O
 
 FC O
 Hansa O
@@ -1902,7 +1902,7 @@ inquiry O
 . O
 
 FSA O
-INSURED B-PER
+INSURED O
 
 BASKETBALL O
 - O
@@ -2046,7 +2046,7 @@ c O
 Healy O
 b O
 Gillespie O
-31 B-PER
+31 O
 
 Industry O
 sources O
@@ -2112,7 +2112,7 @@ Espanyol O
 7 O
 17 O
 20 O
-16 B-PER
+16 O
 
 9. O
 Florence O
@@ -2120,7 +2120,7 @@ Masnada O
 ( O
 France O
 ) O
-1:49.51 B-ORG
+1:49.51 O
 
 There O
 was O
@@ -2144,7 +2144,7 @@ LAKERS O
 7 O
 .667 O
 1 O
-1/2 B-ORG
+1/2 O
 
 One O
 of O
@@ -2171,7 +2171,7 @@ S&P O
 : O
 AAA O
 / O
-AA- B-PER
+AA- O
 
 West O
 Ham O
@@ -2181,7 +2181,7 @@ Ham O
 7 O
 13 O
 20 O
-17 B-PER
+17 O
 
 GOLF O
 - O
@@ -2193,7 +2193,7 @@ SCORES O
 . O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 Other O
 Facts O
@@ -2353,7 +2353,7 @@ STANDINGS O
 . O
 
 TIRANA O
-1996-12-07 B-PER
+1996-12-07 O
 
 Government O
 disperses O
@@ -2367,14 +2367,14 @@ Scoreboard O
 in O
 the O
 World O
-Series B-PER
+Series O
 
 Corn B-ORG
 
 2-1 O
 8-1 O
 2-1 O
-10-1 B-PER
+10-1 O
 
 He O
 is O
@@ -2394,7 +2394,7 @@ Igor O
 , O
 Shatskikh O
 Oleg O
-90 B-PER
+90 O
 
 NZ O
 's O
@@ -2411,7 +2411,7 @@ stage O
 
 9. O
 Soininen O
-85 B-PER
+85 O
 
 Tasmania O
 481 O
@@ -2482,19 +2482,19 @@ ships O
 
 Nation O
 : O
-Russia B-PER
+Russia O
 
 JosepGuardiola B-ORG
 
 SIALKOT O
 , O
 Pakistan O
-1996-12-06 B-PER
+1996-12-06 O
 
 Results O
 of O
 National O
-Basketball B-PER
+Basketball O
 
 19. O
 Heidi O
@@ -2502,7 +2502,7 @@ Zurbriggen O
 ( O
 Switzerland O
 ) O
-1:19.03 B-ORG
+1:19.03 O
 
 CRICKET O
 - O
@@ -2515,7 +2515,7 @@ SCORE O
 Davor O
 Suker O
 9-2 O
-Ronaldo B-PER
+Ronaldo O
 
 207 O
 Clinton O
@@ -2528,7 +2528,7 @@ Mark O
 Cayeux O
 ( O
 Zimbabwe O
-) B-PER
+) O
 
 3. O
 Andreas O
@@ -2541,7 +2541,7 @@ Austria O
 144.4 O
 / O
 130 O
-) B-PER
+) O
 
 " O
 As O
@@ -2581,7 +2581,7 @@ GeePee O
 . O
 
 OMAHA O
-1996-12-06 B-PER
+1996-12-06 O
 
 30. O
 Alessandra O
@@ -2589,18 +2589,18 @@ Merlin O
 ( O
 Italy O
 ) O
-1:51.16 B-ORG
+1:51.16 O
 
 LA O
 LAKERS O
 92 O
 Orlando O
-81 B-PER
+81 O
 
 HOBART O
 , O
 Australia O
-1996-12-07 B-PER
+1996-12-07 O
 
 Woman O
 charged O
@@ -2654,7 +2654,7 @@ between O
 Pakistan O
 and O
 New O
-Zealand B-PER
+Zealand O
 
 HOUSTON O
 16 O
@@ -2734,7 +2734,7 @@ U.S. O
 ) O
 69 O
 67 O
-76 B-PER
+76 O
 
 NBA O
 BASKETBALL O
@@ -2811,7 +2811,7 @@ ISLANDERS O
 8 O
 65 O
 72 O
-22 B-PER
+22 O
 
 10,719 B-ORG
 
@@ -2830,7 +2830,7 @@ Gladishiva O
 ( O
 Russia O
 ) O
-137 B-ORG
+137 O
 
 He O
 said O
@@ -2976,7 +2976,7 @@ Steel O
 . O
 
 PaineWebber O
-Incorporated B-PER
+Incorporated O
 
 Iowa-S O
 Minn O
@@ -3058,7 +3058,7 @@ said O
 W O
 L O
 PCT O
-GB B-PER
+GB O
 
 Weah O
 has O
@@ -3191,7 +3191,7 @@ attack O
 Leading O
 results O
 in O
-a B-LOC
+a O
 
 The O
 official O
@@ -3391,7 +3391,7 @@ Auxerre O
 4 O
 26 O
 12 O
-32 B-PER
+32 O
 
 Aninat O
 also O
@@ -3418,10 +3418,10 @@ RANGERS O
 5 O
 91 O
 81 O
-25 B-PER
+25 O
 
 AMSTERDAM O
-1996-12-06 B-PER
+1996-12-06 O
 
 Stefano O
 Bordon O
@@ -3461,7 +3461,7 @@ team O
 Phoenix O
 101 O
 SACRAMENTO O
-95 B-PER
+95 O
 
 Rashid O
 , O
@@ -3500,7 +3500,7 @@ in O
 . O
 
 Attendance O
-29,300 B-PER
+29,300 O
 
 Physical O
 prices O
@@ -3535,12 +3535,12 @@ Atwood O
 Santiago O
 newsroom O
 +56-2-699-5595 O
-x211 B-PER
+x211 O
 
 TORONTO O
 AT O
 NY O
-RANGERS B-PER
+RANGERS O
 
 PT O
 Tambang O
@@ -3574,7 +3574,7 @@ Olafsson O
 
 MINNESOTA O
 AT O
-UTAH B-LOC
+UTAH O
 
 Saturday O
 's O
@@ -3657,7 +3657,7 @@ FIXED O
 MINIMUM O
 AT O
 1230 O
-CST B-PER
+CST O
 
 She O
 and O
@@ -3694,10 +3694,10 @@ MINNESOTA O
 6 O
 0 O
 243 O
-245 B-PER
+245 O
 
 BRATISLAVA O
-1996-12-06 B-PER
+1996-12-06 O
 
 Winds O
 up O
@@ -3764,7 +3764,7 @@ minute O
 . O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 PT O
 Telekomunikasi O
@@ -3845,11 +3845,11 @@ FLORIDA O
 4 O
 Ny O
 Islanders O
-2 B-PER
+2 O
 
 Men O
 's O
-singles B-PER
+singles O
 
 SOCCER O
 - O
@@ -3868,7 +3868,7 @@ Marken O
 ( O
 Norway O
 ) O
-1:19.54 B-ORG
+1:19.54 O
 
 4. O
 Grunde O
@@ -3876,14 +3876,14 @@ Njos O
 ( O
 Norway O
 ) O
-1:16.44 B-ORG
+1:16.44 O
 
 Flax O
 165.2 O
 181.9 O
 14.9 O
 231.4 O
-332.9 B-PER
+332.9 O
 
 BOSTON O
 4 O
@@ -3901,7 +3901,7 @@ Huber O
 Antonio O
 Tartaglia O
 ) O
-1:45.93 B-ORG
+1:45.93 O
 
 Good O
 news O
@@ -3962,7 +3962,7 @@ defeats O
 Men O
 's O
 10 O
-kms B-PER
+kms O
 
 In O
 the O
@@ -4053,7 +4053,7 @@ Meiluawati O
 Indonesia O
 ) O
 11-6 O
-12-10 B-PER
+12-10 O
 
 He O
 was O
@@ -4090,7 +4090,7 @@ Goetschl O
 ( O
 Austria O
 ) O
-1:18.98 B-ORG
+1:18.98 O
 
 But O
 he O
@@ -4167,10 +4167,10 @@ added O
 
 National O
 Football O
-League B-PER
+League O
 
 Group O
-D B-PER
+D O
 
 9. O
 Ingeborg O
@@ -4179,7 +4179,7 @@ Markein O
 ( O
 Norway O
 ) O
-58 B-ORG
+58 O
 
 Indian O
 rubber O
@@ -4191,7 +4191,7 @@ production O
 
 BUFFALO O
 AT O
-HARTFORD B-LOC
+HARTFORD O
 
 It O
 was O
@@ -4215,7 +4215,7 @@ Middlesbrough O
 ) O
 , O
 Alan O
-Shearer B-PER
+Shearer O
 
 It O
 recorded O
@@ -4240,10 +4240,10 @@ Sunseeds O
 219 O
 216 O
 220 O
-216 B-PER
+216 O
 
 Vithoon O
-Amorn B-PER
+Amorn O
 
 They O
 were O
@@ -4311,7 +4311,7 @@ Leu O
 ( O
 Switzerland O
 ) O
-160.36 B-ORG
+160.36 O
 
 Men O
 's O
@@ -4328,7 +4328,7 @@ Women B-ORG
 Coventry O
 1 O
 Tottenham O
-2 B-PER
+2 O
 
 3. O
 Isolde O
@@ -4336,7 +4336,7 @@ Kostner O
 ( O
 Italy O
 ) O
-1:48.91 B-ORG
+1:48.91 O
 
 The O
 violence O
@@ -4361,7 +4361,7 @@ Jerusalem O
 W O
 L O
 PCT O
-GB B-PER
+GB O
 
 DETROIT O
 15 O
@@ -4369,7 +4369,7 @@ DETROIT O
 4 O
 81 O
 53 O
-34 B-PER
+34 O
 
 ( O
 ( O
@@ -4377,10 +4377,10 @@ Winnipeg O
 bureau O
 204-947-3548 O
 ) O
-) B-ORG
+) O
 
 BANGKOK O
-1996-11-29 B-PER
+1996-11-29 O
 
 DALLAS O
 6 O
@@ -4390,7 +4390,7 @@ DALLAS O
 1/2 O
 
 ROME O
-1996-12-06 B-PER
+1996-12-06 O
 
 A O
 controlled O
@@ -4481,7 +4481,7 @@ Swansea O
 8 O
 25 O
 25 O
-32 B-PER
+32 O
 
 lost O
 , O
@@ -4507,7 +4507,7 @@ HOUSTON O
 6 O
 0 O
 291 O
-254 B-PER
+254 O
 
 NORTHEAST O
 DIVISION O
@@ -4629,7 +4629,7 @@ Friday O
 Barnet O
 3 O
 Wycombe O
-3 B-PER
+3 O
 
 1. O
 Katja O
@@ -4694,14 +4694,14 @@ act O
 ) O
 685,000 O
 31,000 O
-1,914,000 B-PER
+1,914,000 O
 
 Results O
 of O
 English O
 league O
 and O
-cup B-LOC
+cup O
 
 0-2 O
 . O
@@ -4721,7 +4721,7 @@ Marshall O
 ( O
 Australia O
 ) O
-154.60 B-ORG
+154.60 O
 
 Syria O
 - O
@@ -4733,7 +4733,7 @@ Jokhadar O
 London O
 Newsroom O
 +44-171-542 O
-7717 B-PER
+7717 O
 
 First O
 run O
@@ -4807,7 +4807,7 @@ in O
 the O
 men O
 's O
-EuroLeague B-PER
+EuroLeague O
 
 The O
 Wallabies O
@@ -4853,7 +4853,7 @@ game O
 12/15/2003 O
 265M O
 4.40 O
-4.40 B-PER
+4.40 O
 
 It O
 added O
@@ -4972,7 +4972,7 @@ newsdesk O
 312 O
 408 O
 8720 O
-) B-PER
+) O
 
 Athletic O
 Bilbao O
@@ -4992,7 +4992,7 @@ Y O
 -- O
 CLINCHED O
 PLAYOFF O
-BERTH B-PER
+BERTH O
 
 Along O
 with O
@@ -5028,7 +5028,7 @@ stock O
 1-0 O
 13-2 O
 1-0 O
-15-2 B-PER
+15-2 O
 
 Jin O
 Hua O
@@ -5048,7 +5048,7 @@ Jakobsen O
 Copenhagen O
 newsroom O
 +45 O
-33969650 B-PER
+33969650 O
 
 Lara O
 looked O
@@ -5083,10 +5083,10 @@ PHILADELPHIA O
 ALBUQUERQUE O
 , O
 N.M. O
-1996-12-05 B-PER
+1996-12-05 O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Italy O
 said O
@@ -5148,7 +5148,7 @@ units O
 VAIL O
 , O
 Colorado O
-1996-12-07 B-PER
+1996-12-07 O
 
 Timah O
 at O
@@ -5167,7 +5167,7 @@ Portsmouth O
 10 O
 25 O
 29 O
-26 B-PER
+26 O
 
 1. O
 Tatjana O
@@ -5175,7 +5175,7 @@ Mittermayer O
 ( O
 Germany O
 ) O
-24.32 B-ORG
+24.32 O
 
 He O
 said O
@@ -5213,7 +5213,7 @@ Bolton O
 2 O
 43 O
 28 O
-41 B-PER
+41 O
 
 Liberian O
 striker O
@@ -5238,7 +5238,7 @@ midfield O
 . O
 
 Steven O
-Silber B-PER
+Silber O
 
 A O
 French-owned O
@@ -5269,7 +5269,7 @@ money O
 . O
 
 ROME O
-1996-12-06 B-PER
+1996-12-06 O
 
 2001 O
 4.20 O
@@ -5279,7 +5279,7 @@ ROME O
 4.65 O
 4.65 O
 5.00 O
-5.00 B-PER
+5.00 O
 
 Zywiec O
 is O
@@ -5298,7 +5298,7 @@ Okocim O
 . O
 
 PARIS O
-1996-12-06 B-PER
+1996-12-06 O
 
 INTERVIEW-ZYWIEC O
 SEES O
@@ -5315,7 +5315,7 @@ Brauner O
 ( O
 Germany O
 ) O
-1:18.81 B-ORG
+1:18.81 O
 
 Rayo O
 Vallecano O
@@ -5436,7 +5436,7 @@ Thistle O
 3 O
 28 O
 20 O
-29 B-PER
+29 O
 
 * O
 The O
@@ -5472,7 +5472,7 @@ Ijaz O
 Ahmad O
 b O
 Saqlain O
-37 B-PER
+37 O
 
 K.J. O
 Matthew O
@@ -5510,7 +5510,7 @@ tonnes O
 . O
 
 WASHINGTON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Crusaders O
 10 O
@@ -5528,15 +5528,15 @@ Nabil O
 Abu O
 Rdainah O
 said O
-: B-PER
+: O
 
 KANPUR O
 , O
 India O
-1996-12-07 B-PER
+1996-12-07 O
 
 ROME O
-1996-12-06 B-PER
+1996-12-06 O
 
 Defender O
 Hassan O
@@ -5677,7 +5677,7 @@ County O
 6 O
 27 O
 23 O
-27 B-PER
+27 O
 
 ' O
 ' O
@@ -5705,12 +5705,12 @@ X O
 -- O
 CLINCHED O
 DIVISION O
-TITLE B-PER
+TITLE O
 
 14-1 O
 Real O
 Madrid O
-Draw B-PER
+Draw O
 
 The O
 radio O
@@ -5817,10 +5817,10 @@ Belgium O
 12/15/2010 O
 1,250M O
 5.15 O
-5.15 B-PER
+5.15 O
 
 HARARE O
-1996-12-06 B-PER
+1996-12-06 O
 
 NYMEX O
 Henry O
@@ -5884,7 +5884,7 @@ Hearts O
 4 O
 18 O
 19 O
-21 B-PER
+21 O
 
 Racing O
 Santander O
@@ -5899,18 +5899,18 @@ Santander O
 HOBART O
 , O
 Australia O
-1996-12-06 B-PER
+1996-12-06 O
 
 CENTRAL O
-DIVISION B-PER
+DIVISION O
 
 TIGNES O
 , O
 France O
-1996-12-06 B-PER
+1996-12-06 O
 
 CHICAGO O
-1996-12-06 B-PER
+1996-12-06 O
 
 West O
 Indies O
@@ -5975,7 +5975,7 @@ RESULTS O
 . O
 
 TOKYO O
-1996-12-06 B-PER
+1996-12-06 O
 
 The O
 group O
@@ -6006,14 +6006,14 @@ said O
 . O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 SOFIA O
-1996-12-06 B-PER
+1996-12-06 O
 
 Standings O
 ( O
@@ -6070,7 +6070,7 @@ Jerusalem O
 4 O
 
 MOSCOW O
-1996-12-06 B-PER
+1996-12-06 O
 
 19. O
 Stefanie O
@@ -6078,14 +6078,14 @@ Schuster O
 ( O
 Austria O
 ) O
-89 B-ORG
+89 O
 
 Bristol O
 City O
 9 O
 St O
 Albans O
-2 B-PER
+2 O
 
 Russia O
 opposes O
@@ -6139,7 +6139,7 @@ Velde O
 ( O
 Netherlands O
 ) O
-1:16.63 B-ORG
+1:16.63 O
 
 1. O
 Svetlana O
@@ -6203,14 +6203,14 @@ Perez O
 ( O
 Italy O
 ) O
-30 B-ORG
+30 O
 
 Tampa O
 Bay O
 2 O
 LOS O
 ANGELES O
-1 B-PER
+1 O
 
 Bowling O
 : O
@@ -6224,7 +6224,7 @@ Akram O
 ) O
 , O
 Waqar O
-Younis B-PER
+Younis O
 
 Costa O
 has O
@@ -6309,7 +6309,7 @@ the O
 PLO O
 . O
 
-) B-MISC
+) B-ORG
 
 ( O
 tabulate O
@@ -6331,7 +6331,7 @@ Zelenskaja O
 ( O
 Russia O
 ) O
-51 B-ORG
+51 O
 
 The O
 sharp O
@@ -6419,7 +6419,7 @@ Corn O
 87.0 O
 0.6 O
 22.1 O
-11.1 B-PER
+11.1 O
 
 In O
 a O
@@ -6450,7 +6450,7 @@ Waltman O
 Bradford O
 Vaughan O
 72 O
-71 B-PER
+71 O
 
 Thai O
 rice O
@@ -6616,7 +6616,7 @@ Kostner O
 ( O
 Italy O
 ) O
-60 B-ORG
+60 O
 
 Syria O
 1 O
@@ -6625,7 +6625,7 @@ Syria O
 1 O
 1 O
 2 O
-0 B-ORG
+0 O
 
 United O
 Arab O
@@ -6636,11 +6636,11 @@ Kuwait O
 ( O
 halftime O
 0-2 O
-) B-PER
+) O
 
 4. O
 Okabe O
-146 B-PER
+146 O
 
 Summaries O
 of O
@@ -6681,7 +6681,7 @@ Nantes O
 5 O
 41 O
 25 O
-30 B-PER
+30 O
 
 10. O
 Primoz O
@@ -6689,7 +6689,7 @@ Peterka O
 ( O
 Slovakia O
 ) O
-76 B-ORG
+76 O
 
 " O
 I O
@@ -6747,7 +6747,7 @@ Lindh O
 United O
 States O
 ) O
-1:50.69 B-ORG
+1:50.69 O
 
 If O
 it O
@@ -6769,7 +6769,7 @@ said O
 
 CLEVELAND O
 AT O
-DETROIT B-LOC
+DETROIT O
 
 6. O
 Heidi O
@@ -6777,7 +6777,7 @@ Zurbriggen O
 ( O
 Switzerland O
 ) O
-153 B-ORG
+153 O
 
 RUGBY O
 UNION O
@@ -6885,7 +6885,7 @@ Lyon O
 6 O
 24 O
 31 O
-26 B-PER
+26 O
 
 28. O
 Alexandra O
@@ -6893,7 +6893,7 @@ Meissnitzer O
 ( O
 Austria O
 ) O
-1:19.53 B-ORG
+1:19.53 O
 
 The O
 rebels O
@@ -7006,7 +7006,7 @@ of O
 . O
 
 AMARILLO O
-1996-12-06 B-PER
+1996-12-06 O
 
 4. O
 Eric O
@@ -7014,11 +7014,11 @@ Bergoust O
 ( O
 U.S O
 ) O
-207.15 B-ORG
+207.15 O
 
 6. O
 Saitoh O
-121 B-PER
+121 O
 
 I O
 've O
@@ -7365,7 +7365,7 @@ Ireland O
 
 NEW O
 YORK O
-1996-12-07 B-PER
+1996-12-07 O
 
 Cagliari O
 start O
@@ -7423,7 +7423,7 @@ Ibrahim O
 . O
 
 MELBOURNE O
-1996-12-06 B-PER
+1996-12-06 O
 
 More O
 than O
@@ -7496,7 +7496,7 @@ Gilg O
 ( O
 France O
 ) O
-24.31 B-ORG
+24.31 O
 
 Middlesbrough O
 17 O
@@ -7512,14 +7512,14 @@ MIAMI O
 7 O
 0 O
 285 O
-266 B-PER
+266 O
 
 -- O
 Moscow O
 Newsroom O
 +7095 O
 941 O
-8520 B-PER
+8520 O
 
 NHL O
 ICE O
@@ -7578,7 +7578,7 @@ Lueders O
 Dave O
 MacEachern O
 ) O
-1:45.94 B-ORG
+1:45.94 O
 
 Interfax O
 , O
@@ -7776,7 +7776,7 @@ L O
 T O
 GF O
 GA O
-PTS B-PER
+PTS O
 
 Brighton O
 22 O
@@ -7788,16 +7788,16 @@ Brighton O
 13 O
 
 COPENHAGEN O
-1996-12-06 B-PER
+1996-12-06 O
 
 UNITED O
 NATIONS O
-1996-12-06 B-PER
+1996-12-06 O
 
 3-2 O
 25-1 O
 3-2 O
-25-1 B-PER
+25-1 O
 
 Delphis O
 Hanover O
@@ -7863,7 +7863,7 @@ Harper O
 . O
 
 LATEST O
-ACTUAL B-PER
+ACTUAL O
 
 Arbroath O
 16 O
@@ -7964,7 +7964,7 @@ SUMMARIES O
 52.82 O
 / O
 53.13 O
-) B-PER
+) O
 
 WASHINGTON O
 7 O
@@ -7973,7 +7973,7 @@ WASHINGTON O
 6 O
 
 GLASGOW O
-1996-12-07 B-PER
+1996-12-07 O
 
 It O
 does O
@@ -8088,7 +8088,7 @@ do O
 n't O
 believe O
 it O
-... B-PER
+... O
 
 SAN O
 FRANCISCO O
@@ -8096,17 +8096,17 @@ FRANCISCO O
 3 O
 0 O
 325 O
-198 B-PER
+198 O
 
 ST O
 LOUIS O
 AT O
-CHICAGO B-LOC
+CHICAGO O
 
 3-1 O
 16-1 O
 3-1 O
-22-1 B-PER
+22-1 O
 
 Mexican O
 stocks O
@@ -8197,7 +8197,7 @@ Austria O
 119.7 O
 / O
 132.9 O
-) B-PER
+) O
 
 Pontypridd O
 53 O
@@ -8221,7 +8221,7 @@ JERSEY O
 1 O
 61 O
 61 O
-29 B-PER
+29 O
 
 The O
 Labour O
@@ -8258,7 +8258,7 @@ Cooper O
 ( O
 Australia O
 ) O
-156.52 B-ORG
+156.52 O
 
 MONDAY O
 , O
@@ -8271,7 +8271,7 @@ Horvat O
 ( O
 Slovenia O
 ) O
-108 B-ORG
+108 O
 
 Moody O
 10-1-25-2 O
@@ -8284,7 +8284,7 @@ Warne O
 ( O
 w-1 O
 ) O
-, B-ORG
+, O
 
 Leading O
 goalscorers O
@@ -8297,7 +8297,7 @@ Ertl O
 ( O
 Germany O
 ) O
-58 B-ORG
+58 O
 
 Bnei O
 Yehuda O
@@ -8316,7 +8316,7 @@ control O
 them O
 all O
 ? O
-" B-PER
+" O
 
 The O
 official O
@@ -8426,10 +8426,10 @@ COLORADO O
 4 O
 97 O
 56 O
-38 B-PER
+38 O
 
 BELFAST O
-1996-12-06 B-PER
+1996-12-06 O
 
 Willem O
 II O
@@ -8445,10 +8445,10 @@ Tilburg O
 SAN O
 DIEGO O
 AT O
-PITTSBURGH B-LOC
+PITTSBURGH O
 
 CANBERRA O
-1996-12-06 B-PER
+1996-12-06 O
 
 Heavy O
 rains O
@@ -8495,7 +8495,7 @@ deal O
 
 BUFFALO O
 AT O
-SEATTLE B-LOC
+SEATTLE O
 
 Alatas O
 said O
@@ -8634,7 +8634,7 @@ Swindon O
 11 O
 32 O
 28 O
-29 B-PER
+29 O
 
 Indian O
 synthetic O
@@ -8663,7 +8663,7 @@ LA O
 CLIPPERS O
 AT O
 NEW O
-YORK B-PER
+YORK O
 
 NBA O
 BASKETBALL O
@@ -8747,7 +8747,7 @@ children O
 
 3. O
 Goldberger O
-160 B-PER
+160 O
 
 South O
 Korea O
@@ -8805,7 +8805,7 @@ Wachter O
 ( O
 Austria O
 ) O
-1:19.21 B-ORG
+1:19.21 O
 
 The O
 BJP O
@@ -8937,7 +8937,7 @@ lbs O
 . O
 
 WINNIPEG O
-1996-12-06 B-PER
+1996-12-06 O
 
 Thursday O
 600 O
@@ -8946,7 +8946,7 @@ ago O
 holiday O
 year O
 ago O
-14,200 B-PER
+14,200 O
 
 Mike O
 Cito O
@@ -8988,10 +8988,10 @@ referee O
 
 1. O
 Behle O
-89 B-PER
+89 O
 
 half-time O
-full-time B-PER
+full-time O
 
 Let O
 's O
@@ -9022,7 +9022,7 @@ United O
 6 O
 17 O
 17 O
-17 B-PER
+17 O
 
 Bowling O
 : O
@@ -9034,7 +9034,7 @@ nb-3 O
 , O
 Gillespie O
 10-0-39-2 O
-, B-MISC
+, O
 
 NY O
 JETS O
@@ -9042,7 +9042,7 @@ JETS O
 12 O
 0 O
 221 O
-368 B-PER
+368 O
 
 Comments O
 by O
@@ -9082,7 +9082,7 @@ Friday O
 . O
 
 BEIRUT O
-1996-12-06 B-PER
+1996-12-06 O
 
 68 O
 , O
@@ -9106,7 +9106,7 @@ Dion O
 Fourie O
 69 O
 73 O
-, B-MISC
+, O
 
 " O
 Some O
@@ -9125,7 +9125,7 @@ convinced O
 
 Chicago O
 8,674 O
-484,018 B-PER
+484,018 O
 
 11. O
 Florence O
@@ -9133,7 +9133,7 @@ Masnada O
 ( O
 France O
 ) O
-133 B-ORG
+133 O
 
 Two O
 barges O
@@ -9269,10 +9269,10 @@ Caribbean O
 : O
 
 BRUSSELS O
-1996-12-06 B-PER
+1996-12-06 O
 
 - O
-USDA B-PER
+USDA O
 
 Cuttitta O
 , O
@@ -9357,10 +9357,10 @@ Foucras O
 ( O
 France O
 ) O
-223.60 B-ORG
+223.60 O
 
 WARSAW O
-1996-12-06 B-PER
+1996-12-06 O
 
 Maccabi O
 Tel O
@@ -9381,10 +9381,10 @@ Breda O
 9 O
 17 O
 29 O
-21 B-PER
+21 O
 
 Group O
-D B-PER
+D O
 
 Moslem O
 fundamentalists O
@@ -9412,18 +9412,18 @@ Durum O
 1225.0 O
 44.3 O
 965.3 O
-1069.6 B-PER
+1069.6 O
 
 Iran O
 Sabr O
 19/11/96 O
 9,000 O
-Iran B-PER
+Iran O
 
 Arsenal O
 2 O
 Derby O
-2 B-PER
+2 O
 
 GOLF O
 - O
@@ -9442,7 +9442,7 @@ Gauthier O
 ( O
 Canada O
 ) O
-22.73 B-ORG
+22.73 O
 
 19= O
 Kate O
@@ -9451,7 +9451,7 @@ Lindsay O
 ( O
 Canada O
 ) O
-23 B-ORG
+23 O
 
 Semifinals O
 ( O
@@ -9465,10 +9465,10 @@ Permadi O
 Taiwan O
 ) O
 v O
-Indra B-ORG
+Indra O
 
 PARIS O
-1996-12-06 B-PER
+1996-12-06 O
 
 Physical O
 prices O
@@ -9519,7 +9519,7 @@ Perugia O
 ( O
 8 O
 ) O
-1330 B-ORG
+1330 O
 
 WESTERN O
 HEMISPHERE O
@@ -9539,7 +9539,7 @@ lost O
 , O
 goals O
 for O
-, B-LOC
+, O
 
 Lahd O
 said O
@@ -9617,10 +9617,10 @@ Kyou-hyuk O
 South O
 Korea O
 ) O
-1:16.47 B-ORG
+1:16.47 O
 
 Group O
-B B-PER
+B O
 
 MINNESOTA O
 7 O
@@ -9637,12 +9637,12 @@ Palace O
 4 O
 46 O
 22 O
-35 B-PER
+35 O
 
 12/15/2012 O
 1,200M O
 5.25 O
-5.30 B-PER
+5.30 O
 
 , O
 $ O
@@ -9704,7 +9704,7 @@ Ireland O
 . O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 The O
 Clinton O
@@ -9769,7 +9769,7 @@ TAMPA O
 BAY O
 AT O
 SAN O
-JOSE B-PER
+JOSE O
 
 By O
 selling O
@@ -9893,7 +9893,7 @@ added O
 . O
 
 - O
-USDA B-PER
+USDA O
 
 DALLAS O
 6 O
@@ -9904,11 +9904,11 @@ DALLAS O
 
 UTAH O
 AT O
-DENVER B-LOC
+DENVER O
 
 Draw O
 : O
-9-4 B-PER
+9-4 O
 
 One O
 Australian O
@@ -9938,12 +9938,12 @@ Bassis O
 ( O
 Italy O
 ) O
-1:51.13 B-ORG
+1:51.13 O
 
 TIGNES O
 , O
 France O
-1996-12-07 B-PER
+1996-12-07 O
 
 In O
 U.S. O
@@ -9980,10 +9980,10 @@ Espanyol O
 7 O
 17 O
 20 O
-16 B-PER
+16 O
 
 MELBOURNE O
-1996-12-06 B-PER
+1996-12-06 O
 
 BADMINTON O
 - O
@@ -10036,7 +10036,7 @@ with O
 . O
 
 HOUSTON O
-1996-12-05 B-PER
+1996-12-05 O
 
 Final O
 : O
@@ -10196,7 +10196,7 @@ Oct O
 68.00 O
 68.05 O
 63.98 O
-65.43-70.16 B-PER
+65.43-70.16 O
 
 Wasim O
 Akram O
@@ -10285,7 +10285,7 @@ tonnes O
 . O
 
 JERUSALEM O
-1996-12-07 B-PER
+1996-12-07 O
 
 Goalkeepers O
 - O
@@ -10297,7 +10297,7 @@ Prunea O
 . O
 
 BRUSSELS O
-1996-12-06 B-PER
+1996-12-06 O
 
 Burmese O
 students O
@@ -10314,7 +10314,7 @@ Zurbriggen O
 ( O
 Switzerland O
 ) O
-69 B-ORG
+69 O
 
 Do O
 you O
@@ -10333,7 +10333,7 @@ not O
 at O
 that O
 time O
-? B-PER
+? O
 
 * O
 The O
@@ -10509,7 +10509,7 @@ Partick O
 4 O
 23 O
 16 O
-24 B-PER
+24 O
 
 Canadian O
 Defence O
@@ -10547,7 +10547,7 @@ Chesterfield O
 6 O
 22 O
 16 O
-37 B-PER
+37 O
 
 0-1 O
 . O
@@ -10669,7 +10669,7 @@ virus O
 WASHINGTON O
 AT O
 TAMPA O
-BAY B-PER
+BAY O
 
 Pakistan O
 , O
@@ -10732,7 +10732,7 @@ act O
 ) O
 132,000 O
 6,000 O
-336,000 B-PER
+336,000 O
 
 Frankfurt O
 dollar O
@@ -10789,7 +10789,7 @@ Caen O
 10 O
 12 O
 23 O
-16 B-PER
+16 O
 
 He O
 has O
@@ -10824,13 +10824,13 @@ Italy O
 ( O
 halftime O
 44-35 O
-) B-PER
+) O
 
 Cambridge O
 United O
 0 O
 Woking O
-2 B-PER
+2 O
 
 ( O
 ( O
@@ -10838,7 +10838,7 @@ Chicago O
 Newsdesk O
 312-408-8720 O
 ) O
-) B-ORG
+) O
 
 Stoke O
 2 O
@@ -10909,12 +10909,12 @@ Grimsby O
 RIO O
 DE O
 JANEIRO O
-1996-12-05 B-PER
+1996-12-05 O
 
 Budisuryana O
 22/11/96 O
 3,800 O
-Malaysia B-PER
+Malaysia O
 
 West O
 Bromwich O
@@ -10924,7 +10924,7 @@ Bromwich O
 6 O
 26 O
 31 O
-24 B-PER
+24 O
 
 Two O
 Manchester O
@@ -10996,7 +10996,7 @@ Wrexham O
 3 O
 27 O
 22 O
-35 B-PER
+35 O
 
 Charlton O
 2 O
@@ -11038,7 +11038,7 @@ Friday O
 BOMBAY O
 , O
 India O
-1996-12-06 B-PER
+1996-12-06 O
 
 There O
 is O
@@ -11156,7 +11156,7 @@ Waalwijk O
 Willem O
 II O
 Tilburg O
-2 B-PER
+2 O
 
 with O
 the O
@@ -11209,7 +11209,7 @@ Wachter O
 ( O
 Austria O
 ) O
-1:50.10 B-ORG
+1:50.10 O
 
 TORONTO O
 6 O
@@ -11262,11 +11262,11 @@ Milan O
 sink O
 any O
 further O
-? B-PER
+? O
 
 Attendance O
 : O
-2,000 B-PER
+2,000 O
 
 " O
 Some O
@@ -11318,7 +11318,7 @@ FLORIDA O
 6 O
 83 O
 53 O
-40 B-PER
+40 O
 
 New O
 York O
@@ -11362,7 +11362,7 @@ value O
 25-1 O
 Barcelona O
 Real O
-Madrid B-PER
+Madrid O
 
 Japan O
 2 O
@@ -11371,14 +11371,14 @@ Syria O
 ( O
 halftime O
 0-1 O
-) B-PER
+) O
 
 40-1 O
 Carlos O
 Secretario O
 28-1 O
 Sergi O
-Barjuan B-PER
+Barjuan O
 
 Men O
 : O
@@ -11633,7 +11633,7 @@ Chicago O
 newsdesk O
 312-408-8720 O
 ) O
-) B-ORG
+) O
 
 January O
 crude O
@@ -11665,7 +11665,7 @@ Coast O
 
 ( O
 Newcastle O
-) B-PER
+) O
 
 - O
 Gulf O
@@ -11680,7 +11680,7 @@ Saturday O
 
 World O
 Cup O
-standings B-PER
+standings O
 
 He O
 had O
@@ -11774,7 +11774,7 @@ Lindh O
 ( O
 U.S. O
 ) O
-1:19.41 B-ORG
+1:19.41 O
 
 NEW O
 JERSEY O
@@ -11810,7 +11810,7 @@ Indiana O
 86 O
 GOLDEN O
 STATE O
-71 B-PER
+71 O
 
 Chinese O
 girl O
@@ -11831,7 +11831,7 @@ Greece O
 12 O
 
 MOSCOW O
-1996-12-06 B-PER
+1996-12-06 O
 
 Bomb O
 explodes O
@@ -11847,7 +11847,7 @@ Soybeans O
 283 O
 unq O
 283 O
-unq B-PER
+unq O
 
 No O
 weather-related O
@@ -11882,7 +11882,7 @@ Yr O
 to O
 Date O
 Yr O
-Ago B-PER
+Ago O
 
 EPA O
 says O
@@ -11895,14 +11895,14 @@ data O
 . O
 
 Edna O
-Fernandes B-PER
+Fernandes O
 
 Oldham O
 0 O
 Queens O
 Park O
 Rangers O
-2 B-PER
+2 O
 
 Nebraska O
 fed O
@@ -11927,16 +11927,16 @@ Barley O
 506.0 O
 48.2 O
 941.0 O
-786.6 B-PER
+786.6 O
 
 PRAGUE O
-1996-12-06 B-PER
+1996-12-06 O
 
 W O
 L O
 T O
 PF O
-PA B-PER
+PA O
 
 Senegal O
 proposes O
@@ -11949,10 +11949,10 @@ post O
 
 NEW O
 DELHI O
-1996-12-06 B-PER
+1996-12-06 O
 
 MELBOURNE O
-1996-12-06 B-PER
+1996-12-06 O
 
 SOCCER O
 - O
@@ -11996,7 +11996,7 @@ race O
 
 DES O
 MOINES O
-1996-12-06 B-PER
+1996-12-06 O
 
 Merwe O
 ( O
@@ -12011,7 +12011,7 @@ Swart O
 75 O
 64 O
 73 O
-, B-MISC
+, O
 
 Radio O
 Romania O
@@ -12025,12 +12025,12 @@ Kostner O
 ( O
 Italy O
 ) O
-65 B-ORG
+65 O
 
 Mansfield O
 0 O
 Stockport O
-3 B-PER
+3 O
 
 They O
 last O
@@ -12076,7 +12076,7 @@ in O
 
 CHARLOTTE O
 AT O
-PORTLAND B-LOC
+PORTLAND O
 
 Med O
 oil O
@@ -12095,7 +12095,7 @@ newsroom O
 ( O
 662 O
 ) O
-652-0642 B-ORG
+652-0642 O
 
 Ards O
 0 O
@@ -12104,7 +12104,7 @@ Crusaders O
 
 OTTAWA O
 AT O
-VANCOUVER B-LOC
+VANCOUVER O
 
 ORE O
 - O
@@ -12152,7 +12152,7 @@ PITTSBURGH O
 3 O
 81 O
 91 O
-21 B-PER
+21 O
 
 The O
 new O
@@ -12188,7 +12188,7 @@ Dent O
 113 O
 114 O
 113.7 O
-112 B-PER
+112 O
 
 Violent O
 crime O
@@ -12275,7 +12275,7 @@ Strasbourg O
 8 O
 27 O
 27 O
-34 B-PER
+34 O
 
 Inzamamul O
 Haq O
@@ -12283,7 +12283,7 @@ st O
 Germon O
 b O
 Astle O
-2 B-PER
+2 O
 
 MILWAUKEE O
 8 O
@@ -12295,7 +12295,7 @@ W O
 L O
 T O
 PF O
-PA B-PER
+PA O
 
 He O
 said O
@@ -12393,7 +12393,7 @@ Schenk O
 ( O
 Germany O
 ) O
-1:23.17 B-ORG
+1:23.17 O
 
 BOBSLEIGH-SHIMER O
 PILOTS O
@@ -12407,13 +12407,13 @@ WIN O
 Livingston O
 2 O
 Stenhousemuir O
-1 B-PER
+1 O
 
 20-1 O
 Luis O
 Milla O
 25-1 O
-Luis B-PER
+Luis O
 
 Results O
 of O
@@ -12424,7 +12424,7 @@ division O
 Women O
 's O
 7.5 O
-kms B-PER
+kms O
 
 Scorers O
 : O
@@ -12575,14 +12575,14 @@ Madrid O
 4 O
 26 O
 17 O
-27 B-PER
+27 O
 
 JACKSONVILLE O
 6 O
 7 O
 0 O
 263 O
-288 B-PER
+288 O
 
 Ahold O
 has O
@@ -12605,7 +12605,7 @@ worldwide O
 Bucharest O
 Newsroom O
 40-1 O
-3120264 B-PER
+3120264 O
 
 If O
 he O
@@ -12658,7 +12658,7 @@ said O
 
 Men O
 's O
-singles B-PER
+singles O
 
 Charleroi O
 ( O
@@ -12673,7 +12673,7 @@ Spain O
 82 O
 ( O
 34-35 O
-) B-PER
+) O
 
 Middlesbrough O
 0 O
@@ -12688,7 +12688,7 @@ seconds O
 52.90 O
 / O
 53.01 O
-) B-PER
+) O
 
 Earnings O
 in O
@@ -12818,14 +12818,14 @@ Hole O
 ( O
 Norway O
 ) O
-23.92 B-ORG
+23.92 O
 
 Paris O
 St O
 Germain O
 1 O
 Nancy O
-2 B-PER
+2 O
 
 Philadelphia O
 , O
@@ -12884,7 +12884,7 @@ checking O
 . O
 
 CHICAGO O
-1996-12-06 B-PER
+1996-12-06 O
 
 In O
 a O
@@ -12930,7 +12930,7 @@ headquartered O
 
 Standings O
 of O
-National B-LOC
+National O
 
 The O
 number O
@@ -13015,10 +13015,10 @@ L O
 T O
 GF O
 GA O
-PTS B-PER
+PTS O
 
 BUCHAREST O
-1996-12-06 B-PER
+1996-12-06 O
 
 Hapoel O
 Beersheba O
@@ -13032,19 +13032,19 @@ Beersheba O
 
 3. O
 Switzerland O
-972 B-PER
+972 O
 
 CENTRAL O
-DIVISION B-PER
+DIVISION O
 
 Chicago O
 0 O
-0 B-ORG
+0 O
 
 SIALKOT O
 , O
 Pakistan O
-1996-12-06 B-PER
+1996-12-06 O
 
 Investigators O
 have O
@@ -13193,7 +13193,7 @@ $ O
 1=32.14 O
 Belgian O
 Franc O
-) B-PER
+) O
 
 Brentford O
 22 O
@@ -13202,7 +13202,7 @@ Brentford O
 4 O
 35 O
 23 O
-40 B-PER
+40 O
 
 Spanish O
 police O
@@ -13387,7 +13387,7 @@ Zaire O
 " O
 
 Receipts O
-Shipments B-PER
+Shipments O
 
 Security O
 forces O
@@ -13433,7 +13433,7 @@ Windass O
 ( O
 Aberdeen O
 ) O
-, B-ORG
+, O
 
 Kenneth O
 Clarke O
@@ -13447,7 +13447,7 @@ L O
 T O
 GF O
 GA O
-PTS B-PER
+PTS O
 
 drawn O
 , O
@@ -13481,7 +13481,7 @@ Lincoln O
 8 O
 28 O
 33 O
-30 B-PER
+30 O
 
 The O
 richest O
@@ -13575,7 +13575,7 @@ Newsroom O
 44 O
 171 O
 542 O
-2774 B-PER
+2774 O
 
 Foreign O
 Minister O
@@ -13615,7 +13615,7 @@ Feyenoord O
 3 O
 29 O
 20 O
-36 B-PER
+36 O
 
 Attendance O
 : O
@@ -13636,10 +13636,10 @@ Tilburg O
 ( O
 Konterman O
 45 O
-, B-MISC
+, O
 
 FRANKFURT O
-1996-12-06 B-PER
+1996-12-06 O
 
 " O
 Mr O
@@ -13738,7 +13738,7 @@ Baier O
 ( O
 Germany O
 ) O
-1:25.16 B-ORG
+1:25.16 O
 
 1. O
 Takanobu O
@@ -13758,10 +13758,10 @@ Tikva O
 0 O
 Hapoel O
 Haifa O
-2 B-PER
+2 O
 
 NAIROBI O
-1996-12-06 B-PER
+1996-12-06 O
 
 Alatas O
 said O
@@ -13897,7 +13897,7 @@ saying O
 Plymouth O
 4 O
 Exeter O
-1 B-PER
+1 O
 
 15. O
 Stefanie O
@@ -13905,7 +13905,7 @@ Schuster O
 ( O
 Austria O
 ) O
-39 B-ORG
+39 O
 
 The O
 United O
@@ -13967,7 +13967,7 @@ Thursday O
 Aaa O
 Aa O
 A O
-Baa B-MISC
+Baa O
 
 Ponce O
 said O
@@ -14035,7 +14035,7 @@ Atlalanta O
 ( O
 15 O
 ) O
-1330 B-ORG
+1330 O
 
 The O
 more O
@@ -14060,7 +14060,7 @@ Wachter O
 ( O
 Austria O
 ) O
-49 B-ORG
+49 O
 
 " O
 Let O
@@ -14103,7 +14103,7 @@ Jul O
 74.45 O
 74.01 O
 69.95 O
-71.39-76.12 B-PER
+71.39-76.12 O
 
 -- O
 New O
@@ -14113,7 +14113,7 @@ Desk O
 +1 O
 212 O
 859 O
-1640 B-PER
+1640 O
 
 Hapoel O
 Petah O
@@ -14138,7 +14138,7 @@ Les O
 Ferdinand O
 ( O
 Newcastle O
-) B-PER
+) O
 
 Scorers O
 : O
@@ -14159,7 +14159,7 @@ said O
 . O
 
 WELLINGTON O
-1996-12-06 B-PER
+1996-12-06 O
 
 FIXTURES O
 - O
@@ -14170,7 +14170,7 @@ Borghi O
 ( O
 Switzerland O
 ) O
-1:19.44 B-ORG
+1:19.44 O
 
 Lang O
 said O
@@ -14204,12 +14204,12 @@ est O
 ) O
 38,000 O
 0 O
-18,000 B-ORG
+18,000 O
 
 Murless O
 71 O
 67 O
-73 B-PER
+73 O
 
 Havel O
 has O
@@ -14296,7 +14296,7 @@ DALLAS O
 1 O
 77 O
 66 O
-33 B-PER
+33 O
 
 Every O
 year O
@@ -14397,7 +14397,7 @@ Millwall O
 4 O
 32 O
 22 O
-40 B-PER
+40 O
 
 Livingston O
 16 O
@@ -14409,7 +14409,7 @@ Livingston O
 34 O
 
 Jonathan O
-Wright B-PER
+Wright O
 
 " O
 He O
@@ -14440,7 +14440,7 @@ United O
 3 O
 29 O
 22 O
-26 B-PER
+26 O
 
 Sylvain O
 Bouchard O
@@ -14493,7 +14493,7 @@ Alkmaar O
 11 O
 16 O
 23 O
-17 B-PER
+17 O
 
 NFL O
 AMERICAN O
@@ -14566,7 +14566,7 @@ Lid O
 ( O
 Norway O
 ) O
-148.20 B-ORG
+148.20 O
 
 GOLF O
 - O
@@ -14581,7 +14581,7 @@ SCORES O
 Victor O
 Sanchez O
 12-1 O
-Guillermo B-PER
+Guillermo O
 
 Barcelona O
 ( O
@@ -14697,7 +14697,7 @@ May O
 76.51 O
 77.07 O
 72.97 O
-74.42-79.19 B-PER
+74.42-79.19 O
 
 Note O
 - O
@@ -14809,7 +14809,7 @@ in O
 Cliftonville O
 1 O
 Portadown O
-1 B-PER
+1 O
 
 22. O
 Bibiana O
@@ -14817,7 +14817,7 @@ Perez O
 ( O
 Italy O
 ) O
-1:50.65 B-ORG
+1:50.65 O
 
 Scalfaro O
 was O
@@ -14852,7 +14852,7 @@ unity O
 . O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 The O
 Beirut O
@@ -14895,7 +14895,7 @@ Rangers O
 ) O
 , O
 Darren O
-Jackson B-PER
+Jackson O
 
 " O
 The O
@@ -15019,7 +15019,7 @@ PHILADELPHIA O
 2 O
 75 O
 75 O
-30 B-PER
+30 O
 
 Sheffield O
 United O
@@ -15029,13 +15029,13 @@ Portsmouth O
 
 BALTIMORE O
 AT O
-CINCINNATI B-LOC
+CINCINNATI O
 
 Crystal O
 Palace O
 2 O
 Oxford O
-2 B-PER
+2 O
 
 " O
 While O
@@ -15088,7 +15088,7 @@ Klevchenya O
 ( O
 Russia O
 ) O
-1:16.31 B-ORG
+1:16.31 O
 
 Quarter-final O
 results O
@@ -15210,7 +15210,7 @@ Gladishiva O
 ( O
 Russia O
 ) O
-114 B-ORG
+114 O
 
 Pilkington O
 Cup O
@@ -15308,7 +15308,7 @@ ACCOUNTS O
 33-1 O
 Fernando O
 Sanz O
-25-1 B-PER
+25-1 O
 
 The O
 Palestine O
@@ -15436,7 +15436,7 @@ CAROLINA O
 4 O
 0 O
 292 O
-164 B-PER
+164 O
 
 Manitoba O
 's O
@@ -15446,7 +15446,7 @@ Range O
 : O
 84.00-86.00 O
 per O
-cwt B-PER
+cwt O
 
 His O
 previous O
@@ -15509,7 +15509,7 @@ Newsroom O
 +44 O
 171 O
 542 O
-7630 B-PER
+7630 O
 
 Peterborough O
 22 O
@@ -15518,14 +15518,14 @@ Peterborough O
 10 O
 32 O
 41 O
-20 B-PER
+20 O
 
 W O
 L O
 T O
 GF O
 GA O
-PTS B-PER
+PTS O
 
 India O
 's O
@@ -15562,7 +15562,7 @@ Vogt O
 ( O
 Germany O
 ) O
-1:49.28 B-ORG
+1:49.28 O
 
 1. O
 Fischer O
@@ -15604,7 +15604,7 @@ in O
 47 O
 overs O
 ) O
-277 B-ORG
+277 O
 
 " O
 The O
@@ -15642,7 +15642,7 @@ CHARLOTTE O
 NY O
 RANGERS O
 AT O
-TORONTO B-LOC
+TORONTO O
 
 But O
 China O
@@ -15672,17 +15672,17 @@ Uzbekistan O
 
 CATTLE O
 CALVES O
-HOGS B-PER
+HOGS O
 
 OAKLAND O
 6 O
 7 O
 0 O
 274 O
-234 B-PER
+234 O
 
 Downhill O
-Standings B-PER
+Standings O
 
 The O
 fans O
@@ -15721,7 +15721,7 @@ Bordeaux O
 4 O
 29 O
 21 O
-34 B-PER
+34 O
 
 1-2 O
 . O
@@ -15732,7 +15732,7 @@ VANCOUVER O
 1 O
 84 O
 83 O
-29 B-PER
+29 O
 
 Daily O
 Argentine O
@@ -15805,10 +15805,10 @@ Pakistan O
 , O
 New O
 Zealand O
-231 B-PER
+231 O
 
 BONN O
-1996-12-06 B-PER
+1996-12-06 O
 
 TAMPA O
 BAY O
@@ -15817,11 +15817,11 @@ BAY O
 2 O
 69 O
 81 O
-18 B-PER
+18 O
 
 NEW O
 YORK O
-1996-12-07 B-PER
+1996-12-07 O
 
 First O
 goalscorer O
@@ -15830,7 +15830,7 @@ match O
 : O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 ALPINE O
 SKIING-WOMEN O
@@ -15861,7 +15861,7 @@ Friday O
 : O
 
 VIENNA O
-1996-12-07 B-PER
+1996-12-07 O
 
 Lebanon O
 sentences O
@@ -15884,7 +15884,7 @@ Nielsen O
 Denmark O
 ) O
 15-8 O
-15-2 B-PER
+15-2 O
 
 When O
 it O
@@ -16134,7 +16134,7 @@ Guilin O
 
 December O
 14 O
-) B-PER
+) O
 
 18. O
 Barbara O
@@ -16142,10 +16142,10 @@ Merlin O
 ( O
 Germany O
 ) O
-38 B-ORG
+38 O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 SOCCER O
 - O
@@ -16159,7 +16159,7 @@ IRISHMAN O
 . O
 
 TOKYO O
-1996-12-06 B-PER
+1996-12-06 O
 
 In O
 a O
@@ -16197,7 +16197,7 @@ age O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 Mussolini O
 , O
@@ -16260,7 +16260,7 @@ Montrose O
 5 O
 30 O
 25 O
-30 B-PER
+30 O
 
 UAE O
 - O
@@ -16275,10 +16275,10 @@ Talyani O
 , O
 Bakhit O
 Saad O
-80 B-PER
+80 O
 
 Lynnley O
-Browning B-PER
+Browning O
 
 Don O
 Rieck O
@@ -16327,7 +16327,7 @@ female O
 12/15/2013 O
 1,135M O
 5.30 O
-5.35 B-PER
+5.35 O
 
 SC O
 Freiburg O
@@ -16340,11 +16340,11 @@ Freiburg O
 13 O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Women O
 's O
-singles B-PER
+singles O
 
 Ye O
 Zhaoying O
@@ -16358,7 +16358,7 @@ Zhichao O
 China O
 ) O
 11-8 O
-11-3 B-PER
+11-3 O
 
 NYMEX O
 Alberta O
@@ -16395,7 +16395,7 @@ hectolitres O
 
 Attendance O
 : O
-5,465 B-PER
+5,465 O
 
 He O
 also O
@@ -16529,7 +16529,7 @@ December O
 . O
 
 Ramthan O
-Hussain B-PER
+Hussain O
 
 The O
 Doetinchem O
@@ -16606,7 +16606,7 @@ PORTLAND O
 12 O
 8 O
 .600 O
-3 B-PER
+3 O
 
 Two O
 strikes O
@@ -16651,7 +16651,7 @@ of O
 an O
 English O
 F.A. O
-Challenge B-PER
+Challenge O
 
 Uzbekistan O
 1 O
@@ -16660,12 +16660,12 @@ Uzbekistan O
 0 O
 2 O
 0 O
-3 B-ORG
+3 O
 
 W O
 L O
 PCT O
-GB B-PER
+GB O
 
 70 O
 , O
@@ -16690,7 +16690,7 @@ Brazil O
 , O
 Sammy O
 Daniels O
-73 B-PER
+73 O
 
 11,589 B-ORG
 
@@ -16714,7 +16714,7 @@ Moody O
 5 O
 
 Klara O
-Gajduskova B-PER
+Gajduskova O
 
 Only O
 bonds O
@@ -16833,7 +16833,7 @@ Reuters O
 . O
 
 WELLINGTON O
-1996-12-06 B-PER
+1996-12-06 O
 
 The O
 duo O
@@ -16871,7 +16871,7 @@ Goetschl O
 ( O
 Austria O
 ) O
-146 B-ORG
+146 O
 
 25. O
 Carole O
@@ -16879,23 +16879,23 @@ Montillet O
 ( O
 France O
 ) O
-1:50.91 B-ORG
+1:50.91 O
 
 Saqlain O
 Mushtaq O
 b O
 Harris O
-2 B-PER
+2 O
 
 12/15/2009 O
 1,240M O
 5.05 O
-5.05 B-PER
+5.05 O
 
 Results O
 of O
 National O
-Hockey B-PER
+Hockey O
 
 NZ O
 's O
@@ -16912,13 +16912,13 @@ Sunday O
 
 Real O
 Madrid O
-Barcelona B-PER
+Barcelona O
 
 Millet O
 unq O
 unq O
 90 O
-unq B-PER
+unq O
 
 5. O
 Ari-Pekka O
@@ -16931,7 +16931,7 @@ Finland O
 126 O
 / O
 130.4 O
-) B-PER
+) O
 
 Rayo O
 Vallecano O
@@ -16947,12 +16947,12 @@ Vancouver O
 105 O
 SAN O
 ANTONIO O
-89 B-PER
+89 O
 
 STEPHENVILLE O
 , O
 Newfoundland O
-1996-12-06 B-PER
+1996-12-06 O
 
 But O
 they O
@@ -16997,7 +16997,7 @@ Gerg O
 ( O
 Germany O
 ) O
-1:18.15 B-ORG
+1:18.15 O
 
 " O
 A O
@@ -17155,7 +17155,7 @@ Muslimov O
 ( O
 Russia O
 ) O
-82 B-ORG
+82 O
 
 " O
 A O
@@ -17216,7 +17216,7 @@ mid-wicket O
 . O
 
 - O
-USDA B-PER
+USDA O
 
 West O
 Indies O
@@ -17275,7 +17275,7 @@ Ago O
 Year O
 Ago O
 - O
-900 B-PER
+900 O
 
 St. O
 Louis O
@@ -17300,7 +17300,7 @@ Hay O
 . O
 
 WESTERN O
-CONFERENCE B-PER
+CONFERENCE O
 
 Wenchang O
 has O
@@ -17338,7 +17338,7 @@ said O
 . O
 
 EASTERN O
-CONFERENCE B-PER
+CONFERENCE O
 
 Botes O
 72 O
@@ -17351,7 +17351,7 @@ Reid O
 , O
 Clinton O
 Whitelaw O
-70 B-PER
+70 O
 
 He O
 ( O
@@ -17383,7 +17383,7 @@ ENGLAND O
 4 O
 0 O
 355 O
-269 B-PER
+269 O
 
 Villa O
 ) O
@@ -17399,7 +17399,7 @@ Ekoku O
 ( O
 Wimbledon O
 ) O
-, B-ORG
+, O
 
 Bitar O
 pulled O
@@ -17417,7 +17417,7 @@ Battellle O
 ( O
 U.S. O
 ) O
-23.56 B-ORG
+23.56 O
 
 The O
 Portuguese O
@@ -17535,7 +17535,7 @@ Rulhong O
 ( O
 China O
 ) O
-1:25.89 B-ORG
+1:25.89 O
 
 Squad O
 : O
@@ -17547,7 +17547,7 @@ Uzbekistan O
 ( O
 halftime O
 0-0 O
-) B-PER
+) O
 
 PSV O
 , O
@@ -17577,7 +17577,7 @@ DIVISION O
 Fourie O
 69 O
 73 O
-71 B-PER
+71 O
 
 12. O
 Bibiana O
@@ -17585,7 +17585,7 @@ Perez O
 ( O
 Italy O
 ) O
-1:18.52 B-ORG
+1:18.52 O
 
 The O
 Canadian O
@@ -17665,7 +17665,7 @@ M. O
 Taylor O
 b O
 McLean O
-29 B-PER
+29 O
 
 3. O
 Jeff O
@@ -17673,11 +17673,11 @@ Bean O
 ( O
 Canada O
 ) O
-209.96 B-ORG
+209.96 O
 
 Minneapolis O
 306,364 O
-153,231 B-PER
+153,231 O
 
 What O
 was O
@@ -17735,10 +17735,10 @@ said O
 . O
 
 WARSAW O
-1996-12-06 B-PER
+1996-12-06 O
 
 MADRID O
-1996-12-06 B-PER
+1996-12-06 O
 
 I O
 do O
@@ -17810,7 +17810,7 @@ DETROIT O
 8 O
 0 O
 263 O
-289 B-PER
+289 O
 
 Canada O
 's O
@@ -17854,7 +17854,7 @@ Friday O
 Leicester O
 1 O
 Blackburn O
-1 B-PER
+1 O
 
 Veronica O
 Brenner O
@@ -17899,17 +17899,17 @@ of O
 . O
 
 K.T. O
-Arasu B-PER
+Arasu O
 
 Gloucester O
 29 O
 London O
 Irish O
-19 B-PER
+19 O
 
 MONTREAL O
 AT O
-CHICAGO B-LOC
+CHICAGO O
 
 -- O
 U.S. O
@@ -18077,7 +18077,7 @@ Zimbabwe O
 68 O
 , O
 Glen O
-Cayeux B-PER
+Cayeux O
 
 standings O
 after O
@@ -18169,7 +18169,7 @@ France O
 9 O
 6 O
 3 O
-15 B-ORG
+15 O
 
 The O
 United O
@@ -18238,12 +18238,12 @@ lb-10 O
 w-1 O
 nb-3 O
 ) O
-14 B-ORG
+14 O
 
 HANOVER O
 , O
 Germany O
-1996-12-06 B-PER
+1996-12-06 O
 
 " O
 But O
@@ -18263,7 +18263,7 @@ Volendam O
 7 O
 20 O
 23 O
-21 B-PER
+21 O
 
 Ex-minister O
 , O
@@ -18403,7 +18403,7 @@ investigation O
 
 ST. O
 LOUIS O
-1996-12-06 B-PER
+1996-12-06 O
 
 Gong O
 Zhichao O
@@ -18417,7 +18417,7 @@ Audina O
 Indonesia O
 ) O
 11-2 O
-12-10 B-PER
+12-10 O
 
 Dirty O
 tanker O
@@ -18532,7 +18532,7 @@ Flint O
 113 O
 114 O
 113.7 O
-112 B-PER
+112 O
 
 Queens O
 Park O
@@ -18558,7 +18558,7 @@ WASHINGTON O
 5 O
 0 O
 291 O
-251 B-PER
+251 O
 
 19,306 B-ORG
 
@@ -18568,7 +18568,7 @@ Dalloz O
 ( O
 France O
 ) O
-33 B-ORG
+33 O
 
 They O
 are O
@@ -18622,7 +18622,7 @@ to O
 date O
 33,549,000 O
 1,589,000 O
-84,894,000 B-PER
+84,894,000 O
 
 European O
 Union O
@@ -18660,7 +18660,7 @@ Friday O
 . O
 
 Marcin O
-Grajewski B-PER
+Grajewski O
 
 soccer O
 match O
@@ -18684,7 +18684,7 @@ Results O
 of O
 first O
 division O
-soccer B-PER
+soccer O
 
 Full O
 strength O
@@ -18752,7 +18752,7 @@ Benson O
 ( O
 U.S. O
 ) O
-22.56 B-ORG
+22.56 O
 
 Sangetsu O
 - O
@@ -18832,7 +18832,7 @@ ANAHEIM O
 5 O
 74 O
 87 O
-23 B-PER
+23 O
 
 Chester O
 1 O
@@ -19006,7 +19006,7 @@ wickets O
 48.4 O
 overs O
 ) O
-173 B-ORG
+173 O
 
 UTAH O
 15 O
@@ -19015,7 +19015,7 @@ UTAH O
 1/2 O
 
 PARIS O
-1996-12-06 B-PER
+1996-12-06 O
 
 Rosati O
 did O
@@ -19062,10 +19062,10 @@ lb-8 O
 nb-2 O
 w-14 O
 ) O
-24 B-ORG
+24 O
 
 Brendan O
-Intindola B-PER
+Intindola O
 
 The O
 Wallabies O
@@ -19125,10 +19125,10 @@ Pignol O
 5-1 O
 Draw O
 Real O
-Madrid B-PER
+Madrid O
 
 TOKYO O
-1996-12-06 B-PER
+1996-12-06 O
 
 NY O
 RANGERS O
@@ -19151,7 +19151,7 @@ Ian O
 Wright O
 ( O
 Arsenal O
-) B-PER
+) O
 
 4. O
 Alexandra O
@@ -19159,10 +19159,10 @@ Meissnitzer O
 ( O
 Austria O
 ) O
-1:49.13 B-ORG
+1:49.13 O
 
 WARSAW O
-1996-12-06 B-PER
+1996-12-06 O
 
 Indonesia O
 2 O
@@ -19175,7 +19175,7 @@ Indonesia O
 
 Attendance O
 : O
-24,602 B-PER
+24,602 O
 
 Stranraer O
 15 O
@@ -19192,20 +19192,20 @@ Sunday O
 West O
 Bromwich O
 v O
-Bolton B-ORG
+Bolton O
 
 8. O
 Nikkola O
-101 B-PER
+101 O
 
 NEW O
 DELHI O
-1996-12-06 B-PER
+1996-12-06 O
 
 12/15/2007 O
 850M O
 4.85 O
-4.85 B-PER
+4.85 O
 
 The O
 victims O
@@ -19320,7 +19320,7 @@ Wolverhampton O
 6 O
 29 O
 21 O
-33 B-PER
+33 O
 
 6. O
 Shimazaki O
@@ -19328,7 +19328,7 @@ Kyoko O
 ( O
 Japan O
 ) O
-1:25.51 B-ORG
+1:25.51 O
 
 Limoges O
 ( O
@@ -19390,7 +19390,7 @@ products O
 4,605 O
 5,110 O
 30,589 O
-29,328 B-PER
+29,328 O
 
 " O
 The O
@@ -19533,7 +19533,7 @@ Curr O
 Wk O
 YTD O
 Yr O
-Ago B-PER
+Ago O
 
 SOCCER O
 - O
@@ -19567,7 +19567,7 @@ lower O
 
 Age O
 : O
-25 B-PER
+25 O
 
 " O
 We O
@@ -19635,16 +19635,16 @@ and O
 Heifer O
 Cow O
 and O
-Bull B-LOC
+Bull O
 
 1-2 O
 . O
 
 rounds O
-) B-PER
+) O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Defenders O
 - O
@@ -19708,7 +19708,7 @@ scheme O
 Prince O
 Rupert O
 1 O
-3 B-ORG
+3 O
 
 Wall O
 Street O
@@ -19866,7 +19866,7 @@ Friday O
 Jakarta O
 newsroom O
 +6221 O
-384-6364 B-PER
+384-6364 O
 
 SAN O
 JOSE O
@@ -19875,7 +19875,7 @@ JOSE O
 4 O
 69 O
 87 O
-24 B-PER
+24 O
 
 All O
 major O
@@ -19939,7 +19939,7 @@ Canola O
 1135.5 O
 46.7 O
 894.9 O
-822.0 B-PER
+822.0 O
 
 - O
 36 O
@@ -19979,7 +19979,7 @@ Raul O
 Gonzalez O
 7-1 O
 Juan O
-Pizzi B-PER
+Pizzi O
 
 OPEC O
 basket O
@@ -20092,7 +20092,7 @@ Van O
 Hooydonk O
 ( O
 Celtic O
-) B-PER
+) O
 
 Marianne O
 Timmer O
@@ -20161,7 +20161,7 @@ agenda O
 . O
 
 WESTERN O
-CONFERENCE B-PER
+CONFERENCE O
 
 The O
 consumption O
@@ -20243,12 +20243,12 @@ Belorus O
 23:58.6 O
 ( O
 0 O
-) B-ORG
+) O
 
 DIYARBAKIR O
 , O
 Turkey O
-1996-12-06 B-PER
+1996-12-06 O
 
 15. O
 Katharina O
@@ -20256,10 +20256,10 @@ Gutensohn O
 ( O
 Germany O
 ) O
-1:18.92 B-ORG
+1:18.92 O
 
 BEIJING O
-1996-12-06 B-PER
+1996-12-06 O
 
 World O
 Cup O
@@ -20279,17 +20279,17 @@ Southampton O
 0 O
 Aston O
 Villa O
-1 B-PER
+1 O
 
 COLORADO O
 AT O
 LOS O
-ANGELES B-PER
+ANGELES O
 
 OAKLAND O
 , O
 N.J. O
-1996-12-06 B-PER
+1996-12-06 O
 
 ASEAN O
 groups O
@@ -20312,7 +20312,7 @@ Vietnam O
 PHOENIX O
 AT O
 NEW O
-JERSEY B-PER
+JERSEY O
 
 Hamilton O
 15 O
@@ -20321,7 +20321,7 @@ Hamilton O
 2 O
 31 O
 11 O
-31 B-PER
+31 O
 
 He O
 had O
@@ -20360,7 +20360,7 @@ Yasunori O
 ( O
 Japan O
 ) O
-1:16.86 B-ORG
+1:16.86 O
 
 Homestake O
 , O
@@ -20565,7 +20565,7 @@ Dalmatians O
 " O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 " O
 Terrorists O
@@ -20628,7 +20628,7 @@ Luton O
 6 O
 34 O
 25 O
-37 B-PER
+37 O
 
 Rain O
 earlier O
@@ -20688,7 +20688,7 @@ Newsroom O
 , O
 +7095 O
 941 O
-8520 B-PER
+8520 O
 
 KANSAS O
 CITY O
@@ -20696,7 +20696,7 @@ CITY O
 4 O
 0 O
 262 O
-230 B-PER
+230 O
 
 Valencia O
 15 O
@@ -20710,7 +20710,7 @@ Valencia O
 Motherwell O
 2 O
 Celtic O
-1 B-PER
+1 O
 
 " O
 I O
@@ -20776,7 +20776,7 @@ SUMMARIES O
 ST O
 LOUIS O
 AT O
-COLORADO B-LOC
+COLORADO O
 
 for O
 , O
@@ -20800,7 +20800,7 @@ Yoon-man O
 South O
 Korea O
 ) O
-1:16.75 B-ORG
+1:16.75 O
 
 Week O
 to O
@@ -20817,7 +20817,7 @@ Lst O
 Yr O
 N O
 / O
-A B-PER
+A O
 
 Lens O
 21 O
@@ -20906,7 +20906,7 @@ $ O
 = O
 8.3 O
 yuan O
-) B-PER
+) O
 
 Kilmarnock O
 14 O
@@ -20920,19 +20920,19 @@ Kilmarnock O
 Women O
 's O
 World O
-Cup B-PER
+Cup O
 
 Results O
-of B-PER
+of O
 
 12-1 O
 Fernando O
 Redondo O
 9-1 O
-Giovanni B-PER
+Giovanni O
 
 AMSTERDAM O
-1996-12-07 B-PER
+1996-12-07 O
 
 Bochum O
 2 O
@@ -20999,7 +20999,7 @@ TORONTO O
 VAIL O
 , O
 Colorado O
-1996-12-07 B-PER
+1996-12-07 O
 
 While O
 the O
@@ -21052,7 +21052,7 @@ st O
 Murray O
 b O
 Hooper O
-3 B-PER
+3 O
 
 CZECH O
 VICE-PM O
@@ -21065,7 +21065,7 @@ CONGRESS O
 . O
 
 Group O
-A B-ORG
+A O
 
 The O
 protest O
@@ -21095,7 +21095,7 @@ Monaco O
 3 O
 36 O
 16 O
-41 B-PER
+41 O
 
 In O
 November O
@@ -21145,7 +21145,7 @@ Bournemouth O
 Enfield O
 1 O
 Peterborough O
-1 B-PER
+1 O
 
 A O
 group O
@@ -21203,7 +21203,7 @@ Torquay O
 VAIL O
 , O
 Colorado O
-1996-12-07 B-PER
+1996-12-07 O
 
 MILWAUKEE O
 8 O
@@ -21246,7 +21246,7 @@ lost O
 , O
 goals O
 for O
-, B-LOC
+, O
 
 A O
 minute O
@@ -21276,7 +21276,7 @@ shot O
 
 ANAHEIM O
 AT O
-BUFFALO B-LOC
+BUFFALO O
 
 His O
 comments O
@@ -21323,17 +21323,17 @@ Coast O
 12/15/2008 O
 1,200M O
 4.95 O
-4.95 B-PER
+4.95 O
 
 WESTERN O
-CONFERENCE B-PER
+CONFERENCE O
 
 Barley O
 1074.0 O
 1104.8 O
 178.0 O
 2531.4 O
-1897.1 B-PER
+1897.1 O
 
 Colchester O
 22 O
@@ -21342,7 +21342,7 @@ Colchester O
 5 O
 32 O
 26 O
-31 B-PER
+31 O
 
 Brazil O
 exam O
@@ -21362,7 +21362,7 @@ Cardiff O
 7 O
 25 O
 22 O
-34 B-PER
+34 O
 
 International O
 trade O
@@ -21575,7 +21575,7 @@ Cup O
 . O
 
 SINGAPORE O
-1996-12-06 B-PER
+1996-12-06 O
 
 Cibona O
 Zagreb O
@@ -21676,7 +21676,7 @@ to O
 win O
 Barcelona O
 to O
-win B-LOC
+win O
 
 Oldham O
 22 O
@@ -21715,7 +21715,7 @@ BAY O
 3 O
 0 O
 346 O
-191 B-PER
+191 O
 
 Cambridge O
 22 O
@@ -21724,20 +21724,20 @@ Cambridge O
 6 O
 33 O
 27 O
-42 B-PER
+42 O
 
 Rye O
 44.6 O
 86.3 O
 2.3 O
 108.2 O
-119.2 B-PER
+119.2 O
 
 CHONJU O
 , O
 South O
 Korea O
-1996-12-07 B-PER
+1996-12-07 O
 
 " O
 I O
@@ -21825,7 +21825,7 @@ in O
 10. O
 United O
 States O
-164 B-PER
+164 O
 
 South O
 Korea O
@@ -21915,7 +21915,7 @@ said O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 DALLAS O
 16 O
@@ -21923,7 +21923,7 @@ DALLAS O
 1 O
 74 O
 60 O
-33 B-PER
+33 O
 
 Hapoel O
 Jerusalem O
@@ -21945,7 +21945,7 @@ Piacenza O
 ( O
 13 O
 ) O
-1330 B-ORG
+1330 O
 
 Earlier O
 , O
@@ -22048,10 +22048,10 @@ CLIPPERS O
 
 11-2 O
 Draw O
-Barcelona B-PER
+Barcelona O
 
 LISBON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Toledo O
 61,514 O
@@ -22063,7 +22063,7 @@ Merlin O
 ( O
 Italy O
 ) O
-92 B-ORG
+92 O
 
 Wimbledon O
 16 O
@@ -22072,12 +22072,12 @@ Wimbledon O
 3 O
 29 O
 17 O
-31 B-PER
+31 O
 
 KANSAS O
 CITY O
 AT O
-OAKLAND B-LOC
+OAKLAND O
 
 Reported O
 sales O
@@ -22182,7 +22182,7 @@ uprising O
 . O
 
 MADRID O
-1996-12-06 B-PER
+1996-12-06 O
 
 Both O
 areas O
@@ -22302,10 +22302,10 @@ Gregoire O
 ( O
 France O
 ) O
-22.58 B-ORG
+22.58 O
 
 CAIRO O
-1996-12-06 B-PER
+1996-12-06 O
 
 Week O
 to O
@@ -22315,7 +22315,7 @@ est O
 ) O
 688,000 O
 31,000 O
-1,810,000 B-PER
+1,810,000 O
 
 Contractors O
 won O
@@ -22349,7 +22349,7 @@ Scunthorpe O
 9 O
 28 O
 30 O
-31 B-PER
+31 O
 
 10-1-33-2 O
 ( O
@@ -22402,7 +22402,7 @@ China O
 1 O
 0 O
 2 O
-0 B-ORG
+0 O
 
 No O
 barges O
@@ -22438,7 +22438,7 @@ Lucky O
 Emdldm O
 20/11/96 O
 5,000 O
-Japan B-PER
+Japan O
 
 basketball O
 championship O
@@ -22448,7 +22448,7 @@ Thursday O
 matches O
 ( O
 tabulate O
-under B-PER
+under O
 
 NHL O
 ICE O
@@ -22526,7 +22526,7 @@ detained O
 " O
 the O
 spokesman O
-added B-PER
+added O
 
 played O
 , O
@@ -22572,14 +22572,14 @@ badly O
 
 ABU O
 DHABI O
-1996-12-07 B-PER
+1996-12-07 O
 
 Halftime O
 2-0 O
 . O
 
 INDIANAPOLIS O
-1996-12-06 B-PER
+1996-12-06 O
 
 BUFFALO O
 13 O
@@ -22645,7 +22645,7 @@ Results O
 of O
 Northern O
 Ireland O
-premier B-PER
+premier O
 
 Network O
 operators O
@@ -22708,7 +22708,7 @@ Fulham O
 4 O
 36 O
 16 O
-48 B-PER
+48 O
 
 Indonesia O
 - O
@@ -22718,7 +22718,7 @@ Wabia O
 , O
 Widodo O
 Putra O
-65 B-PER
+65 O
 
 Norilsk O
 said O
@@ -22783,7 +22783,7 @@ protection O
 . O
 
 George O
-Nishiyama B-PER
+Nishiyama O
 
 " O
 The O
@@ -22819,16 +22819,16 @@ statement O
 . O
 
 3-3 O
-50-1 B-PER
+50-1 O
 
 ( O
 52.92 O
 / O
 53.21 O
-) B-PER
+) O
 
 BRUSSELS O
-1996-12-06 B-PER
+1996-12-06 O
 
 3. O
 Sashurin O
@@ -22887,7 +22887,7 @@ Total O
 8188.2 O
 164.2 O
 3156.0 O
-2686.7 B-PER
+2686.7 O
 
 Coste O
 said O
@@ -22922,7 +22922,7 @@ Heerenveen O
 4 O
 30 O
 20 O
-28 B-PER
+28 O
 
 Wimbledon O
 leap-frogged O
@@ -22953,14 +22953,14 @@ DURBAN O
 , O
 South O
 Africa O
-1996-12-06 B-PER
+1996-12-06 O
 
 NEW O
 YORK O
 10 O
 6 O
 .625 O
-3 B-PER
+3 O
 
 A O
 quick O
@@ -22987,7 +22987,7 @@ Cowdenbeath O
 5 O
 22 O
 16 O
-24 B-PER
+24 O
 
 NCAA O
 AMERICAN O
@@ -23034,7 +23034,7 @@ Grimsby O
 11 O
 24 O
 41 O
-21 B-PER
+21 O
 
 I O
 thought O
@@ -23068,7 +23068,7 @@ Germany O
 141.6 O
 / O
 124.4 O
-) B-PER
+) O
 
 3. O
 Gunn O
@@ -23080,7 +23080,7 @@ Norway O
 24:00.4 O
 ( O
 0 O
-) B-ORG
+) O
 
 They O
 said O
@@ -23151,7 +23151,7 @@ premium O
 
 Net O
 6.20 O
-5.36 B-PER
+5.36 O
 
 freestyle O
 skiing O
@@ -23232,7 +23232,7 @@ output O
 . O
 
 EASTERN O
-DIVISION B-PER
+DIVISION O
 
 A O
 mix-up O
@@ -23302,11 +23302,11 @@ Chendo O
 Porlan O
 33-1 O
 Miguel O
-Nadal B-PER
+Nadal O
 
 MILWAUKEE O
 AT O
-WASHINGTON B-LOC
+WASHINGTON O
 
 Enrique B-ORG
 
@@ -23386,7 +23386,7 @@ Warne O
 8 O
 
 BALI O
-1996-12-06 B-PER
+1996-12-06 O
 
 On O
 the O
@@ -23432,7 +23432,7 @@ Capital O
 Markets O
 Corp. O
 - O
-NJ B-PER
+NJ O
 
 Scorers O
 : O
@@ -23441,7 +23441,7 @@ PACIFIC O
 DIVISION O
 
 MADRID O
-1996-12-07 B-PER
+1996-12-07 O
 
 It O
 is O
@@ -23514,7 +23514,7 @@ weekend O
 : O
 
 BUDAPEST O
-1996-12-06 B-PER
+1996-12-06 O
 
 4. O
 Tae O
@@ -23522,7 +23522,7 @@ Satoya O
 ( O
 Japan O
 ) O
-23.75 B-ORG
+23.75 O
 
 Bowyer O
 , O
@@ -23711,12 +23711,12 @@ Friday O
 . O
 
 CENTRAL O
-DIVISION B-PER
+DIVISION O
 
 WASHINGTON O
 AT O
 NY O
-ISLANDERS B-PER
+ISLANDERS O
 
 Cairns O
 8-1-35-1 O
@@ -23732,7 +23732,7 @@ Harris O
 ( O
 w-1 O
 ) O
-, B-ORG
+, O
 
 However O
 , O
@@ -23760,7 +23760,7 @@ Wheat O
 3909.3 O
 288.5 O
 6278.9 O
-5580.0 B-PER
+5580.0 O
 
 Schalke O
 2 O
@@ -23779,7 +23779,7 @@ Rostock O
 Jakarta O
 newsroom O
 +6221 O
-384-6364 B-PER
+384-6364 O
 
 But O
 overall O
@@ -23802,15 +23802,15 @@ Leicester O
 8 O
 17 O
 22 O
-21 B-PER
+21 O
 
 7. O
 Sweden O
-673 B-PER
+673 O
 
 Nation O
 : O
-Austria B-PER
+Austria O
 
 I O
 coordinate O
@@ -23887,7 +23887,7 @@ Sangthai O
 Glory O
 22/11/96 O
 3,000 O
-Singapore B-PER
+Singapore O
 
 In O
 local O
@@ -23921,7 +23921,7 @@ percent O
 
 Dec O
 4 O
-87.16 B-ORG
+87.16 O
 
 Barnet O
 22 O
@@ -23930,10 +23930,10 @@ Barnet O
 6 O
 23 O
 17 O
-32 B-PER
+32 O
 
 Laurent O
-Blanc B-PER
+Blanc O
 
 The O
 man O
@@ -24012,12 +24012,12 @@ Saturday O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 12/15/2004 O
 625M O
 4.50 O
-4.50 B-PER
+4.50 O
 
 France O
 managed O
@@ -24174,7 +24174,7 @@ re-elected O
 4-2 O
 50-1 O
 4-2 O
-80-1 B-PER
+80-1 O
 
 Dynamo O
 Moscow O
@@ -24253,7 +24253,7 @@ Doncaster O
 12 O
 24 O
 33 O
-24 B-PER
+24 O
 
 Estudiantes O
 Madrid O
@@ -24269,7 +24269,7 @@ Liverpool O
 0 O
 Sheffield O
 Wednesday O
-1 B-PER
+1 O
 
 Goalkeepers O
 - O
@@ -24277,7 +24277,7 @@ Blendi O
 Nallbani O
 , O
 Armir O
-Grima B-PER
+Grima O
 
 Halftime O
 2-0 O
@@ -24364,7 +24364,7 @@ Gijon O
 16 O
 
 53.29 O
-) B-PER
+) O
 
 Not O
 enough O
@@ -24431,7 +24431,7 @@ Montillet O
 ( O
 France O
 ) O
-86 B-ORG
+86 O
 
 8. O
 Andy O
@@ -24439,7 +24439,7 @@ Capicik O
 ( O
 Canada O
 ) O
-193.82 B-ORG
+193.82 O
 
 Natural O
 rubber O
@@ -24525,7 +24525,7 @@ Italy O
 9 O
 7 O
 2 O
-16 B-ORG
+16 O
 
 Returns O
 on O
@@ -24566,12 +24566,12 @@ Afridi O
 Salim O
 Malik O
 2.5-0-8-1 O
-, B-MISC
+, O
 
 Bath O
 35 O
 Harlequins O
-20 B-PER
+20 O
 
 The O
 British O
@@ -24616,7 +24616,7 @@ Jun O
 77.53 O
 77.24 O
 73.17 O
-74.62-79.35 B-PER
+74.62-79.35 O
 
 Halverson O
 was O
@@ -24638,7 +24638,7 @@ Gladishiva O
 ( O
 Russia O
 ) O
-23 B-ORG
+23 O
 
 Standings O
 ( O
@@ -24656,7 +24656,7 @@ goals B-PER
 
 2. O
 Germany O
-1,135 B-PER
+1,135 O
 
 As O
 he O
@@ -24691,7 +24691,7 @@ Kennedy O
 w-7 O
 nb-1 O
 ) O
-, B-ORG
+, O
 
 GUNMEN O
 WOUND O
@@ -24706,7 +24706,7 @@ AUSTRIA O
 St. O
 Louis O
 253,821 O
-223,172 B-PER
+223,172 O
 
 Extras O
 ( O
@@ -24715,11 +24715,11 @@ lb-3 O
 w-12 O
 nb-2 O
 ) O
-26 B-ORG
+26 O
 
 Total O
 : O
-11,880M B-PER
+11,880M O
 
 CRICKET O
 - O
@@ -24769,7 +24769,7 @@ SUMMARIES O
 . O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 But O
 the O
@@ -24844,7 +24844,7 @@ set O
 . O
 
 Group O
-B B-PER
+B O
 
 69 O
 69 O
@@ -24854,7 +24854,7 @@ Justin O
 Hobday O
 71 O
 65 O
-71 B-PER
+71 O
 
 13= O
 Picabo O
@@ -24862,7 +24862,7 @@ Street O
 ( O
 U.S. O
 ) O
-50 B-ORG
+50 O
 
 Durum O
 129.0 O
@@ -24870,17 +24870,17 @@ Durum O
 1220.6 O
 4.6 O
 75.8 O
-73.3 B-PER
+73.3 O
 
 Exports O
 29,200 O
 17,200 O
 7,700 O
 100 O
-59,400 B-PER
+59,400 O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Results O
 of O
@@ -24957,7 +24957,7 @@ Compagnoni O
 ( O
 Italy O
 ) O
-120 B-ORG
+120 O
 
 " O
 President O
@@ -25036,11 +25036,11 @@ Sokol O
 Prenga O
 , O
 Ervin O
-Fakaj B-PER
+Fakaj O
 
 New O
 Zealand O
-innings B-PER
+innings O
 
 Turkey O
 's O
@@ -25170,7 +25170,7 @@ Ago O
 24,300 O
 8,700 O
 8,200 O
-12,200 B-PER
+12,200 O
 
 Chesterfield O
 2 O
@@ -25183,10 +25183,10 @@ Tschirky O
 ( O
 Switzerland O
 ) O
-1:19.60 B-ORG
+1:19.60 O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 Australia O
 beat O
@@ -25217,11 +25217,11 @@ Schuster O
 ( O
 Austria O
 ) O
-50 B-ORG
+50 O
 
 NEW O
 YORK O
-1996-12-07 B-PER
+1996-12-07 O
 
 5. O
 Isolde O
@@ -25229,7 +25229,7 @@ Kostner O
 ( O
 Italy O
 ) O
-1:18.19 B-ORG
+1:18.19 O
 
 EDMONTON O
 14 O
@@ -25237,7 +25237,7 @@ EDMONTON O
 1 O
 99 O
 90 O
-29 B-PER
+29 O
 
 Woolmer O
 said O
@@ -25265,12 +25265,12 @@ played O
 12/15/2000 O
 1,250M O
 6.25 O
-4.10 B-PER
+4.10 O
 
 3-0 O
 20-1 O
 3-0 O
-28-1 B-PER
+28-1 O
 
 Mussolini O
 's O
@@ -25286,7 +25286,7 @@ Rijavec O
 ( O
 Austria O
 ) O
-204.17 B-ORG
+204.17 O
 
 9. O
 Jeremy O
@@ -25294,19 +25294,19 @@ Wotherspoon O
 ( O
 Canada O
 ) O
-1:16.75 B-ORG
+1:16.75 O
 
 PACIFIC O
 DIVISION O
 
 DODGE O
 CITY O
-1996-12-06 B-PER
+1996-12-06 O
 
 ORLANDO O
 AT O
 LA O
-LAKERS B-PER
+LAKERS O
 
 Frenchman O
 Patrick O
@@ -25405,7 +25405,7 @@ Watford O
 3 O
 24 O
 18 O
-36 B-PER
+36 O
 
 Slaughter O
 steers O
@@ -25431,7 +25431,7 @@ Arsenal O
 2 O
 34 O
 16 O
-35 B-PER
+35 O
 
 Xinhua O
 did O
@@ -25462,7 +25462,7 @@ points O
 
 Simona O
 de O
-Logu B-PER
+Logu O
 
 Standings O
 ( O
@@ -25476,7 +25476,7 @@ won O
 drawn O
 , O
 lost O
-, B-PER
+, O
 
 Manchester O
 City O
@@ -25486,7 +25486,7 @@ City O
 12 O
 26 O
 35 O
-26 B-PER
+26 O
 
 Hapoel O
 Taiba O
@@ -25504,7 +25504,7 @@ CHICAGO O
 3 O
 72 O
 70 O
-27 B-PER
+27 O
 
 Same O
 Period O
@@ -25515,14 +25515,14 @@ est O
 ) O
 601,000 O
 26,000 O
-1,547,000 B-PER
+1,547,000 O
 
 Nov O
 97 O
 68.00 O
 68.05 O
 63.98 O
-65.43-70.16 B-PER
+65.43-70.16 O
 
 71 O
 ) O
@@ -25531,7 +25531,7 @@ Nov O
 OESTERSUND O
 , O
 Sweden O
-1996-12-07 B-PER
+1996-12-07 O
 
 So O
 far O
@@ -25568,7 +25568,7 @@ Allais O
 ( O
 France O
 ) O
-21.58 B-ORG
+21.58 O
 
 , O
 41 O
@@ -25615,7 +25615,7 @@ vehicles O
 52.89 O
 / O
 53.13 O
-) B-PER
+) O
 
 16= O
 Sabina O
@@ -25623,7 +25623,7 @@ Panzanini O
 ( O
 Italy O
 ) O
-100 B-ORG
+100 O
 
 Trade O
 and O
@@ -25702,14 +25702,14 @@ Jocelyn B-PER
 Glenavon O
 2 O
 Linfield O
-1 B-PER
+1 O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 PITTSBURGH O
 AT O
-WASHINGTON B-LOC
+WASHINGTON O
 
 " O
 Internet O
@@ -25789,7 +25789,7 @@ Bracun O
 ( O
 Slovenia O
 ) O
-1:50.40 B-ORG
+1:50.40 O
 
 division O
 ahead O
@@ -25804,7 +25804,7 @@ Results O
 of O
 British O
 rugby O
-union B-PER
+union O
 
 Men O
 's O
@@ -25925,7 +25925,7 @@ reform O
 . O
 
 CENTRAL O
-DIVISION B-PER
+DIVISION O
 
 The O
 party O
@@ -25964,7 +25964,7 @@ Madrid O
 0 O
 32 O
 12 O
-38 B-PER
+38 O
 
 Glentoran O
 1 O
@@ -25973,14 +25973,14 @@ Coleraine O
 
 BUENOS O
 AIRES O
-1996-12-06 B-PER
+1996-12-06 O
 
 20-1 O
 Fernando O
 Hierro O
 20-1 O
 Ivan O
-de B-PER
+de O
 
 The O
 source O
@@ -26012,10 +26012,10 @@ Ago O
 Year O
 Ago O
 - O
-900 B-PER
+900 O
 
 MADRID O
-1996-12-06 B-PER
+1996-12-06 O
 
 Interest O
 remains O
@@ -26040,7 +26040,7 @@ delivery O
 
 Attendance O
 : O
-15,000 B-PER
+15,000 O
 
 SACRAMENTO O
 6 O
@@ -26157,10 +26157,10 @@ DOLLAR O
 EXCHANGE O
 RATE O
 : O
-1.3570 B-PER
+1.3570 O
 
 SINGAPORE O
-1996-12-06 B-PER
+1996-12-06 O
 
 Note O
 : O
@@ -26173,7 +26173,7 @@ C$ O
 per O
 cwt O
 ) O
-- B-ORG
+- O
 
 The O
 United O
@@ -26222,7 +26222,7 @@ Des O
 Terblanche O
 65 O
 67 O
-73 B-PER
+73 O
 
 You O
 are O
@@ -26259,7 +26259,7 @@ DILI O
 , O
 East O
 Timor O
-1996-12-06 B-PER
+1996-12-06 O
 
 1. O
 United O
@@ -26272,14 +26272,14 @@ Shimer O
 Randy O
 Jones O
 ) O
-one B-ORG
+one O
 
 Crude O
 petroleum O
 2,557 O
 2,832 O
 15,838 O
-17,648 B-PER
+17,648 O
 
 " O
 I O
@@ -26349,7 +26349,7 @@ Ivanov O
 ( O
 Russia O
 ) O
-24.88 B-ORG
+24.88 O
 
 In-form O
 Napoli O
@@ -26395,7 +26395,7 @@ demonstration O
 Philadelphia O
 6 O
 DALLAS O
-3 B-PER
+3 O
 
 Pernilla O
 Wiberg O
@@ -26424,10 +26424,10 @@ Haeusl O
 ( O
 Germany O
 ) O
-66 B-ORG
+66 O
 
 EASTERN O
-CONFERENCE B-PER
+CONFERENCE O
 
 HARTFORD O
 12 O
@@ -26435,7 +26435,7 @@ HARTFORD O
 6 O
 77 O
 76 O
-30 B-PER
+30 O
 
 Police O
 have O
@@ -26448,10 +26448,10 @@ of O
 Saturday O
 's O
 only O
-Spanish B-PER
+Spanish O
 
 West O
-Indies B-PER
+Indies O
 
 Est O
 daily O
@@ -26461,7 +26461,7 @@ under O
 Fed O
 inspection O
 - O
-USDA B-PER
+USDA O
 
 Japan O
 then O
@@ -26586,11 +26586,11 @@ Masnada O
 ( O
 France O
 ) O
-1:18.31 B-ORG
+1:18.31 O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 Tottenham O
 16 O
@@ -26602,7 +26602,7 @@ Tottenham O
 23 O
 
 DAKAR O
-1996-12-06 B-PER
+1996-12-06 O
 
 The O
 Melbourne O
@@ -26634,7 +26634,7 @@ COLORADO O
 4 O
 100 O
 60 O
-38 B-PER
+38 O
 
 SOCCER O
 - O
@@ -26648,7 +26648,7 @@ L O
 T O
 GF O
 GA O
-PTS B-PER
+PTS O
 
 Accordingly O
 , O
@@ -26665,17 +26665,17 @@ c O
 and O
 b O
 Afridi O
-88 B-PER
+88 O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 SEATTLE O
 5 O
 8 O
 0 O
 250 O
-317 B-PER
+317 O
 
 Aston O
 Villa O
@@ -26747,7 +26747,7 @@ MONTREAL O
 4 O
 99 O
 104 O
-26 B-PER
+26 O
 
 1996-12-06 B-ORG
 
@@ -26790,7 +26790,7 @@ Waltman O
 Ian O
 Dougan O
 73 O
-69 B-PER
+69 O
 
 The O
 inference O
@@ -26854,10 +26854,10 @@ Moscow O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 VIENNA O
-1996-12-06 B-PER
+1996-12-06 O
 
 Hapoel O
 Beit O
@@ -26865,7 +26865,7 @@ She'an O
 2 O
 Hapoel O
 Beersheba O
-1 B-PER
+1 O
 
 Benchaou O
 died O
@@ -26885,7 +26885,7 @@ blast O
 
 Attendance O
 : O
-38,018 B-PER
+38,018 O
 
 Rules O
 call O
@@ -26919,7 +26919,7 @@ races O
 : O
 
 Group O
-C B-PER
+C O
 
 The O
 consumption O
@@ -27142,7 +27142,7 @@ Wijaya O
 Indonesia O
 ) O
 15-6 O
-15-8 B-PER
+15-8 O
 
 The O
 ICFTU O
@@ -27241,7 +27241,7 @@ Halftime O
 RIO O
 DE O
 JANEIRO O
-1996-12-06 B-PER
+1996-12-06 O
 
 NOTE O
 - O
@@ -27288,7 +27288,7 @@ City O
 6 O
 36 O
 23 O
-33 B-PER
+33 O
 
 As O
 well O
@@ -27334,7 +27334,7 @@ Germany O
 24:09.5 O
 ( O
 1 O
-) B-ORG
+) O
 
 If O
 approached O
@@ -27392,7 +27392,7 @@ Seizinger O
 ( O
 Germany O
 ) O
-1:48.53 B-ORG
+1:48.53 O
 
 12= O
 Barbara O
@@ -27400,7 +27400,7 @@ Merlin O
 ( O
 Italy O
 ) O
-42 B-ORG
+42 O
 
 The O
 London O
@@ -27464,7 +27464,7 @@ c O
 Astle O
 b O
 Harris O
-1 B-PER
+1 O
 
 I O
 think O
@@ -27497,7 +27497,7 @@ Thistle O
 v O
 Queen O
 's O
-Park B-PER
+Park O
 
 Stefanel O
 Milan O
@@ -27507,7 +27507,7 @@ Italy O
 9 O
 6 O
 3 O
-15 B-ORG
+15 O
 
 It O
 was O
@@ -27611,7 +27611,7 @@ Cuo O
 ( O
 China O
 ) O
-154.61 B-ORG
+154.61 O
 
 9 O
 - O
@@ -27619,7 +27619,7 @@ Paul O
 Gascoigne O
 ( O
 Rangers O
-) B-PER
+) O
 
 Kinder O
 Bologna O
@@ -27724,7 +27724,7 @@ Turkey O
 9 O
 7 O
 2 O
-16 B-ORG
+16 O
 
 But O
 he O
@@ -27794,7 +27794,7 @@ Newfoundland O
 
 CHICAGO O
 AT O
-MONTREAL B-LOC
+MONTREAL O
 
 He O
 said O
@@ -27828,14 +27828,14 @@ Holon O
 Hapoel O
 Petah O
 Tikva O
-1 B-PER
+1 O
 
 Mar O
 97 O
 76.37 O
 76.12 O
 72.02 O
-73.47-78.24 B-PER
+73.47-78.24 O
 
 Friday O
 12/06/96 O
@@ -27844,7 +27844,7 @@ est O
 ) O
 132,000 O
 7,000 O
-359,000 B-PER
+359,000 O
 
 Allan O
 Budi O
@@ -27859,7 +27859,7 @@ Hoyer-Larsen O
 Denmark O
 ) O
 15-7 O
-15-4 B-PER
+15-4 O
 
 Premier O
 division O
@@ -27898,7 +27898,7 @@ Zaire O
 ( O
 halftime O
 2-0 O
-) B-PER
+) O
 
 LUXEMBOURG O
 CHRISTMAS O
@@ -27940,7 +27940,7 @@ Brechin O
 DETROIT O
 AT O
 NEW O
-JERSEY B-PER
+JERSEY O
 
 R. O
 Kennedy O
@@ -27953,11 +27953,11 @@ Germon O
 lbw O
 b O
 Afridi O
-2 B-PER
+2 O
 
 6. O
 Norway O
-746 B-PER
+746 O
 
 10= O
 Stefanie O
@@ -27965,16 +27965,16 @@ Schuster O
 ( O
 Austria O
 ) O
-1:18.48 B-ORG
+1:18.48 O
 
 4. O
 Italy O
-887 B-PER
+887 O
 
 Caerphilly O
 20 O
 Cardiff O
-34 B-PER
+34 O
 
 A O
 police O
@@ -28025,7 +28025,7 @@ night O
 Boroughmuir O
 31 O
 Watsonians O
-35 B-PER
+35 O
 
 USDA O
 gross O
@@ -28043,7 +28043,7 @@ Japan O
 0 O
 2 O
 1 O
-3 B-ORG
+3 O
 
 Indonesia O
 : O
@@ -28152,12 +28152,12 @@ Zurbriggen O
 ( O
 Switzerland O
 ) O
-43 B-ORG
+43 O
 
 4-0 O
 50-1 O
 4-0 O
-100-1 B-PER
+100-1 O
 
 26= O
 Michaela O
@@ -28165,7 +28165,7 @@ Dorfmeister O
 ( O
 Austria O
 ) O
-1:19.44 B-ORG
+1:19.44 O
 
 A O
 visit O
@@ -28252,11 +28252,11 @@ bureau O
 +1 O
 213 O
 380 O
-2014 B-PER
+2014 O
 
 OTTAWA O
 AT O
-EDMONTON B-LOC
+EDMONTON O
 
 Overall O
 women O
@@ -28265,7 +28265,7 @@ World O
 Cup O
 standings O
 leaders O
-after B-PER
+after O
 
 January O
 ended O
@@ -28369,7 +28369,7 @@ Crewe O
 9 O
 29 O
 21 O
-34 B-PER
+34 O
 
 -- O
 Sydney O
@@ -28435,7 +28435,7 @@ and O
 why O
 should O
 I O
-? B-PER
+? O
 
 Poor O
 man O
@@ -28470,15 +28470,15 @@ Cavagnoud O
 ( O
 France O
 ) O
-1:19.21 B-ORG
+1:19.21 O
 
 GLASGOW O
-1996-12-07 B-PER
+1996-12-07 O
 
 Standings O
 of O
 National O
-Hockey B-PER
+Hockey O
 
 EU O
 , O
@@ -28496,7 +28496,7 @@ Zelenskaja O
 ( O
 Russia O
 ) O
-100 B-ORG
+100 O
 
 B. O
 Young O
@@ -28527,7 +28527,7 @@ Olivier O
 ( O
 Canada O
 ) O
-157.10 B-ORG
+157.10 O
 
 7. O
 Stefanie O
@@ -28535,7 +28535,7 @@ Schuster O
 ( O
 Austria O
 ) O
-1:49.38 B-ORG
+1:49.38 O
 
 Clarke O
 denied O
@@ -28605,7 +28605,7 @@ Mexico O
 City O
 newsroom O
 +525 O
-728-7903 B-PER
+728-7903 O
 
 Queen O
 's O
@@ -28666,7 +28666,7 @@ result O
 : O
 
 EASTERN O
-CONFERENCE B-PER
+CONFERENCE O
 
 Not O
 exactly O
@@ -28685,7 +28685,7 @@ nonetheless O
 Italy O
 recalled O
 Marcello O
-Cuttitta B-PER
+Cuttitta O
 
 Shrewsbury O
 22 O
@@ -28694,7 +28694,7 @@ Shrewsbury O
 9 O
 26 O
 33 O
-27 B-PER
+27 O
 
 It O
 's O
@@ -28757,14 +28757,14 @@ ISLANDERS O
 8 O
 65 O
 72 O
-22 B-PER
+22 O
 
 -- O
 Singapore O
 Newsroom O
 ( O
 65-8703305 O
-) B-PER
+) O
 
 Two O
 other O
@@ -28809,7 +28809,7 @@ of O
 yen O
 unless O
 specified O
-) B-PER
+) O
 
 20. O
 Regine O
@@ -28817,7 +28817,7 @@ Cavagnoud O
 ( O
 France O
 ) O
-1:50.51 B-ORG
+1:50.51 O
 
 Spain O
 coach O
@@ -28848,7 +28848,7 @@ December O
 
 Prudential O
 Securities O
-Incorporated B-PER
+Incorporated O
 
 To O
 win O
@@ -28858,7 +28858,7 @@ Real O
 Madrid O
 ; O
 7-4 O
-Barcelona B-PER
+Barcelona O
 
 Spetses O
 139 O
@@ -28879,7 +28879,7 @@ Ahmad O
 b O
 Salim O
 Malik O
-20 B-PER
+20 O
 
 The O
 trends O
@@ -28917,7 +28917,7 @@ Rangers O
 ) O
 , O
 Gerry O
-Britton B-PER
+Britton O
 
 8. O
 Elena O
@@ -28925,7 +28925,7 @@ Koroleva O
 ( O
 Russia O
 ) O
-21.77 B-ORG
+21.77 O
 
 matches O
 on O
@@ -28937,7 +28937,7 @@ L O
 T O
 GF O
 GA O
-PTS B-PER
+PTS O
 
 On O
 several O
@@ -28961,7 +28961,7 @@ him O
 . O
 
 WESTERN O
-DIVISION B-PER
+DIVISION O
 
 Mills O
 was O
@@ -29086,13 +29086,13 @@ debate O
 . O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Elgin O
 City O
 0 O
 Whitehill O
-3 B-PER
+3 O
 
 Their O
 other O
@@ -29168,7 +29168,7 @@ debts O
 Montreal O
 3 O
 CHICAGO O
-1 B-PER
+1 O
 
 The O
 majority O
@@ -29200,7 +29200,7 @@ results O
 . O
 
 Robert O
-Kitson B-PER
+Kitson O
 
 Werder O
 Bremen O
@@ -29240,7 +29240,7 @@ Aires O
 Quequen O
 Rosario O
 Bahia O
-Blanca B-PER
+Blanca O
 
 " O
 You O
@@ -29346,12 +29346,12 @@ said O
 . O
 
 BRATISLAVA O
-1996-12-06 B-PER
+1996-12-06 O
 
 W O
 L O
 PCT O
-GB B-PER
+GB O
 
 The O
 United O
@@ -29427,7 +29427,7 @@ Madrid O
 4 O
 26 O
 17 O
-27 B-PER
+27 O
 
 Southampton O
 0 O
@@ -29444,11 +29444,11 @@ NEW O
 JERSEY O
 2 O
 Calgary O
-1 B-PER
+1 O
 
 Toledo O
 64,334 O
-160,476 B-PER
+160,476 O
 
 Russia O
 warns O
@@ -29464,7 +29464,7 @@ it O
 12/15/2014 O
 850M O
 5.30 O
-5.35 B-PER
+5.35 O
 
 Czech O
 diplomats O
@@ -29553,7 +29553,7 @@ Munich O
 1 O
 26 O
 14 O
-33 B-PER
+33 O
 
 HAVEL O
 HAS O
@@ -29564,7 +29564,7 @@ WORSENS O
 . O
 
 SANTIAGO O
-1996-12-05 B-PER
+1996-12-05 O
 
 Members O
 of O
@@ -29704,7 +29704,7 @@ strikes O
 . O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 Woolmer O
 was O
@@ -29788,7 +29788,7 @@ Fax O
 +31 O
 20 O
 504 O
-504 B-PER
+504 O
 
 More O
 than O
@@ -29839,7 +29839,7 @@ Southend O
 - O
 Canadian O
 Grain O
-Commission B-PER
+Commission O
 
 WASHINGTON O
 13 O
@@ -29847,7 +29847,7 @@ WASHINGTON O
 1 O
 69 O
 66 O
-27 B-PER
+27 O
 
 Port O
 Vale O
@@ -29867,7 +29867,7 @@ Stuttgart O
 3 O
 39 O
 17 O
-31 B-PER
+31 O
 
 Halftime O
 1-0 O
@@ -29880,7 +29880,7 @@ Marken O
 ( O
 Norway O
 ) O
-1:49.41 B-ORG
+1:49.41 O
 
 Steers O
 - O
@@ -29980,7 +29980,7 @@ BAY O
 9 O
 0 O
 153 O
-243 B-PER
+243 O
 
 Confirmed O
 - O
@@ -29992,7 +29992,7 @@ None O
 Year O
 Ago O
 - O
-None B-PER
+None O
 
 Dutch O
 forward O
@@ -30030,7 +30030,7 @@ Dunvant O
 Sutton O
 ( O
 Blackburn O
-) B-PER
+) O
 
 With O
 65 O
@@ -30147,7 +30147,7 @@ Friday O
 . O
 
 ANKARA O
-1996-12-06 B-PER
+1996-12-06 O
 
 South O
 Korea O
@@ -30156,7 +30156,7 @@ Indonesia O
 2 O
 ( O
 3-0 O
-) B-PER
+) O
 
 League O
 duties O
@@ -30226,7 +30226,7 @@ Wiberg O
 ( O
 Sweden O
 ) O
-1:49.88 B-ORG
+1:49.88 O
 
 " O
 Though O
@@ -30353,7 +30353,7 @@ Flax O
 235.7 O
 1.1 O
 22.2 O
-15.7 B-PER
+15.7 O
 
 In O
 another O
@@ -30433,14 +30433,14 @@ Merlin O
 ( O
 Italy O
 ) O
-1:49.76 B-ORG
+1:49.76 O
 
 Toledo O
 285,505 O
-561,287 B-PER
+561,287 O
 
 HARARE O
-1996-12-06 B-PER
+1996-12-06 O
 
 first O
 division O
@@ -30477,7 +30477,7 @@ King O
 Ace O
 22/11/96 O
 5,000 O
-Japan B-PER
+Japan O
 
 Scottish O
 Cup O
@@ -30489,7 +30489,7 @@ AL-AIN O
 United O
 Arab O
 Emirates O
-1996-12-06 B-PER
+1996-12-06 O
 
 Celta O
 Vigo O
@@ -30508,7 +30508,7 @@ Metz O
 5 O
 21 O
 16 O
-31 B-PER
+31 O
 
 SOCCER O
 - O
@@ -30562,7 +30562,7 @@ under O
 played O
 , O
 won O
-, B-MISC
+, O
 
 There O
 were O
@@ -30583,7 +30583,7 @@ Kusuma O
 Indonesia O
 ) O
 15-9 O
-15-10 B-PER
+15-10 O
 
 In O
 a O
@@ -30620,7 +30620,7 @@ previous O
 calculation O
 on O
 Nov O
-27 B-PER
+27 O
 
 1. O
 Pernilla O
@@ -30628,7 +30628,7 @@ Wiberg O
 ( O
 Sweden O
 ) O
-180 B-ORG
+180 O
 
 The O
 official O
@@ -30696,7 +30696,7 @@ MONTREAL O
 4 O
 96 O
 103 O
-24 B-PER
+24 O
 
 Betar O
 Jerusalem O
@@ -30765,12 +30765,12 @@ Total O
 49.2 O
 overs O
 ) O
-172 B-ORG
+172 O
 
 12/15/2011 O
 1,240M O
 5.25 O
-5.25 B-PER
+5.25 O
 
 Shortly O
 before O
@@ -30806,11 +30806,11 @@ Harris O
 
 Provisional O
 results O
-from B-PER
+from O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 7. O
 Ales O
@@ -30819,7 +30819,7 @@ Valenta O
 Czech O
 Republic O
 ) O
-194.02 B-ORG
+194.02 O
 
 We O
 can O
@@ -30836,7 +30836,7 @@ BALTIMORE O
 9 O
 0 O
 320 O
-369 B-PER
+369 O
 
 Adding O
 to O
@@ -30951,7 +30951,7 @@ Russia O
 23:13.3 O
 ( O
 0 O
-) B-ORG
+) O
 
 S. O
 Chanderpaul O
@@ -30959,7 +30959,7 @@ c O
 Healy O
 b O
 Blewett O
-54 B-PER
+54 O
 
 Slaughter O
 steers O
@@ -31264,13 +31264,13 @@ peace O
 . O
 
 Attendance O
-33,000 B-PER
+33,000 O
 
 Leading O
 goalscorers O
 in O
 the O
-English B-ORG
+English B-LOC
 
 Queen O
 of O
@@ -31284,7 +31284,7 @@ South O
 22 O
 
 GENEVA O
-1996-12-06 B-PER
+1996-12-06 O
 
 Cyberspace O
 squabbles O
@@ -31356,7 +31356,7 @@ Wachter O
 ( O
 Austria O
 ) O
-180 B-ORG
+180 O
 
 Defenders O
 - O
@@ -31379,7 +31379,7 @@ Nevil O
 Dede O
 , O
 Arjan O
-Bellai B-PER
+Bellai O
 
 Tambang O
 Timah O
@@ -31460,7 +31460,7 @@ Ago O
 58,100 O
 Year O
 Ago O
-30,800 B-PER
+30,800 O
 
 " O
 Today O
@@ -31523,13 +31523,13 @@ Germany O
 26:33.0 O
 ( O
 1 O
-) B-ORG
+) O
 
 Notts O
 County O
 3 O
 Rochdale O
-1 B-PER
+1 O
 
 G. O
 Blewett O
@@ -31545,7 +31545,7 @@ out O
 5.95 O
 5.90 O
 6.25 O
-6.20 B-PER
+6.20 O
 
 " O
 We O
@@ -31558,7 +31558,7 @@ Cabinet O
 . O
 
 AMSTERDAM O
-1996-12-06 B-PER
+1996-12-06 O
 
 Teams O
 : O
@@ -31568,7 +31568,7 @@ Brett O
 Liddle O
 75 O
 65 O
-70 B-PER
+70 O
 
 The O
 biggest O
@@ -31629,7 +31629,7 @@ Rochdale O
 7 O
 27 O
 26 O
-26 B-PER
+26 O
 
 Xuc O
 Rulhong O
@@ -31651,7 +31651,7 @@ Southampton O
 13 O
 
 PRAGUE O
-1996-12-06 B-PER
+1996-12-06 O
 
 PaineWebber O
 analyst O
@@ -31724,7 +31724,7 @@ Albion O
 4 O
 21 O
 17 O
-24 B-PER
+24 O
 
 Plastic O
 surgery O
@@ -31807,7 +31807,7 @@ Ago O
 Holiday O
 Year O
 Ago O
-10,900 B-PER
+10,900 O
 
 Pakistan O
 beat O
@@ -31834,7 +31834,7 @@ series O
 W O
 L O
 PCT O
-GB B-PER
+GB O
 
 20. O
 Alexandra O
@@ -31842,7 +31842,7 @@ Meissnitzer O
 ( O
 Austria O
 ) O
-27 B-ORG
+27 O
 
 Nottingham O
 Forest O
@@ -31888,17 +31888,17 @@ Birmingham O
 6 O
 23 O
 21 O
-32 B-PER
+32 O
 
 HAMBURG O
-1996-12-06 B-PER
+1996-12-06 O
 
 Canola O
 646.6 O
 769.4 O
 60.5 O
 1902.0 O
-2147.6 B-PER
+2147.6 O
 
 Alexis O
 Blanc O
@@ -31927,7 +31927,7 @@ ANGELES O
 3 O
 72 O
 83 O
-25 B-PER
+25 O
 
 One O
 of O
@@ -31963,7 +31963,7 @@ Everton O
 4 O
 25 O
 20 O
-24 B-PER
+24 O
 
 Liverpool O
 16 O
@@ -31972,7 +31972,7 @@ Liverpool O
 3 O
 26 O
 14 O
-31 B-PER
+31 O
 
 Company O
 President O
@@ -32041,7 +32041,7 @@ savior O
 
 3. O
 Greiner-Petter-Memm O
-78 B-PER
+78 O
 
 Source O
 : O
@@ -32055,7 +32055,7 @@ Stroem O
 ( O
 Norway O
 ) O
-1:51.07 B-ORG
+1:51.07 O
 
 BUFFALO O
 13 O
@@ -32063,7 +32063,7 @@ BUFFALO O
 1 O
 77 O
 76 O
-27 B-PER
+27 O
 
 Hull O
 22 O
@@ -32101,7 +32101,7 @@ minutes O
 seconds O
 ( O
 no O
-penalty B-PER
+penalty O
 
 Hosts O
 UAE O
@@ -32124,7 +32124,7 @@ matches O
 Goias O
 1 O
 Gremio O
-3 B-PER
+3 O
 
 Tallinna O
 Pank O
@@ -32178,7 +32178,7 @@ said O
 . O
 
 CANBERRA O
-1996-12-06 B-PER
+1996-12-06 O
 
 2. O
 Renate O
@@ -32186,18 +32186,18 @@ Goetschl O
 ( O
 Austria O
 ) O
-132 B-ORG
+132 O
 
 ( O
 52.76 O
 / O
 53.18 O
-) B-PER
+) O
 
 St. O
 Louis O
 217,092 O
-75,810 B-PER
+75,810 O
 
 SAN O
 ANTONIO O
@@ -32276,16 +32276,16 @@ Vogt O
 ( O
 Germany O
 ) O
-47 B-ORG
+47 O
 
 W O
 L O
 T O
 PF O
-PA B-PER
+PA O
 
 BONN O
-1996-12-06 B-PER
+1996-12-06 O
 
 5 O
 - O
@@ -32299,7 +32299,7 @@ Steve O
 McManaman O
 ( O
 Liverpool O
-) B-PER
+) O
 
 TORONTO O
 11 O
@@ -32315,7 +32315,7 @@ c O
 Blewett O
 b O
 Warne O
-24 B-PER
+24 O
 
 Zimbabwe O
 executes O
@@ -32324,7 +32324,7 @@ murderer O
 . O
 
 TALLINN O
-1996-12-06 B-PER
+1996-12-06 O
 
 Rosati O
 said O
@@ -32361,10 +32361,10 @@ Vatican O
 . O
 
 ROME O
-1996-12-06 B-PER
+1996-12-06 O
 
 MELBOURNE O
-1996-12-06 B-PER
+1996-12-06 O
 
 State O
 Street O
@@ -32449,7 +32449,7 @@ China O
 v O
 Allan O
 Budi O
-Kusuma B-PER
+Kusuma O
 
 Le O
 Havre O
@@ -32649,7 +32649,7 @@ months O
 5.60 O
 5.60 O
 5.90 O
-5.90 B-PER
+5.90 O
 
 " O
 He O
@@ -32679,7 +32679,7 @@ Masnada O
 ( O
 France O
 ) O
-51 B-ORG
+51 O
 
 -- O
 Riga O
@@ -32687,7 +32687,7 @@ Newsroom O
 , O
 +371 O
 721 O
-5240 B-PER
+5240 O
 
 Light O
 rains O
@@ -32751,7 +32751,7 @@ Riegler O
 New O
 Zealand O
 ) O
-100 B-ORG
+100 O
 
 Belo O
 and O
@@ -32909,7 +32909,7 @@ two O
 Canberra O
 Bureau O
 61-6 O
-273-2730 B-PER
+273-2730 O
 
 8. O
 Hiroya O
@@ -32922,11 +32922,11 @@ Japan O
 124.6 O
 / O
 110.1 O
-) B-PER
+) O
 
 4-1 O
 Draw O
-Draw B-PER
+Draw O
 
 Scottish O
 premier O
@@ -32939,7 +32939,7 @@ matches O
 
 World O
 Cup O
-standings B-PER
+standings O
 
 Cliftonville O
 9 O
@@ -32951,7 +32951,7 @@ Cliftonville O
 7 O
 
 MELBOURNE O
-1996-12-06 B-PER
+1996-12-06 O
 
 3. O
 Minna O
@@ -32959,11 +32959,11 @@ Karhu O
 ( O
 Finland O
 ) O
-24.05 B-ORG
+24.05 O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 The O
 bank O
@@ -33036,7 +33036,7 @@ DETROIT O
 4 O
 81 O
 53 O
-34 B-PER
+34 O
 
 The O
 Australian O
@@ -33251,7 +33251,7 @@ killed O
 Rafael O
 Alkorta O
 33-1 O
-Albert B-PER
+Albert O
 
 Attendance O
 106,000 O
@@ -33262,7 +33262,7 @@ Attendance O
 Maturity O
 Balance O
 Coupon O
-List B-PER
+List O
 
 Carlisle O
 22 O
@@ -33271,7 +33271,7 @@ Carlisle O
 4 O
 32 O
 20 O
-40 B-PER
+40 O
 
 Justin O
 made O
@@ -33300,7 +33300,7 @@ Martin O
 ( O
 Denmark O
 ) O
-11-1 B-ORG
+11-1 O
 
 Demand O
 and O
@@ -33311,7 +33311,7 @@ light O
 
 NEW O
 YORK O
-1996-12-05 B-PER
+1996-12-05 O
 
 The O
 final O
@@ -33384,7 +33384,7 @@ U.S O
 Parent O
 ) O
 FORECAST O
-YEAR-AGO B-PER
+YEAR-AGO O
 
 World O
 Cup O
@@ -33419,7 +33419,7 @@ programme O
 . O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Slaughter O
 Steers O
@@ -33438,10 +33438,10 @@ Jose O
 Amavisca O
 14-1 O
 Roger O
-Garcia B-PER
+Garcia O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 Hines O
 ) O
@@ -33453,7 +33453,7 @@ Hines O
 ) O
 and O
 Austria O
-III B-PER
+III O
 
 A O
 former O
@@ -33538,7 +33538,7 @@ Belgrade O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 Dundee O
 16 O
@@ -33555,14 +33555,14 @@ Gerg O
 ( O
 Germany O
 ) O
-1:49.84 B-ORG
+1:49.84 O
 
 AL-AIN O
 , O
 United O
 Arab O
 Emirates O
-1996-12-06 B-PER
+1996-12-06 O
 
 Barbarians O
 - O
@@ -33598,7 +33598,7 @@ N.IRELAND O
 
 9. O
 Russia O
-288 B-PER
+288 O
 
 A O
 " O
@@ -33651,7 +33651,7 @@ van O
 Vuuren O
 65 O
 69 O
-75 B-PER
+75 O
 
 MEDITERRANEAN O
 - O
@@ -33700,7 +33700,7 @@ Tranmere O
 8 O
 31 O
 26 O
-32 B-PER
+32 O
 
 Albright O
 , O
@@ -33737,7 +33737,7 @@ in O
 
 ANAHEIM O
 AT O
-PITTSBURGH B-LOC
+PITTSBURGH O
 
 NYMEX O
 Permian O
@@ -33780,10 +33780,10 @@ Wiberg O
 ( O
 Sweden O
 ) O
-1:17.97 B-ORG
+1:17.97 O
 
 MELBOURNE O
-1996-12-06 B-PER
+1996-12-06 O
 
 The O
 official O
@@ -33829,7 +33829,7 @@ Kuster O
 ( O
 Switzerland O
 ) O
-160.55 B-ORG
+160.55 O
 
 Clydebank O
 16 O
@@ -33846,7 +33846,7 @@ Haeusl O
 ( O
 Germany O
 ) O
-1:49.53 B-ORG
+1:49.53 O
 
 Van O
 Boxmeer O
@@ -33890,13 +33890,13 @@ beer O
 NEW O
 JERSEY O
 AT O
-BOSTON B-LOC
+BOSTON O
 
 Algoa O
 Day O
 21/11/96 O
 6,000 O
-Africa B-PER
+Africa O
 
 It O
 said O
@@ -34010,18 +34010,18 @@ first O
 division O
 
 Nadim O
-Ladki B-PER
+Ladki O
 
 CHARLOTTE O
 AT O
-SEATTLE B-LOC
+SEATTLE O
 
 Oats O
 286.5 O
 284.6 O
 31.9 O
 937.3 O
-581.2 B-PER
+581.2 O
 
 Japan O
 : O
@@ -34096,13 +34096,13 @@ Okano O
 . O
 
 GLASGOW O
-1996-12-07 B-PER
+1996-12-07 O
 
 ( O
 52.91 O
 / O
 53.07 O
-) B-PER
+) O
 
 7. O
 Liz O
@@ -34110,7 +34110,7 @@ McIntyre O
 ( O
 U.S. O
 ) O
-22.00 B-ORG
+22.00 O
 
 Jones O
 became O
@@ -34189,13 +34189,13 @@ Dzmura O
 , O
 Pavel O
 Polomsky O
-) B-PER
+) O
 
 Treorchy O
 13 O
 Ebbw O
 Vale O
-17 B-PER
+17 O
 
 With O
 violence O
@@ -34259,15 +34259,15 @@ yen O
 . O
 
 WINNIPEG O
-1996-12-06 B-PER
+1996-12-06 O
 
 CALGARY O
 AT O
-BOSTON B-LOC
+BOSTON O
 
 Exports O
 Domestic O
-Disappearance B-PER
+Disappearance O
 
 Dealers O
 said O
@@ -34289,7 +34289,7 @@ approaches O
 . O
 
 DUBLIN O
-1996-12-07 B-PER
+1996-12-07 O
 
 Nation O
 's O
@@ -34338,7 +34338,7 @@ said O
 W O
 L O
 PCT O
-GB B-PER
+GB O
 
 Hearts O
 0 O
@@ -34358,7 +34358,7 @@ Blackburn O
 28-1 O
 Real O
 Madrid O
-Barcelona B-PER
+Barcelona O
 
 27. O
 Sybille O
@@ -34366,7 +34366,7 @@ Brauner O
 ( O
 Germay O
 ) O
-1:51.04 B-ORG
+1:51.04 O
 
 Dunfermline O
 2 O
@@ -34439,19 +34439,19 @@ DETROIT O
 3 O
 .824 O
 2 O
-1/2 B-ORG
+1/2 O
 
 Hartford O
 4 O
 BOSTON O
-2 B-PER
+2 O
 
 Vessel O
 Date O
 of O
 Arrival O
 Quantity O
-Destination B-PER
+Destination O
 
 They O
 have O
@@ -34596,20 +34596,20 @@ Tenerife O
 6 O
 23 O
 17 O
-19 B-PER
+19 O
 
 Cardiff O
 0 O
 Gillingham O
-2 B-PER
+2 O
 
 12/15/2005 O
 55M O
 4.60 O
-4.60 B-PER
+4.60 O
 
 HARARE O
-1996-12-07 B-PER
+1996-12-07 O
 
 ( O
 Dunfermline O
@@ -34650,7 +34650,7 @@ WEEKEND O
 . O
 
 MADRID O
-1996-12-06 B-PER
+1996-12-06 O
 
 Super O
 G O
@@ -34659,7 +34659,7 @@ standings O
 
 DES O
 MOINES O
-1996-12-06 B-PER
+1996-12-06 O
 
 2. O
 Frode O
@@ -34670,19 +34670,19 @@ Norway O
 26:17.8 O
 ( O
 2 O
-) B-ORG
+) O
 
 RIO O
 DE O
 JANEIRO O
-1996-12-06 B-PER
+1996-12-06 O
 
 PORTLAND O
 11 O
 8 O
 .579 O
 3 O
-1/2 B-ORG
+1/2 O
 
 In O
 the O
@@ -34705,7 +34705,7 @@ deadlines O
 2-0 O
 9-1 O
 2-0 O
-12-1 B-PER
+12-1 O
 
 The O
 NTT O
@@ -34778,7 +34778,7 @@ Total O
 7724.8 O
 629.8 O
 13050.2 O
-11979.6 B-PER
+11979.6 O
 
 Following O
 their O
@@ -34914,7 +34914,7 @@ PHILADELPHIA O
 2 O
 81 O
 78 O
-32 B-PER
+32 O
 
 Grunde O
 Njos O
@@ -34968,7 +34968,7 @@ Montillet O
 ( O
 France O
 ) O
-1:18.11 B-ORG
+1:18.11 O
 
 TAMPA O
 BAY O
@@ -34977,7 +34977,7 @@ BAY O
 2 O
 69 O
 81 O
-18 B-PER
+18 O
 
 Iordanescu O
 said O
@@ -35052,14 +35052,14 @@ Halftime O
 NY O
 GIANTS O
 AT O
-MIAMI B-LOC
+MIAMI O
 
 10. O
 Dmitri O
 Dashinski O
 Belarus O
 ) O
-190.70 B-ORG
+190.70 O
 
 The O
 party O
@@ -35135,7 +35135,7 @@ Tuesday O
 MUNICH O
 , O
 Germany O
-1996-12-06 B-PER
+1996-12-06 O
 
 The O
 committee O
@@ -35171,7 +35171,7 @@ Wasim O
 ) O
 b O
 Waqar O
-1 B-PER
+1 O
 
 19,675 B-ORG
 
@@ -35182,7 +35182,7 @@ LOUIS O
 0 O
 82 O
 84 O
-28 B-PER
+28 O
 
 With O
 more O
@@ -35225,7 +35225,7 @@ Apr O
 74.13 O
 74.69 O
 70.59 O
-72.04-76.81 B-PER
+72.04-76.81 O
 
 He O
 was O
@@ -35337,7 +35337,7 @@ Rye O
 57.9 O
 3.0 O
 10.7 O
-18.9 B-PER
+18.9 O
 
 9. O
 Xu O
@@ -35345,7 +35345,7 @@ Nannan O
 ( O
 China O
 ) O
-152.08 B-ORG
+152.08 O
 
 4. O
 German O
@@ -35357,7 +35357,7 @@ Dostthaler O
 Thomas O
 Lebsa O
 ) O
-1:45.95 B-ORG
+1:45.95 O
 
 Sun O
 Jun O
@@ -35371,7 +35371,7 @@ Sidek O
 Malaysia O
 ) O
 15-12 O
-17-14 B-PER
+17-14 O
 
 Grove O
 said O
@@ -35432,12 +35432,12 @@ Friday O
 -- O
 Hamburg O
 newsroom O
-+49-40-41903275 B-PER
++49-40-41903275 O
 
 Chelsea O
 2 O
 Everton O
-2 B-PER
+2 O
 
 " O
 Falling O
@@ -35466,7 +35466,7 @@ week O
 Delivery O
 Date O
 : O
-12/16/1996 B-PER
+12/16/1996 O
 
 He O
 said O
@@ -35500,7 +35500,7 @@ Lindsay O
 ( O
 Canada O
 ) O
-1:50.54 B-ORG
+1:50.54 O
 
 One O
 of O
@@ -35605,14 +35605,14 @@ PHILADELPHIA O
 
 Port O
 Loading O
-Waiting B-PER
+Waiting O
 
 Werder O
 Bremen O
 1 O
 1860 O
 Munich O
-1 B-PER
+1 O
 
 Olympiakos O
 ( O
@@ -35631,12 +35631,12 @@ County O
 11 O
 15 O
 23 O
-20 B-PER
+20 O
 
 Standings O
 of O
 National O
-Hockey B-PER
+Hockey O
 
 South O
 Africa O
@@ -35679,7 +35679,7 @@ RESULTS O
 . O
 
 RANGOON O
-1996-12-06 B-PER
+1996-12-06 O
 
 " O
 If O
@@ -35723,7 +35723,7 @@ Schoesser O
 Erwin O
 Arnold O
 ) O
-1:46.13 B-ORG
+1:46.13 O
 
 7. O
 Warwara O
@@ -35731,7 +35731,7 @@ Zelenskaja O
 ( O
 Russia O
 ) O
-151 B-ORG
+151 O
 
 M. O
 Waugh O
@@ -35739,7 +35739,7 @@ c O
 Murray O
 b O
 Benjamin O
-27 B-PER
+27 O
 
 Matthew O
 estimates O
@@ -35776,10 +35776,10 @@ est O
 ) O
 130,000 O
 6,000 O
-346,000 B-PER
+346,000 O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 21. O
 Shannon O
@@ -35787,7 +35787,7 @@ Nobis O
 ( O
 U.S. O
 ) O
-1:19.08 B-ORG
+1:19.08 O
 
 Witnesses O
 said O
@@ -35895,13 +35895,13 @@ Buenos O
 Aires O
 Newsroom O
 +541 O
-318-0655 B-PER
+318-0655 O
 
 W O
 L O
 T O
 PF O
-PA B-PER
+PA O
 
 Under O
 pressure O
@@ -35942,7 +35942,7 @@ Reading O
 10 O
 25 O
 33 O
-26 B-PER
+26 O
 
 Fiorentina O
 will O
@@ -35995,7 +35995,7 @@ Madrid O
 0 O
 31 O
 12 O
-35 B-PER
+35 O
 
 RTRS O
 - O
@@ -36110,7 +36110,7 @@ Leyton O
 Orient O
 1 O
 Stevenage O
-2 B-PER
+2 O
 
 Score O
 on O
@@ -36171,7 +36171,7 @@ fog O
 Stranraer O
 0 O
 Brechin O
-1 B-PER
+1 O
 
 " O
 In O
@@ -36221,7 +36221,7 @@ Johnstone O
 38 O
 
 TIRANA O
-1996-12-06 B-PER
+1996-12-06 O
 
 The O
 incident O
@@ -36275,7 +36275,7 @@ in O
 42.1 O
 overs O
 ) O
-231 B-ORG
+231 O
 
 Representatives O
 of O
@@ -36318,7 +36318,7 @@ said O
 . O
 
 Haitham O
-Haddadin B-PER
+Haddadin O
 
 6. O
 Donna O
@@ -36326,7 +36326,7 @@ Weinbrecht O
 ( O
 U.S. O
 ) O
-22.48 B-ORG
+22.48 O
 
 " O
 All O
@@ -36455,14 +36455,14 @@ jail O
 Results O
 of O
 National O
-Hockey B-PER
+Hockey O
 
 CINCINNATI O
 5 O
 8 O
 0 O
 299 O
-318 B-PER
+318 O
 
 7. O
 Espen O
@@ -36470,11 +36470,11 @@ Bredesen O
 ( O
 Norway O
 ) O
-112 B-ORG
+112 O
 
 Current O
 12.00 O
-9.94 B-PER
+9.94 O
 
 Scorers O
 : O
@@ -36491,7 +36491,7 @@ Namibia O
 , O
 Schalk O
 van O
-der B-PER
+der O
 
 Italy O
 commission O
@@ -36601,7 +36601,7 @@ PITTSBURGH O
 3 O
 86 O
 94 O
-23 B-PER
+23 O
 
 6. O
 Germany O
@@ -36613,15 +36613,15 @@ Wiese O
 Jakobs O
 Marco O
 ) O
-1:46.02 B-ORG
+1:46.02 O
 
 Results O
 of O
 Saturday O
-'s B-PER
+'s O
 
 MADRID O
-1996-12-07 B-PER
+1996-12-07 O
 
 Earlier O
 , O
@@ -36724,7 +36724,7 @@ Town O
 
 Attendence O
 : O
-3,000 B-PER
+3,000 O
 
 6 O
 - O
@@ -36844,7 +36844,7 @@ Bos O
 ( O
 Netherlands O
 ) O
-1:16.38 B-ORG
+1:16.38 O
 
 for O
 goals O
@@ -37021,12 +37021,12 @@ Merlin O
 ( O
 Italy O
 ) O
-1:18.67 B-ORG
+1:18.67 O
 
 ATLANTA O
 AT O
 NEW O
-ORLEANS B-PER
+ORLEANS O
 
 Thai O
 Resource O
@@ -37078,12 +37078,12 @@ RANGERS O
 5 O
 97 O
 86 O
-27 B-PER
+27 O
 
 Scottish O
 league O
 standings O
-after B-PER
+after O
 
 " O
 I O
@@ -37196,7 +37196,7 @@ Internazionale O
 ( O
 2 O
 ) O
-1330 B-ORG
+1330 O
 
 Stirling O
 16 O
@@ -37313,7 +37313,7 @@ Burnley O
 7 O
 30 O
 22 O
-37 B-PER
+37 O
 
 In O
 sentencing O
@@ -37356,12 +37356,12 @@ Dortmund O
 3 O
 33 O
 17 O
-31 B-PER
+31 O
 
 Visible O
 Supplies O
 Farmers O
-Deliveries B-PER
+Deliveries O
 
 Turkey O
 says O
@@ -37473,7 +37473,7 @@ OTTAWA O
 6 O
 62 O
 72 O
-20 B-PER
+20 O
 
 Centre O
 Jason O
@@ -37498,7 +37498,7 @@ of O
 Loine O
 19/11/96 O
 10,000 O
-Philippines B-PER
+Philippines O
 
 League O
 teams O
@@ -37511,10 +37511,10 @@ Friday O
 tabulate O
 under O
 won O
-, B-MISC
+, O
 
 BRUSSELS O
-1996-12-06 B-PER
+1996-12-06 O
 
 9. O
 Jani O
@@ -37527,13 +37527,13 @@ Finland O
 115 O
 / O
 116.5 O
-) B-PER
+) O
 
 St O
 Louis O
 4 O
 COLORADO O
-3 B-PER
+3 O
 
 Extremadura O
 15 O
@@ -37549,7 +37549,7 @@ X-DENVER O
 1 O
 0 O
 351 O
-199 B-PER
+199 O
 
 " O
 If O
@@ -37584,7 +37584,7 @@ Greece O
 9 O
 7 O
 2 O
-16 B-ORG
+16 O
 
 Andrew O
 Pitts O
@@ -37637,7 +37637,7 @@ newsdesk O
 408 O
 8720 O
 ) O
-) B-ORG
+) O
 
 Rangers O
 14 O
@@ -37646,7 +37646,7 @@ Rangers O
 1 O
 35 O
 12 O
-35 B-PER
+35 O
 
 Lloyd O
 did O
@@ -37671,7 +37671,7 @@ Hercules O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 The O
 15-year-old O
@@ -37699,7 +37699,7 @@ HOUSTON O
 - O
 
 WESTERN O
-DIVISION B-PER
+DIVISION O
 
 Conversion O
 : O
@@ -37726,7 +37726,7 @@ Motherwell O
 6 O
 17 O
 23 O
-17 B-PER
+17 O
 
 Steers O
 - O
@@ -37770,7 +37770,7 @@ said O
 
 4-1 O
 Barcelona O
-Barcelona B-PER
+Barcelona O
 
 Norilsk O
 's O
@@ -37867,7 +37867,7 @@ DETROIT O
 13 O
 3 O
 .813 O
-3 B-PER
+3 O
 
 ST O
 LOUIS O
@@ -37876,7 +37876,7 @@ LOUIS O
 0 O
 78 O
 81 O
-26 B-PER
+26 O
 
 " O
 I O
@@ -37917,15 +37917,15 @@ Desk O
 +1 O
 212 O
 859 O
-1640 B-PER
+1640 O
 
 Raphael O
-Kopessoua B-PER
+Kopessoua O
 
 12/15/2001 O
 575M O
 4.60 O
-4.20 B-PER
+4.20 O
 
 13. O
 Martina O
@@ -37933,7 +37933,7 @@ Ertl O
 ( O
 Germany O
 ) O
-119 B-ORG
+119 O
 
 From O
 a O
@@ -38011,7 +38011,7 @@ Seizinger O
 ( O
 Germany O
 ) O
-1:18.32 B-ORG
+1:18.32 O
 
 It O
 is O
@@ -38074,7 +38074,7 @@ reporters O
 Pittsburgh O
 5 O
 WASHINGTON O
-3 B-PER
+3 O
 
 for O
 , O
@@ -38100,7 +38100,7 @@ Brechu O
 ( O
 France O
 ) O
-29 B-ORG
+29 O
 
 Top-seeded O
 Eyles O
@@ -38162,7 +38162,7 @@ diesel O
 INDIANA O
 AT O
 GOLDEN O
-STATE B-PER
+STATE O
 
 FEATURE O
 - O
@@ -38186,7 +38186,7 @@ Utrecht O
 DETROIT O
 93 O
 Cleveland O
-81 B-PER
+81 O
 
 Ricky O
 Watters O
@@ -38229,7 +38229,7 @@ in O
 . O
 
 JOHANNESBURG O
-1996-12-06 B-PER
+1996-12-06 O
 
 Marseille O
 20 O
@@ -38238,7 +38238,7 @@ Marseille O
 6 O
 18 O
 17 O
-26 B-PER
+26 O
 
 Asked O
 about O
@@ -38309,7 +38309,7 @@ Friday O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 Telkom O
 at O
@@ -38372,7 +38372,7 @@ State O
 
 2. O
 Brenden O
-206 B-PER
+206 O
 
 High O
 sulphur O
@@ -38421,7 +38421,7 @@ said O
 . O
 
 SHANGHAI O
-1996-12-06 B-PER
+1996-12-06 O
 
 2. O
 Kusunose O
@@ -38429,23 +38429,23 @@ Shiho O
 ( O
 Japan O
 ) O
-1:24.77 B-ORG
+1:24.77 O
 
 PHILADELPHIA O
 AT O
-DALLAS B-LOC
+DALLAS O
 
 VAIL O
 , O
 Colorado O
-1996-12-07 B-PER
+1996-12-07 O
 
 INDIANAPOLIS O
 8 O
 6 O
 0 O
 269 O
-284 B-PER
+284 O
 
 NORTHEAST O
 DIVISION O
@@ -38523,17 +38523,17 @@ Philadelphia O
 
 2. O
 Paramygina O
-79 B-PER
+79 O
 
 Result O
 of O
 National O
-Football B-PER
+Football O
 
 EDMONTON O
 5 O
 Ottawa O
-2 B-PER
+2 O
 
 Popescu B-ORG
 
@@ -38562,7 +38562,7 @@ transparent O
 Real O
 Madrid O
 Real O
-Madrid B-PER
+Madrid O
 
 FLORIDA O
 17 O
@@ -38570,7 +38570,7 @@ FLORIDA O
 6 O
 83 O
 53 O
-40 B-PER
+40 O
 
 standings O
 after O
@@ -38583,7 +38583,7 @@ under O
 won O
 , O
 lost O
-, B-PER
+, O
 
 Santa O
 Fe O
@@ -38637,7 +38637,7 @@ early O
 . O
 
 JERUSALEM O
-1996-12-06 B-PER
+1996-12-06 O
 
 " O
 There O
@@ -38679,7 +38679,7 @@ Montillet O
 ( O
 France O
 ) O
-146 B-ORG
+146 O
 
 In O
 Charleroi O
@@ -38737,7 +38737,7 @@ Reggiana O
 ( O
 18 O
 ) O
-1530 B-ORG
+1530 O
 
 BOSTON O
 10 O
@@ -38745,7 +38745,7 @@ BOSTON O
 4 O
 74 O
 84 O
-24 B-PER
+24 O
 
 Leeds O
 ' O
@@ -38790,7 +38790,7 @@ Last O
 Year O
 N O
 / O
-A B-PER
+A O
 
 SOCCER O
 - O
@@ -38895,7 +38895,7 @@ Tong O
 Shun O
 25/11/96 O
 3,000 O
-Vietnam B-PER
+Vietnam O
 
 New O
 York O
@@ -38912,7 +38912,7 @@ Astle O
 ( O
 w-1 O
 nb-1 O
-) B-PER
+) O
 
 On O
 Thursday O
@@ -38947,13 +38947,13 @@ Saturday O
 : O
 
 - O
-USDA B-PER
+USDA O
 
 Luton O
 2 O
 Boreham O
 Wood O
-1 B-PER
+1 O
 
 Canadian O
 West O
@@ -38970,7 +38970,7 @@ Mikhailov O
 ( O
 Russia O
 ) O
-202.59 B-ORG
+202.59 O
 
 Led O
 as O
@@ -39014,7 +39014,7 @@ Sunday O
 PORTLAND O
 97 O
 Charlotte O
-93 B-PER
+93 O
 
 It O
 was O
@@ -39154,13 +39154,13 @@ Norwich O
 6 O
 27 O
 21 O
-32 B-PER
+32 O
 
 Partizan O
 - O
 Dejan O
 Koturovic O
-21 B-PER
+21 O
 
 This O
 followed O
@@ -39214,7 +39214,7 @@ Kilmarnock O
 0 O
 Dundee O
 United O
-2 B-PER
+2 O
 
 7. O
 Madlen O
@@ -39222,7 +39222,7 @@ Brigger-Summermatter O
 ( O
 Switzerland O
 ) O
-1:18.23 B-ORG
+1:18.23 O
 
 201 O
 Mark O
@@ -39232,7 +39232,7 @@ Zimbabwe O
 ) O
 72 O
 61 O
-68 B-PER
+68 O
 
 The O
 cause O
@@ -39247,7 +39247,7 @@ known O
 
 GENERAL O
 OBLIGATION O
-BONDS B-PER
+BONDS O
 
 HAVEL O
 PRAISES O
@@ -39269,7 +39269,7 @@ Japan O
 151.5 O
 / O
 143.9 O
-) B-PER
+) O
 
 In O
 a O
@@ -39328,7 +39328,7 @@ Sociedad O
 24 O
 
 EASTERN O
-CONFERENCE B-PER
+CONFERENCE O
 
 lealgue O
 matches O
@@ -39420,7 +39420,7 @@ Leeds O
 8 O
 15 O
 20 O
-20 B-PER
+20 O
 
 ATLANTIC O
 DIVISION O
@@ -39472,7 +39472,7 @@ AL-AIN O
 United O
 Arab O
 Emirates O
-1996-12-06 B-PER
+1996-12-06 O
 
 Havel O
 had O
@@ -39499,7 +39499,7 @@ Brassard O
 ( O
 Canada O
 ) O
-24.40 B-ORG
+24.40 O
 
 Tallinna O
 Pank O
@@ -39600,7 +39600,7 @@ Gerg O
 ( O
 Germany O
 ) O
-130 B-ORG
+130 O
 
 week O
 to O
@@ -39611,7 +39611,7 @@ ago O
 71,000 O
 year O
 ago O
-47,200 B-PER
+47,200 O
 
 Fall O
 of O
@@ -39623,11 +39623,11 @@ wickets O
 4-146 O
 5-170 O
 6-190 O
-7-195 B-PER
+7-195 O
 
 PHOENIX O
 AT O
-SACRAMENTO B-LOC
+SACRAMENTO O
 
 16. O
 Bibiana O
@@ -39635,7 +39635,7 @@ Perez O
 ( O
 Italy O
 ) O
-45 B-ORG
+45 O
 
 Fourteen O
 years O
@@ -39667,7 +39667,7 @@ Zimbabwe O
 ) O
 68 O
 68 O
-70 B-PER
+70 O
 
 2006 O
 4.70 O
@@ -39677,7 +39677,7 @@ Zimbabwe O
 5.15 O
 5.15 O
 5.50 O
-5.50 B-PER
+5.50 O
 
 Senior O
 BOJ O
@@ -39721,7 +39721,7 @@ rebels O
 . O
 
 Attendance O
-33,000 B-PER
+33,000 O
 
 Liverpool O
 0 O
@@ -39739,7 +39739,7 @@ PITTSBURGH O
 4 O
 0 O
 299 O
-211 B-PER
+211 O
 
 Exeter O
 22 O
@@ -39748,13 +39748,13 @@ Exeter O
 10 O
 21 O
 28 O
-26 B-PER
+26 O
 
 NY O
 JETS O
 AT O
 NEW O
-ENGLAND B-PER
+ENGLAND O
 
 Bury O
 21 O
@@ -39763,7 +39763,7 @@ Bury O
 4 O
 33 O
 20 O
-39 B-PER
+39 O
 
 New O
 meningitis O
@@ -39776,25 +39776,25 @@ Kinder O
 - O
 Zoran O
 Savic O
-18 B-PER
+18 O
 
 BANGUI O
-1996-12-06 B-PER
+1996-12-06 O
 
 Wheat O
 121 O
 130 O
 121.3 O
-121 B-PER
+121 O
 
 -- O
 Chicago O
 newsdesk O
 312-408 O
-8720 B-PER
+8720 O
 
 WESTERN O
-CONFERENCE B-PER
+CONFERENCE O
 
 soccer O
 match O
@@ -39844,7 +39844,7 @@ div O
 30.00 O
 yen O
 30.00 O
-yen B-PER
+yen O
 
 She O
 was O
@@ -39909,7 +39909,7 @@ said O
 MUNICH O
 , O
 Germany O
-1996-12-06 B-PER
+1996-12-06 O
 
 West O
 Indies O
@@ -39930,18 +39930,18 @@ Tuesday O
 CAROLINA O
 AT O
 SAN O
-FRANCISCO B-PER
+FRANCISCO O
 
 Chicago O
 0 O
-0 B-ORG
+0 O
 
 BUFFALO O
 9 O
 4 O
 0 O
 267 O
-215 B-PER
+215 O
 
 6. O
 Jeremie O
@@ -39949,10 +39949,10 @@ Collomb-Patton O
 ( O
 France O
 ) O
-23.87 B-ORG
+23.87 O
 
 SINGAPORE O
-1996-12-06 B-PER
+1996-12-06 O
 
 Results O
 of O
@@ -40102,10 +40102,10 @@ UAE O
 0 O
 4 O
 3 O
-4 B-ORG
+4 O
 
 ABIDJAN O
-1996-12-06 B-PER
+1996-12-06 O
 
 China O
 controlled O
@@ -40154,7 +40154,7 @@ Reading O
 0 O
 Port O
 Vale O
-1 B-PER
+1 O
 
 30,018 B-ORG
 
@@ -40165,7 +40165,7 @@ Barnsley O
 3 O
 38 O
 26 O
-38 B-PER
+38 O
 
 Racing O
 Santander O
@@ -40267,7 +40267,7 @@ Clyde O
 both O
 now O
 play O
-on B-PER
+on O
 
 ( O
 ( O
@@ -40278,7 +40278,7 @@ Gras O
 947 O
 3548 O
 ) O
-) B-ORG
+) O
 
 6. O
 Katja O
@@ -40286,13 +40286,13 @@ Seizinger O
 ( O
 Germany O
 ) O
-74 B-ORG
+74 O
 
 Sorghum O
 unq O
 unq O
 unq O
-unq B-PER
+unq O
 
 SOCCER O
 - O
@@ -40322,7 +40322,7 @@ Borghi O
 ( O
 Switzerland O
 ) O
-1:50.72 B-ORG
+1:50.72 O
 
 I O
 came O
@@ -40411,7 +40411,7 @@ investors O
 
 Provisional O
 results O
-from B-PER
+from O
 
 Burmese O
 students O
@@ -40522,12 +40522,12 @@ ETA O
 
 ( O
 Indonesia O
-) B-PER
+) O
 
 BOMBAY O
 , O
 India O
-1996-12-06 B-PER
+1996-12-06 O
 
 Chen O
 Gang O
@@ -40542,11 +40542,11 @@ Hansen O
 Denmark O
 ) O
 15-12 O
-15-6 B-PER
+15-6 O
 
 Results O
 of O
-Brazilian B-LOC
+Brazilian O
 
 3. O
 Hide O
@@ -40554,7 +40554,7 @@ Gerg O
 ( O
 Germany O
 ) O
-276 B-ORG
+276 O
 
 Lahd O
 , O
@@ -40620,7 +40620,7 @@ Meissnitzer O
 ( O
 Austria O
 ) O
-65 B-ORG
+65 O
 
 EDMONTON O
 13 O
@@ -40628,14 +40628,14 @@ EDMONTON O
 1 O
 94 O
 88 O
-27 B-PER
+27 O
 
 NEW O
 YORK O
 11 O
 6 O
 .647 O
-2 B-PER
+2 O
 
 In O
 congruence O
@@ -40658,12 +40658,12 @@ the O
 high O
 - O
 $ O
-3.40s. B-PER
+3.40s. O
 
 VAIL O
 , O
 Colorado O
-1996-12-07 B-PER
+1996-12-07 O
 
 CALGARY O
 10 O
@@ -40754,10 +40754,10 @@ rebels O
 . O
 
 SEOUL O
-1996-12-06 B-PER
+1996-12-06 O
 
 JAKARTA O
-1996-12-06 B-PER
+1996-12-06 O
 
 League O
 teams O
@@ -40768,7 +40768,7 @@ on O
 Thursday O
 ( O
 tabulate O
-under B-PER
+under O
 
 18= O
 Miriam O
@@ -40776,7 +40776,7 @@ Vogt O
 ( O
 Germany O
 ) O
-29 B-ORG
+29 O
 
 Ijaz O
 Ahmad O
@@ -40846,7 +40846,7 @@ centre O
 VAIL O
 , O
 Colorado O
-1996-12-07 B-PER
+1996-12-07 O
 
 Volume O
 was O
@@ -40891,7 +40891,7 @@ LOUIS O
 0 O
 
 Group O
-A B-ORG
+A O
 
 Half O
 of O
@@ -40907,7 +40907,7 @@ vet O
 TIGNES O
 , O
 France O
-1996-12-07 B-PER
+1996-12-07 O
 
 Mansfield O
 21 O
@@ -41028,7 +41028,7 @@ citizens O
 . O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 1995 O
 Year O
@@ -41036,7 +41036,7 @@ to O
 date* O
 32,970,000 O
 1,305,000 O
-88,800,000 B-PER
+88,800,000 O
 
 C. O
 Cairns O
@@ -41066,13 +41066,13 @@ Chanderpaul O
 . O
 
 SYDNEY O
-1996-12-06 B-PER
+1996-12-06 O
 
 EPS O
 143.56 O
 yen O
 127.64 O
-yen B-PER
+yen O
 
 Oxford O
 22 O
@@ -41090,7 +41090,7 @@ Tenerife O
 6 O
 23 O
 17 O
-19 B-PER
+19 O
 
 Syria O
 had O
@@ -41118,7 +41118,7 @@ Results O
 of O
 the O
 World O
-Cup B-PER
+Cup O
 
 division O
 matches O
@@ -41129,7 +41129,7 @@ Saturday O
 IGLS O
 , O
 Austria O
-1996-12-07 B-PER
+1996-12-07 O
 
 The O
 Australian O
@@ -41184,11 +41184,11 @@ SBCP O
 . O
 
 Elif O
-Kaban B-PER
+Kaban O
 
 ( O
 Hibernian O
-) B-PER
+) O
 
 When O
 asked O
@@ -41250,18 +41250,18 @@ Worthington O
 ( O
 U.S. O
 ) O
-192.36 B-ORG
+192.36 O
 
 1:46.06 O
 ( O
 53.01 O
 / O
 53.05 O
-) B-PER
+) O
 
 NEW O
 YORK O
-1996-12-07 B-PER
+1996-12-07 O
 
 The O
 bishop O
@@ -41328,7 +41328,7 @@ ORLANDO O
 4 O
 
 ROME O
-1996-12-06 B-PER
+1996-12-06 O
 
 These O
 people O
@@ -41452,10 +41452,10 @@ New O
 York O
 Power O
 Desk O
-+212-859-1628 B-PER
++212-859-1628 O
 
 PARIS O
-1996-12-06 B-PER
+1996-12-06 O
 
 Peters O
 said O
@@ -41491,7 +41491,7 @@ Verona O
 ( O
 17 O
 ) O
-1330 B-ORG
+1330 O
 
 20. O
 Miriam O
@@ -41499,10 +41499,10 @@ Vogt O
 ( O
 Germany O
 ) O
-76 B-ORG
+76 O
 
 GLASGOW O
-1996-12-07 B-PER
+1996-12-07 O
 
 C. O
 Walsh O
@@ -41545,7 +41545,7 @@ LAKERS O
 13 O
 7 O
 .650 O
-2 B-PER
+2 O
 
 2. O
 Pernilla O
@@ -41553,7 +41553,7 @@ Wiberg O
 ( O
 Sweden O
 ) O
-353 B-ORG
+353 O
 
 Hibernian O
 15 O
@@ -41575,7 +41575,7 @@ Yugoslavia O
 14 O
 
 MOSCOW O
-1996-12-06 B-PER
+1996-12-06 O
 
 Before O
 Gorst O
@@ -41611,7 +41611,7 @@ Fax O
 +32 O
 2 O
 230 O
-7710 B-PER
+7710 O
 
 The O
 witnesses O
@@ -41672,7 +41672,7 @@ Weah O
 . O
 
 BEIJING O
-1996-12-06 B-PER
+1996-12-06 O
 
 The O
 taxidriver O
@@ -41797,7 +41797,7 @@ ATLANTA O
 11 O
 0 O
 234 O
-393 B-PER
+393 O
 
 The O
 Barbarians O
@@ -41838,11 +41838,11 @@ Wiberg O
 ( O
 Sweden O
 ) O
-75 B-ORG
+75 O
 
 LOS O
 ANGELES O
-1996-12-05 B-PER
+1996-12-05 O
 
 His O
 statement O
@@ -41890,7 +41890,7 @@ two O
 ZAANDAM O
 , O
 Netherlands O
-1996-12-06 B-PER
+1996-12-06 O
 
 He O
 was O
@@ -41944,7 +41944,7 @@ VANCOUVER O
 1 O
 84 O
 83 O
-29 B-PER
+29 O
 
 The O
 students O
@@ -41981,7 +41981,7 @@ October O
 . O
 
 Group O
-C B-PER
+C O
 
 Ayr O
 16 O
@@ -41990,7 +41990,7 @@ Ayr O
 3 O
 30 O
 18 O
-35 B-PER
+35 O
 
 Indian O
 rubber O
@@ -42035,7 +42035,7 @@ Gianluca O
 Vialli O
 ( O
 Chelsea O
-) B-PER
+) O
 
 Sampdoria O
 ( O
@@ -42046,7 +42046,7 @@ Juventus O
 ( O
 3 O
 ) O
-1330 B-ORG
+1330 O
 
 " O
 The O
@@ -42124,7 +42124,7 @@ change O
 % O
 - O
 4.4 O
-% B-PER
+% O
 
 Syria O
 : O
@@ -42280,7 +42280,7 @@ Dalloz O
 ( O
 France O
 ) O
-1:18.96 B-ORG
+1:18.96 O
 
 On O
 Monday O
@@ -42340,10 +42340,10 @@ Newsroom O
 , O
 +49 O
 69 O
-756525 B-PER
+756525 O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 10= O
 Martina O
@@ -42351,7 +42351,7 @@ Ertl O
 ( O
 Germany O
 ) O
-1:18.48 B-ORG
+1:18.48 O
 
 The O
 president O
@@ -42440,7 +42440,7 @@ Corn O
 163.5 O
 9.4 O
 95.7 O
-252.0 B-PER
+252.0 O
 
 -- O
 New O
@@ -42450,7 +42450,7 @@ Desk O
 +1 O
 212 O
 859 O
-1640 B-PER
+1640 O
 
 Wheat O
 387.4 O
@@ -42458,7 +42458,7 @@ Wheat O
 4553.6 O
 55.2 O
 1039.7 O
-846.1 B-PER
+846.1 O
 
 Results O
 of O
@@ -42479,13 +42479,13 @@ Cavagnoud O
 ( O
 France O
 ) O
-23 B-ORG
+23 O
 
 RANGOON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Evelyn O
-Leopold B-PER
+Leopold O
 
 17. O
 Hilde O
@@ -42493,10 +42493,10 @@ Gerg O
 ( O
 Germany O
 ) O
-42 B-ORG
+42 O
 
 MADRID O
-1996-12-06 B-PER
+1996-12-06 O
 
 Livshits O
 's O
@@ -42629,7 +42629,7 @@ terms O
 
 NATIONAL O
 FOOTBALL O
-CONFERENCE B-PER
+CONFERENCE O
 
 The O
 EU O
@@ -42668,7 +42668,7 @@ L O
 T O
 GF O
 GA O
-PTS B-PER
+PTS O
 
 Ramos O
 Horta O
@@ -42693,13 +42693,13 @@ Oats O
 Rye O
 Flaxseed O
 Canola O
-Corn B-PER
+Corn O
 
 [ O
 CORRECTED O
 08:40 O
 GMT O
-] B-PER
+] O
 
 In O
 addition O
@@ -42733,22 +42733,22 @@ Gutensohn O
 ( O
 Germany O
 ) O
-42 B-ORG
+42 O
 
 16-1 O
 Manolo O
 Sanchis O
 14-1 O
-Gheorghe B-PER
+Gheorghe O
 
 WHISTLER O
 , O
 British O
 Columbia O
-1996-12-06 B-PER
+1996-12-06 O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Harper O
 was O
@@ -42799,14 +42799,14 @@ economy O
 " O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 W O
 L O
 T O
 GF O
 GA O
-PTS B-PER
+PTS O
 
 The O
 court O
@@ -42841,7 +42841,7 @@ war O
 Rangers O
 4 O
 Hibernian O
-3 B-PER
+3 O
 
 CONTRACT O
 PREVIOUS O
@@ -42850,11 +42850,11 @@ PM O
 CLOSE O
 PM O
 CLOSING O
-RANGE B-PER
+RANGE O
 
 NEW O
 YORK O
-1996-12-06 B-PER
+1996-12-06 O
 
 BOSTON O
 10 O
@@ -42862,7 +42862,7 @@ BOSTON O
 4 O
 74 O
 84 O
-24 B-PER
+24 O
 
 Ljubljana O
 ( O
@@ -42871,7 +42871,7 @@ Slovenia O
 9 O
 6 O
 3 O
-15 B-ORG
+15 O
 
 Diouf O
 announced O
@@ -42902,7 +42902,7 @@ discussed O
 . O
 
 1-1 O
-11-2 B-PER
+11-2 O
 
 Group O
 A O
@@ -42918,7 +42918,7 @@ won O
 drawn O
 , O
 lost O
-, B-PER
+, O
 
 FRIDAY O
 , O
@@ -42986,12 +42986,12 @@ CHICAGO O
 3 O
 71 O
 67 O
-27 B-PER
+27 O
 
 VAIL O
 , O
 Colorado O
-1996-12-07 B-PER
+1996-12-07 O
 
 SACRAMENTO O
 6 O
@@ -43035,7 +43035,7 @@ Obermoser O
 ( O
 Austria O
 ) O
-1:50.99 B-ORG
+1:50.99 O
 
 The O
 result O
@@ -43148,7 +43148,7 @@ Yehuda O
 52.74 O
 / O
 53.19 O
-) B-PER
+) O
 
 Note O
 - O
@@ -43193,7 +43193,7 @@ Yang O
 5 O
 22/11/96 O
 4,000 O
-Indonesia B-PER
+Indonesia O
 
 -- O
 Warsaw O
@@ -43201,7 +43201,7 @@ Newsroom O
 +48 O
 22 O
 653 O
-9700 B-PER
+9700 O
 
 Traders O
 noted O
@@ -43286,7 +43286,7 @@ said O
 
 PHILADELPHIA O
 AT O
-HOUSTON B-LOC
+HOUSTON O
 
 70 O
 , O
@@ -43304,7 +43304,7 @@ Halftime O
 CORRECTED O
 14:06 O
 GMT O
-] B-PER
+] O
 
 15,232 B-ORG
 
@@ -43315,7 +43315,7 @@ Newcastle O
 4 O
 26 O
 17 O
-29 B-PER
+29 O
 
 71 O
 , O
@@ -43355,10 +43355,10 @@ term O
 
 Sales O
 128.00 O
-117.56 B-PER
+117.56 O
 
 Group O
-C B-PER
+C O
 
 Asked O
 if O
@@ -43399,12 +43399,12 @@ Aug O
 72.41 O
 72.07 O
 68.01 O
-69.45-74.18 B-PER
+69.45-74.18 O
 
 12/15/2006 O
 145M O
 4.70 O
-4.70 B-PER
+4.70 O
 
 Pace O
 outdistanced O
@@ -43442,7 +43442,7 @@ Saint-Germain O
 3 O
 34 O
 15 O
-42 B-PER
+42 O
 
 " O
 Halverson O
@@ -43505,10 +43505,10 @@ Everton O
 ( O
 Branch O
 17 O
-, B-MISC
+, O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Volume O
 was O
@@ -43538,7 +43538,7 @@ Genoa O
 -- O
 Prague O
 Newsroom O
-42-2-2423-0003 B-PER
+42-2-2423-0003 O
 
 " O
 About O
@@ -43576,7 +43576,7 @@ Chen O
 China O
 ) O
 11-0 O
-12-10 B-PER
+12-10 O
 
 goals O
 for O
@@ -43593,7 +43593,7 @@ DIEGO O
 6 O
 0 O
 277 O
-323 B-PER
+323 O
 
 Feb O
 settled O
@@ -43613,12 +43613,12 @@ Leverkusen O
 3 O
 38 O
 22 O
-34 B-PER
+34 O
 
 Preston O
 2 O
 York O
-3 B-PER
+3 O
 
 On O
 Tuesday O
@@ -43811,7 +43811,7 @@ Seagramd O
 ace O
 20/11/96 O
 5,000 O
-Japan B-PER
+Japan O
 
 TEMPE O
 , O
@@ -43849,7 +43849,7 @@ candidate O
 . O
 
 Group O
-B B-PER
+B O
 
 Peters O
 left O
@@ -43904,7 +43904,7 @@ Roma O
 ( O
 7 O
 ) O
-1930 B-ORG
+1930 O
 
 Ijaz O
 Ahmad O
@@ -43912,7 +43912,7 @@ c O
 Spearman O
 b O
 Vaughan O
-59 B-PER
+59 O
 
 2016 O
 5.35 O
@@ -43922,7 +43922,7 @@ Vaughan O
 5.80 O
 5.75 O
 6.10 O
-6.05 B-PER
+6.05 O
 
 Lara O
 has O
@@ -43959,13 +43959,13 @@ days O
 Name O
 : O
 Svetlana O
-Gladishiva B-PER
+Gladishiva O
 
 Shahid O
 Afridi O
 b O
 Harris O
-2 B-PER
+2 O
 
 All-rounder O
 Greg O
@@ -43994,12 +43994,12 @@ crowd O
 . O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Alloa O
 3 O
 Hawick O
-1 B-PER
+1 O
 
 6-0-32-2 O
 ( O
@@ -44013,15 +44013,15 @@ Mushtaq O
 8-0-54-2 O
 , O
 Mushtaq O
-Ahmad B-PER
+Ahmad O
 
 4-1 O
 40-1 O
 4-1 O
-80-1 B-PER
+80-1 O
 
 RANGOON O
-1996-12-07 B-PER
+1996-12-07 O
 
 Market O
 participants O
@@ -44070,13 +44070,13 @@ sharply O
 Carlisle O
 1 O
 Darlington O
-0 B-PER
+0 O
 
 Bochum O
 2 O
 Bayer O
 Leverkusen O
-2 B-PER
+2 O
 
 Hapoel O
 Kfar O
@@ -44222,10 +44222,10 @@ OUTPUT O
 Sept O
 Sept O
 Apr-Sept O
-Apr-Sept B-PER
+Apr-Sept O
 
 PARIS O
-1996-12-06 B-PER
+1996-12-06 O
 
 Russian O
 President O
@@ -44267,7 +44267,7 @@ Friday O
 . O
 
 CENTRAL O
-DIVISION B-PER
+DIVISION O
 
 Ajax O
 Amsterdam O
@@ -44285,7 +44285,7 @@ HARTFORD O
 6 O
 77 O
 76 O
-30 B-PER
+30 O
 
 Japan O
 NTT O
@@ -44300,7 +44300,7 @@ soon O
 
 NEW O
 YORK O
-1996-12-05 B-PER
+1996-12-05 O
 
 Earlier O
 , O
@@ -44371,7 +44371,7 @@ of O
 Scottish O
 league O
 and O
-cup B-LOC
+cup O
 
 CLEVELAND O
 11 O
@@ -44404,7 +44404,7 @@ Gerety O
 ( O
 U.S. O
 ) O
-1:19.39 B-ORG
+1:19.39 O
 
 John O
 Lewis O
@@ -44428,12 +44428,12 @@ points O
 : O
 
 Premier O
-league B-PER
+league O
 
 VANCOUVER O
 AT O
 SAN O
-ANTONIO B-PER
+ANTONIO O
 
 " O
 We O
@@ -44635,7 +44635,7 @@ Zhilan O
 China O
 ) O
 15-4 O
-15-5 B-PER
+15-5 O
 
 Roadblocks O
 have O
@@ -44663,7 +44663,7 @@ deserted O
 
 14-1 O
 Barcelona O
-Draw B-PER
+Draw O
 
 Glenavon O
 10 O
@@ -44761,7 +44761,7 @@ Norway O
 26:24.9 O
 ( O
 2 O
-) B-ORG
+) O
 
 Jordan O
 said O
@@ -44807,7 +44807,7 @@ Bracun O
 ( O
 Slovenia O
 ) O
-1:19.07 B-ORG
+1:19.07 O
 
 There O
 is O
@@ -44836,7 +44836,7 @@ Reuters O
 . O
 
 Group O
-D B-PER
+D O
 
 Maccabi O
 Petah O
@@ -44847,7 +44847,7 @@ Tikva O
 4 O
 14 O
 12 O
-20 B-PER
+20 O
 
 Takuya O
 Takagi O
@@ -44905,7 +44905,7 @@ from O
 6-260 O
 7-261 O
 8-269 O
-9-276 B-PER
+9-276 O
 
 Chile O
 and O
@@ -44994,7 +44994,7 @@ Sundstrom O
 ( O
 U.S. O
 ) O
-1:25.39 B-ORG
+1:25.39 O
 
 Peter O
 Nicol O
@@ -45033,7 +45033,7 @@ BOSTON O
 108 O
 ( O
 OT O
-) B-PER
+) O
 
 Former O
 Wallaby O
@@ -45053,7 +45053,7 @@ England O
 IGLS O
 , O
 Austria O
-1996-12-07 B-PER
+1996-12-07 O
 
 Kim O
 Yoon-man O
@@ -45098,7 +45098,7 @@ Brechu O
 ( O
 France O
 ) O
-1:19.02 B-ORG
+1:19.02 O
 
 Attempts O
 by O
@@ -45180,7 +45180,7 @@ out O
 corrects O
 from O
 90 O
-) B-PER
+) O
 
 But O
 in O
@@ -45213,7 +45213,7 @@ Ertl O
 ( O
 Germany O
 ) O
-1:49.85 B-ORG
+1:49.85 O
 
 VfL O
 Bochum O
@@ -45223,11 +45223,11 @@ Bochum O
 3 O
 23 O
 21 O
-27 B-PER
+27 O
 
 8. O
 Slovenia O
-432 B-PER
+432 O
 
 Spanish O
 bonds O
@@ -45272,7 +45272,7 @@ DECEMBER O
 SCHEDULE O
 
 2-2 O
-14-1 B-PER
+14-1 O
 
 SAN O
 JOSE O
@@ -45281,7 +45281,7 @@ JOSE O
 4 O
 69 O
 87 O
-24 B-PER
+24 O
 
 Russ O
 Berrie O
@@ -45324,7 +45324,7 @@ ARIZONA O
 7 O
 0 O
 248 O
-332 B-PER
+332 O
 
 Speaking O
 in O
@@ -45402,7 +45402,7 @@ Russia O
 9 O
 6 O
 3 O
-15 B-ORG
+15 O
 
 BOBSLEIGH-WORLD O
 CUP O
@@ -45457,7 +45457,7 @@ pressure O
 . O
 
 WASHINGTON O
-1996-12-05 B-PER
+1996-12-05 O
 
 Mesipia O
 77.5 O
@@ -45509,7 +45509,7 @@ Eriko O
 ( O
 Japan O
 ) O
-1:25.79 B-ORG
+1:25.79 O
 
 Svetlana O
 Gladishiva O
@@ -45556,11 +45556,11 @@ Lebanon O
 . O
 
 BRUSSELS O
-1996-12-06 B-PER
+1996-12-06 O
 
 DES O
 MOINES O
-1996-12-06 B-PER
+1996-12-06 O
 
 Russian O
 tax O
@@ -45666,7 +45666,7 @@ Johnson O
 ( O
 Canada O
 ) O
-24.57 B-ORG
+24.57 O
 
 Polish O
 brewer O
@@ -45754,7 +45754,7 @@ pickup O
 
 Women O
 's O
-singles B-PER
+singles O
 
 5. O
 Megan O
@@ -45762,16 +45762,16 @@ Gerety O
 ( O
 U.S. O
 ) O
-1:49.26 B-ORG
+1:49.26 O
 
 UTAH O
 14 O
 2 O
 .875 O
-1 B-PER
+1 O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Basketball O
 Association O
@@ -45780,12 +45780,12 @@ after O
 games O
 played O
 on O
-Thursday B-LOC
+Thursday O
 
 Summaries O
 of O
 English O
-premier B-PER
+premier O
 
 *1995 O
 totals O
@@ -45821,7 +45821,7 @@ Japan O
 . O
 
 CENTRAL O
-DIVISION B-PER
+DIVISION O
 
 Llanelli O
 97 O
@@ -45889,7 +45889,7 @@ Germany O
 26:28.2 O
 ( O
 1 O
-) B-ORG
+) O
 
 6. O
 Warwara O
@@ -45897,10 +45897,10 @@ Zelenskaja O
 ( O
 Russia O
 ) O
-1:18.21 B-ORG
+1:18.21 O
 
 Robert O
-Galvin B-PER
+Galvin O
 
 I O
 think O
@@ -45944,7 +45944,7 @@ Feb O
 79.94 O
 79.67 O
 75.55 O
-77.01-81.80 B-PER
+77.01-81.80 O
 
 Bill O
 Brett O
@@ -45985,7 +45985,7 @@ withdrawn O
 KUUSAMO O
 , O
 Finland O
-1996-12-07 B-PER
+1996-12-07 O
 
 Albanian O
 jailed O
@@ -45998,7 +45998,7 @@ suicide O
 
 AMERICAN O
 FOOTBALL O
-CONFERENCE B-PER
+CONFERENCE O
 
 He O
 spent O
@@ -46031,7 +46031,7 @@ Bradford O
 11 O
 21 O
 37 O
-21 B-PER
+21 O
 
 Australia O
 was O
@@ -46126,7 +46126,7 @@ Junichi O
 ( O
 Japan O
 ) O
-1:16.61 B-ORG
+1:16.61 O
 
 Barcelona O
 fought O
@@ -46187,12 +46187,12 @@ Gladishiva O
 ( O
 Russia O
 ) O
-1:50.03 B-ORG
+1:50.03 O
 
 DENVER O
 AT O
 GREEN O
-BAY B-PER
+BAY O
 
 RUGBY O
 UNION O
@@ -46221,7 +46221,7 @@ One O
 4.00 O
 4.00 O
 4.30 O
-4.35 B-PER
+4.35 O
 
 Spanish O
 police O
@@ -46340,7 +46340,7 @@ Friday O
 
 5. O
 Funaki O
-143 B-PER
+143 O
 
 United O
 States O
@@ -46353,7 +46353,7 @@ Garrett B-PER
 
 DALLAS O
 AT O
-ARIZONA B-LOC
+ARIZONA O
 
 PHOENIX O
 3 O
@@ -46513,7 +46513,7 @@ Montillet O
 ( O
 France O
 ) O
-60 B-ORG
+60 O
 
 The O
 nominees O
@@ -46638,7 +46638,7 @@ CHICAGO O
 8 O
 0 O
 202 O
-248 B-PER
+248 O
 
 " O
 The O
@@ -46666,12 +46666,12 @@ Tolonics O
 UTAH O
 106 O
 Minnesota O
-95 B-PER
+95 O
 
 W O
 L O
 PCT O
-GB B-PER
+GB O
 
 Lara O
 , O
@@ -46717,7 +46717,7 @@ Moran O
 ( O
 U.S. O
 ) O
-23.25 B-ORG
+23.25 O
 
 The O
 weather O
@@ -46781,7 +46781,7 @@ Gerety O
 ( O
 U.S. O
 ) O
-51 B-ORG
+51 O
 
 Royal O
 Clipper O
@@ -46843,14 +46843,14 @@ wickets O
 5-81 O
 6-120 O
 7-135 O
-8-150 B-PER
+8-150 O
 
 -- O
 London O
 Newsroom O
 +44 O
 171 O
-542-7768 B-PER
+542-7768 O
 
 NEW O
 JERSEY O
@@ -46859,7 +46859,7 @@ JERSEY O
 1 O
 61 O
 61 O
-29 B-PER
+29 O
 
 Galley O
 suffered O
@@ -46934,7 +46934,7 @@ Airdrieonians O
 2 O
 26 O
 16 O
-26 B-PER
+26 O
 
 " O
 In O
@@ -46982,13 +46982,13 @@ statement O
 5.90 O
 5.85 O
 6.20 O
-6.15 B-PER
+6.15 O
 
 Oats O
 unq O
 unq O
 unq O
-unq B-PER
+unq O
 
 VANCOUVER O
 2 O
@@ -47019,7 +47019,7 @@ talks O
 
 Age O
 : O
-20 B-PER
+20 O
 
 Sheffield O
 United O
@@ -47029,7 +47029,7 @@ United O
 4 O
 38 O
 20 O
-39 B-PER
+39 O
 
 C. O
 Harris O
@@ -47054,7 +47054,7 @@ supply O
 . O
 
 0-0 O
-8-1 B-PER
+8-1 O
 
 Vancouver O
 5 O
@@ -47066,7 +47066,7 @@ LOUIS O
 9 O
 0 O
 246 O
-334 B-PER
+334 O
 
 Real O
 Madrid O
@@ -47125,7 +47125,7 @@ Rotterdam O
 10 O
 21 O
 25 O
-21 B-PER
+21 O
 
 Guingamp O
 20 O
@@ -47199,7 +47199,7 @@ offences O
 . O
 
 AMARILLO O
-1996-12-06 B-PER
+1996-12-06 O
 
 DENVER O
 5 O
@@ -47240,7 +47240,7 @@ Dec O
 . O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 Extras O
 ( O
@@ -47248,7 +47248,7 @@ lb-17 O
 nb-8 O
 w-3 O
 ) O
-28 B-ORG
+28 O
 
 5. O
 Isolde O
@@ -47256,11 +47256,11 @@ Kostner O
 ( O
 Italy O
 ) O
-157 B-ORG
+157 O
 
 5. O
 France O
-853 B-PER
+853 O
 
 League O
 games O
@@ -47281,7 +47281,7 @@ after O
 games O
 played O
 on O
-Friday B-LOC
+Friday O
 
 10. O
 Kristian O
@@ -47294,10 +47294,10 @@ Norway O
 129.4 O
 / O
 98.7 O
-) B-PER
+) O
 
 TOKYO O
-1996-12-06 B-PER
+1996-12-06 O
 
 Australia O
 - O
@@ -47424,7 +47424,7 @@ Goetschi O
 Guido O
 Acklin O
 ) O
-1:45.98 B-ORG
+1:45.98 O
 
 Wigan O
 21 O
@@ -47433,7 +47433,7 @@ Wigan O
 5 O
 39 O
 24 O
-40 B-PER
+40 O
 
 Some O
 of O
@@ -47455,7 +47455,7 @@ Niasse O
 
 MEXICO O
 CITY O
-1996-12-06 B-PER
+1996-12-06 O
 
 York O
 21 O
@@ -47464,7 +47464,7 @@ York O
 9 O
 23 O
 29 O
-26 B-PER
+26 O
 
 PSV O
 Eindhoven O
@@ -47474,7 +47474,7 @@ Eindhoven O
 2 O
 52 O
 14 O
-42 B-PER
+42 O
 
 Peres O
 , O
@@ -47518,7 +47518,7 @@ commanders O
 RE O
 : O
 $ O
-25,000,000 B-PER
+25,000,000 O
 
 Hindu O
 party O
@@ -47530,7 +47530,7 @@ adjourn O
 . O
 
 LONDON O
-1996-12-07 B-PER
+1996-12-07 O
 
 ( O
 ( O
@@ -47538,12 +47538,12 @@ Chicago O
 newsdesk O
 312-408-8720 O
 ) O
-) B-ORG
+) O
 
 Name O
 : O
 Renate O
-Goetschl B-PER
+Goetschl O
 
 5. O
 Petra O
@@ -47554,7 +47554,7 @@ Germany O
 24:15.4 O
 ( O
 2 O
-) B-ORG
+) O
 
 -- O
 Brussels O
@@ -47562,7 +47562,7 @@ Newsroom O
 32 O
 2 O
 287 O
-6800 B-PER
+6800 O
 
 Dong O
 Jiong O
@@ -47576,7 +47576,7 @@ Stuer-Lauridsen O
 Denmark O
 ) O
 15-10 O
-15-6 B-PER
+15-6 O
 
 They O
 were O
@@ -47595,7 +47595,7 @@ OTTAWA O
 HOBART O
 , O
 Australia O
-1996-12-07 B-PER
+1996-12-07 O
 
 Bastia O
 20 O
@@ -47604,12 +47604,12 @@ Bastia O
 5 O
 27 O
 22 O
-33 B-PER
+33 O
 
 Sunderland O
 1 O
 Wimbledon O
-3 B-PER
+3 O
 
 WEATHER O
 - O
@@ -47820,7 +47820,7 @@ Justin O
 Hobday O
 71 O
 65 O
-, B-MISC
+, O
 
 Portadown O
 9 O
@@ -47836,12 +47836,12 @@ World O
 Cup O
 victories O
 : O
-None B-PER
+None O
 
 TALLAHASSEE O
 , O
 Fla. O
-1996-12-06 B-PER
+1996-12-06 O
 
 LA O
 CLIPPERS O
@@ -47907,7 +47907,7 @@ Sep O
 69.18 O
 69.24 O
 65.17 O
-66.61-71.34 B-PER
+66.61-71.34 O
 
 Japan O
 began O
@@ -47948,7 +47948,7 @@ Nancy O
 2 O
 ( O
 Paul O
-Fischer B-PER
+Fischer O
 
 Svetlana O
 Jhurova O
@@ -47964,7 +47964,7 @@ But O
 2 O
 27/11/96 O
 5,000 O
-Burma B-PER
+Burma O
 
 Delphis O
 Hanover O
@@ -48269,7 +48269,7 @@ Kerkrade O
 4 O
 19 O
 21 O
-27 B-PER
+27 O
 
 Tasmania O
 352 O
@@ -48301,7 +48301,7 @@ PHILADELPHIA O
 6 O
 0 O
 313 O
-302 B-PER
+302 O
 
 Southend O
 22 O
@@ -48310,7 +48310,7 @@ Southend O
 8 O
 23 O
 36 O
-24 B-PER
+24 O
 
 on O
 Friday O
@@ -48333,7 +48333,7 @@ Oats O
 391.9 O
 4.8 O
 149.6 O
-115.0 B-PER
+115.0 O
 
 But O
 in O
@@ -48362,7 +48362,7 @@ Cairns O
 corrects O
 from O
 87 O
-) B-PER
+) O
 
 " O
 But O
@@ -48383,7 +48383,7 @@ house O
 . O
 
 TOKYO O
-1996-12-06 B-PER
+1996-12-06 O
 
 Five O
 people O
@@ -48421,7 +48421,7 @@ S. O
 Law O
 b O
 Hooper O
-21 B-PER
+21 O
 
 Dressed O
 Basis O
@@ -48461,13 +48461,13 @@ TARPON O
 SPRINGS O
 , O
 Florida O
-1996-12-07 B-PER
+1996-12-07 O
 
 Sudbury O
 Town O
 1 O
 Brentford O
-3 B-PER
+3 O
 
 Seller O
 interest O
@@ -48477,7 +48477,7 @@ light O
 Deligst O
 20/11/96 O
 5,500 O
-Indonesia B-PER
+Indonesia O
 
 " O
 ( O
@@ -48543,14 +48543,14 @@ W O
 L O
 T O
 PF O
-PA B-PER
+PA O
 
 145.4 O
 / O
 second O
 jump O
 158 O
-) B-PER
+) O
 
 Langmore O
 , O
@@ -48737,10 +48737,10 @@ ORLEANS O
 11 O
 0 O
 184 O
-291 B-PER
+291 O
 
 PRAGUE O
-1996-12-06 B-PER
+1996-12-06 O
 
 9. O
 Chris O
@@ -48748,7 +48748,7 @@ Witty O
 ( O
 U.S. O
 ) O
-1:25.85 B-ORG
+1:25.85 O
 
 His O
 supporters O
@@ -48770,7 +48770,7 @@ impasse O
 
 Thursday O
 100,000 O
-33,000 B-PER
+33,000 O
 
 9. O
 Ljudmila O
@@ -48778,7 +48778,7 @@ Dymchenko O
 ( O
 Russia O
 ) O
-21.59 B-ORG
+21.59 O
 
 Pau-Orthez O
 ( O
@@ -48790,7 +48790,7 @@ France O
 14 O
 
 LONDON O
-1996-12-06 B-PER
+1996-12-06 O
 
 Ohio O
 State O
@@ -48895,7 +48895,7 @@ Rovers O
 8 O
 22 O
 23 O
-28 B-PER
+28 O
 
 Winds O
 from O
@@ -48921,7 +48921,7 @@ Brenner O
 ( O
 Canada O
 ) O
-170.42 B-ORG
+170.42 O
 
 Summary O
 of O
@@ -48967,7 +48967,7 @@ BOSTON O
 Blackpool O
 0 O
 Hednesford O
-1 B-PER
+1 O
 
 Danila O
 28.5 O
@@ -49000,7 +49000,7 @@ Karlsruhe O
 5 O
 30 O
 20 O
-28 B-PER
+28 O
 
 Both O
 sources O
@@ -49121,7 +49121,7 @@ Ireland O
 NEW O
 YORK O
 AT O
-MIAMI B-LOC
+MIAMI O
 
 Sevilla O
 15 O
@@ -49189,7 +49189,7 @@ Japan O
 Milan O
 newsroom O
 +392 O
-66129502 B-PER
+66129502 O
 
 48,053 O
 . O
@@ -49328,7 +49328,7 @@ W O
 L O
 T O
 PF O
-PA B-PER
+PA O
 
 About O
 200 O
@@ -49376,7 +49376,7 @@ Lindgren O
 ( O
 Sweden O
 ) O
-154.82 B-ORG
+154.82 O
 
 NY O
 GIANTS O
@@ -49384,7 +49384,7 @@ GIANTS O
 8 O
 0 O
 200 O
-250 B-PER
+250 O
 
 12= O
 Madlen O
@@ -49392,7 +49392,7 @@ Brigger-Summermatter O
 ( O
 Switzerland O
 ) O
-42 B-ORG
+42 O
 
 New O
 York O
@@ -49549,7 +49549,7 @@ Malaysia O
 ) O
 5-15 O
 15-11 O
-15-11 B-PER
+15-11 O
 
 NFL O
 AMERICAN O
@@ -49572,7 +49572,7 @@ Chester O
 7 O
 23 O
 23 O
-30 B-PER
+30 O
 
 Her O
 name O
@@ -49591,7 +49591,7 @@ Hereford O
 23 O
 
 MEXICO O
-CITY B-PER
+CITY O
 
 Berwick O
 16 O
@@ -49655,14 +49655,14 @@ target O
 MANTUA O
 , O
 Italy O
-1996-12-06 B-PER
+1996-12-06 O
 
 DALLAS O
 8 O
 5 O
 0 O
 254 O
-201 B-PER
+201 O
 
 Hull O
 1 O
@@ -49675,7 +49675,7 @@ Anaheim O
 1 O
 ( O
 OT O
-) B-PER
+) O
 
 ( O
 Zimbabwe O
@@ -49696,7 +49696,7 @@ Manchester O
 City O
 3 O
 Bradford O
-2 B-PER
+2 O
 
 RTRS O
 - O
@@ -49768,7 +49768,7 @@ $ O
 . O
 
 EASTERN O
-DIVISION B-PER
+DIVISION O
 
 Gaulieder O
 's O
@@ -49802,7 +49802,7 @@ Udinese O
 ( O
 11 O
 ) O
-1330 B-ORG
+1330 O
 
 tied O
 , O
@@ -49828,7 +49828,7 @@ won O
 drawn O
 , O
 lost O
-, B-PER
+, O
 
 On O
 tour O
