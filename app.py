@@ -35,7 +35,7 @@ def predict_audio(audio):
             sample_rate = 8000
 
         # 生成带时间戳的文件名
-        wav_filename = f"audio_{datetime.now().strftime("%H-%M-%S")}.wav"
+        wav_filename = f"test/audio_{datetime.now().strftime("%H-%M-%S")}.wav"
         wavfile.write(wav_filename, sample_rate, audio_data)
 
         # 提取MFCC特征

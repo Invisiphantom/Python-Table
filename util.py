@@ -188,7 +188,7 @@ class SpeechDataset(Dataset):
         files = []
         for word_idx in self.vocab.keys():
             for repeat in range(1, 21):
-                for id in ["21300240018", "21307110316", "21307130050", "21307130052", "21307130121", "21307130150", "22300240004", "23300240026"]:
+                for id in ["21300240018", "21307130050", "21307130052", "21307130121", "21307130150", "22307130379"]:
                     filename = f"Data/{word_idx}/{id}_{word_idx}_{repeat:02d}.dat"
                     if os.path.exists(os.path.join(self.root_dir, filename)):
                         files.append((filename, int(word_idx)))
@@ -196,7 +196,7 @@ class SpeechDataset(Dataset):
                     filename = f"Data/{word_idx}/{id}-{word_idx}-{repeat:02d}.dat"
                     if os.path.exists(os.path.join(self.root_dir, filename)):
                         files.append((filename, int(word_idx)))
-        print(f"找到 {len(files)} 个音频文件")
+        print(f"训练集: {len(files)} 个音频文件")
         return files
 
     def _preprocess_all_data(self):
