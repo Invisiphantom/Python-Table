@@ -1,8 +1,10 @@
+import os
 import torch
-import numpy as np
 import gradio as gr
+import numpy as np
 from scipy.io import wavfile
 from scipy import signal
+from datetime import datetime
 from util import ManualMFCC, SpeechRecognizer
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -33,7 +35,7 @@ def predict_audio(audio):
             sample_rate = 8000
 
         # 生成带时间戳的文件名
-        wav_filename = "test.wav"
+        wav_filename = f"test.dat"
         wavfile.write(wav_filename, sample_rate, audio_data)
 
         # 提取MFCC特征
@@ -51,7 +53,7 @@ def predict_audio(audio):
         predicted_idx = str(predicted.item()).zfill(2)
         result = VOCAB.get(predicted_idx, "未知单词")
 
-        return f"识别结果: {result}"
+        return f"识别结果: {result} / {wav_filename}"
     except Exception as e:
         return f"识别出错: {str(e)}"
 

@@ -1,8 +1,10 @@
 import os
+import random
 import struct
 import numpy as np
 import scipy.fftpack as fft
 from scipy.signal import get_window
+import torchaudio.functional as F
 
 import torch
 import torch.nn as nn
@@ -188,7 +190,24 @@ class SpeechDataset(Dataset):
         files = []
         for word_idx in self.vocab.keys():
             for repeat in range(1, 21):
-                for id in ["21300240018", "21307130050", "21307130052", "21307130121", "21307130150", "22307130379"]:
+                for id in [
+                    "21300240016",
+                    "21300240018",
+                    "21307110148",
+                    "21307110316",
+                    "21307130050",
+                    "21307130052",
+                    "21307130121",
+                    "21307130150",
+                    "21307130179",
+                    "22300240004",
+                    "22307130013",
+                    "22307130082",
+                    "22307130143",
+                    "22307130224",
+                    "22307130379",
+                    "23300240026",
+                ]:
                     filename = f"Data/{word_idx}/{id}_{word_idx}_{repeat:02d}.dat"
                     if os.path.exists(os.path.join(self.root_dir, filename)):
                         files.append((filename, int(word_idx)))
@@ -200,23 +219,70 @@ class SpeechDataset(Dataset):
         return files
 
     def _preprocess_all_data(self):
-        """预处理所有数据并存储在内存中"""
+        """预处理所有数据并存储在内存中，包含数据增强"""
         file_list = self._build_file_list()
         data = []
 
-        for filename, label in file_list:
+        data_size = len(file_list)
+        for idx, (filename, label) in enumerate(file_list):
+            if idx % 500 == 0:
+                print(f"处理到 {idx}/{data_size}")
             filepath = os.path.join(self.root_dir, filename)
 
-            # 提取MFCC特征
-            mfcc = self.mfcc_extractor.compute_mfcc(filepath)
+            # 加载原始音频数据
+            signal = self.mfcc_extractor.load_dat_file(filepath)
 
-            # 转换为torch张量并存储
+            # 原始MFCC特征
+            mfcc = self.mfcc_extractor.compute_mfcc(signal)
             mfcc_tensor = torch.FloatTensor(mfcc)
             label_tensor = torch.LongTensor([label])
-
             data.append((mfcc_tensor, label_tensor))
 
+            # 数据增强 - 生成变体
+            for _ in range(2):  # 为每个原始样本生成2个增强样本
+                augmented_signal = self._augment_audio(signal)
+                augmented_mfcc = self.mfcc_extractor.compute_mfcc(augmented_signal)
+                augmented_mfcc_tensor = torch.FloatTensor(augmented_mfcc)
+                data.append((augmented_mfcc_tensor, label_tensor))
+
+        print(f"总样本数(包含增强): {len(data)}")
         return data
+
+    def _augment_audio(self, signal):
+        """应用随机音频增强"""
+        # 随机选择1-2种增强方式
+        augmentations = random.sample([self._add_noise, self._time_shift, self._volume_change], k=random.randint(1, 2))
+
+        augmented_signal = signal.copy()
+        for augment in augmentations:
+            augmented_signal = augment(augmented_signal)
+
+        return augmented_signal
+
+    def _add_noise(self, signal, noise_level=0.005):
+        """添加高斯白噪声"""
+        noise = np.random.normal(0, noise_level, len(signal))
+        return signal + noise
+
+    def _time_shift(self, signal, max_shift=0.1):
+        """时间偏移"""
+        shift = int(len(signal) * max_shift * random.uniform(-1, 1))
+        if shift > 0:
+            return np.concatenate([signal[shift:], np.zeros(shift)])
+        elif shift < 0:
+            return np.concatenate([np.zeros(-shift), signal[:shift]])
+        return signal
+
+    def _volume_change(self, signal, db_range=(-6, 6)):
+        """音量变化"""
+        db = random.uniform(*db_range)
+        # 转换为PyTorch张量进行音量调整
+        signal_tensor = torch.FloatTensor(signal)
+        try:
+            changed = F.gain(signal_tensor.unsqueeze(0), db)
+            return changed.squeeze(0).numpy()
+        except:
+            return signal  # 如果失败返回原信号
 
     def __len__(self):
         return len(self.data)
