@@ -53,7 +53,7 @@ def predict_audio(audio):
         predicted_idx = str(predicted.item()).zfill(2)
         result = VOCAB.get(predicted_idx, "未知单词")
 
-        return f"识别结果: {result} / {wav_filename}"
+        return f"识别结果: {result}"
     except Exception as e:
         return f"识别出错: {str(e)}"
 
